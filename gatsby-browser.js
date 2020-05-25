@@ -5,3 +5,6 @@
  */
 
 // You can delete this file if you're not using it
+// ES5 way
+// exports.onClientEntry = () => {
+// ES6 way

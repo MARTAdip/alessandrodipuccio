@@ -29,15 +29,15 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div style={style}>
+      <div >
         <Link to="/">Home</Link>
       </div>
-      <div style={style}>
+      <div >
         <Link to="/about">About</Link>
       </div>
       
-      <div className="icon-placeholder" style={style} />
-      <div className="text-placeholder" style={style} />
+      {/* <div className="icon-placeholder" style={style} />
+      <div className="text-placeholder" style={style} /> */}
     </motion.li>
   );
 };

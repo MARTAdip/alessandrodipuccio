@@ -620,6 +620,8 @@ pre tt:after {
     font-size: 100%;
   }
 } */
+@import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+
 body {
   width: 100vw;
   height: 100vh;
@@ -630,6 +632,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 nav {
@@ -638,14 +641,21 @@ nav {
   left: 0;
   bottom: 0;
   width: 300px;
+  z-index: 111;
 }
-
+/* @media (max-width: 768px) {
+  nav {
+    max-height: 350px;
+    border-radius: 5px;
+  }
+} */
 .background {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
   width: 300px;
+  z-index: 111;
   background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);;
 }
 
@@ -663,6 +673,7 @@ button {
   height: 50px;
   border-radius: 50%;
   background: transparent;
+  z-index: 111;
 }
 
 ul,
@@ -676,14 +687,26 @@ ul {
   position: absolute;
   top: 100px;
   width: 230px;
+  z-index: 111;
 }
 
 li {
   list-style: none;
   margin-bottom: 20px;
   display: flex;
+  flex-flow: column;
   align-items: center;
   cursor: pointer;
+  z-index: 111;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: "Bowlby One SC", cursive;
+
 }
 
 .icon-placeholder {
@@ -714,4 +737,29 @@ li {
   justify-content: center;
   align-items: center;
   cursor: pointer;
+}
+
+
+.gatsby-image-wrapper {
+  height: 70vh !important;
+  width: 44vh !important;
+}
+
+@media (min-width: 320px) {
+  .gatsby-image-wrapper {
+    height: 52vh !important;
+    width: 37vh !important;
+  }
+}
+@media (min-width: 1024px) {
+  .gatsby-image-wrapper {
+    height: 79vh !important;
+    width: 85vh !important;
+  }
+}
+@media (min-width: 1440px) {
+  .gatsby-image-wrapper {
+    height: 85vh !important;
+    width: 100vh !important;
+  }
 }
