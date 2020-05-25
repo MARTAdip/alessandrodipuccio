@@ -621,6 +621,11 @@ pre tt:after {
   }
 } */
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+html {
+  
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
 
 body {
   width: 100vw;
@@ -659,7 +664,7 @@ nav {
   background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);;
 }
 
-button {
+.button-toggle {
   outline: none;
   border: none;
   -webkit-user-select: none;

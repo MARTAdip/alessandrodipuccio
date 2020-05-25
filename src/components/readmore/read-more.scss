@@ -28,10 +28,10 @@
   text-align: left;
   line-height: 2rem;
   font-weight: bold;
-  @media (min-width: 768px) {
-    line-height: 2.5rem;
-    font-size: 24px;
-  }
+  // @media (min-width: 768px) {
+  //   line-height: 2.5rem;
+  //   font-size: 24px;
+  // }
 }
 .read-more__text--show {
   max-height: 10em;
@@ -44,10 +44,10 @@
   text-align: left;
   line-height: 2rem;
   font-weight: bold;
-  @media (min-width: 768px) {
-    font-size: 24px;
-    line-height: 2.5rem;
-  }
+  // @media (min-width: 768px) {
+  //   font-size: 24px;
+  //   line-height: 2.5rem;
+  // }
 }
 
 .read-more__text--remaining {

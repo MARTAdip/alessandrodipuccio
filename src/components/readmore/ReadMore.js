@@ -21,7 +21,9 @@ export default class ReadMore extends Component {
     this.props.onContentChange();
   }
 
-  toggleReadMore = () => {
+  toggleReadMore = (e) => {
+    console.log(e);
+    
     this.setState({
       showingAll: !this.state.showingAll,
     });
