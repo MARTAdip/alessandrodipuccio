@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import ReadMore from '../components/readmore/ReadMore'; 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { Link } from "gatsby"
 import  '../components/about.scss';
 
 

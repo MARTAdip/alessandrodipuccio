@@ -1,6 +1,6 @@
 import * as React from "react";
 import { motion } from "framer-motion";
-import { MenuItem } from "./MenuItem";
+import { MenuItem } from "./menuitem";
 
 const variants = {
   open: {
@@ -19,4 +19,3 @@ export const Navigation = () => (
   </motion.ul>
 );
 
-const itemIds = [0, 1, 2, 3];
