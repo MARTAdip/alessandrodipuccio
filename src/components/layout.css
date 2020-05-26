@@ -622,25 +622,35 @@ pre tt:after {
 } */
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
 html {
-  
   box-sizing: border-box;
   overflow-y: scroll;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  /* width: 100vw; */
+  min-height: 100vh;
   /* background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%); */
-  overflow: hidden;
+  overflow: scroll;
   padding: 0;
   margin: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   position: relative;
 }
+.site-header {
+  margin-top: 3rem;
+  margin-bottom: 1.45rem;
+}
+@media (min-width: 768px) {
+  .site-header {
+    margin-top: 0 !important;
+    text-align: center;
+  }
+}
 
-nav {
+
+.motion-nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -661,7 +671,9 @@ nav {
   bottom: 0;
   width: 300px;
   z-index: 111;
-  background: linear-gradient(180deg, #0055ff 0%, rgb(0, 153, 255) 100%);;
+  /* background: #457b9d; */
+  background: url('../images/palm.jpeg');
+  background-size: cover;
 }
 
 .button-toggle {
@@ -711,7 +723,7 @@ a {
   font-size: 20px;
   text-transform: uppercase;
   font-family: "Bowlby One SC", cursive;
-
+  color: #000;
 }
 
 .icon-placeholder {
@@ -744,8 +756,7 @@ a {
   cursor: pointer;
 }
 
-
-.gatsby-image-wrapper {
+/* .gatsby-image-wrapper {
   height: 70vh !important;
   width: 44vh !important;
 }
@@ -767,4 +778,4 @@ a {
     height: 85vh !important;
     width: 100vh !important;
   }
-}
+} */

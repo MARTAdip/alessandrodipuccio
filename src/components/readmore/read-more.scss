@@ -10,6 +10,8 @@
   color: #007f8c;
   font-weight: bold;
   font-family: "Open Sans Condensed", sans-serif;
+  position: relative;
+  z-index: 9999;
 }
 
 .read-more__button:hover {
@@ -23,7 +25,7 @@
 }
 .span {
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px 0;
   text-align: left;
   line-height: 2rem;
@@ -39,7 +41,7 @@
   font-size: inherit;
 
   font-family: "Open Sans Condensed", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   padding: 20px 0;
   text-align: left;
   line-height: 2rem;

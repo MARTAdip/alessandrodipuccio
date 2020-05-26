@@ -35,6 +35,9 @@ export const MenuItem = ({ i }) => {
       <div >
         <Link to="/about">About</Link>
       </div>
+      <div >
+        <Link to="/music">Music</Link>
+      </div>
       
       {/* <div className="icon-placeholder" style={style} />
       <div className="text-placeholder" style={style} /> */}

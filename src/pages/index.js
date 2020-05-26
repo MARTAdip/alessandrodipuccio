@@ -1,9 +1,7 @@
 import React from "react"
-// import { Link } from "gatsby"
-
+import { graphql } from "gatsby"
 import Layout from "../components/layout"
 // import Image from "../components/image"
-// import StyledBackgroundSection from "../components/backgroundimage"
 import SEO from "../components/seo"
 import Img from "gatsby-image"
 
@@ -16,10 +14,13 @@ const IndexPage = props => (
       style={{
         backgroundSize: "cover",
         width: "100%",
-        backgroundPosition: "center"
-        // backgroundRepeat: "no-repeat center center fixed",
+        backgroundPosition: "center",
       }}
     />
+    <footer>
+      © {new Date().getFullYear()}, Built with love
+      {` `}
+    </footer>
   </Layout>
 )
 
