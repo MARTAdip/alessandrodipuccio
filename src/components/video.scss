@@ -1,10 +1,8 @@
 .awssld__content {
   background-color: transparentize($color: #fff, $amount: 0.7);
-
-
 }
 .video-outer-wrapper {
-  background: url('../images/video.jpg');
+  background: url("../images/video.jpg");
   background-size: cover;
   min-height: 100vh;
 
@@ -12,5 +10,16 @@
     .video-text {
       color: #000;
     }
+  }
+}
+
+.video-container {
+  @media screen and (min-width: 1600px) {
+    max-width: 1570px;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 1900px) {
+    max-width: 1870px;
+    margin: 0 auto;
   }
 }

@@ -36,7 +36,7 @@ export default class about extends Component {
         <Layout>
           <SEO title="About" />
 
-          <div className="container">
+          <div className="about-container">
             <div className="bio-wrapper">
               <div
                 className="section-content"

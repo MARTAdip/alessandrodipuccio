@@ -11,7 +11,7 @@ const Video = props => (
   <div className="video-outer-wrapper">
     <Layout>
       <SEO title="Other Projects" />
-      <div className="container">
+      <div className="video-container">
         <AwesomeSlider
           cssModule={AwesomeSliderStyles}
           animation="foldOutAnimation"

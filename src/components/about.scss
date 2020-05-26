@@ -7,7 +7,7 @@
 
   min-height: 100vh;
 }
-.container {
+.about-container {
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
@@ -58,8 +58,9 @@
 }
 
 @media screen and (min-width: 1600px) {
-  .container {
+  .about-container {
     max-width: 1570px;
+    margin: 0 auto;
 
     .bio-wrapper {
       padding: 40px;
@@ -71,7 +72,8 @@
   }
 }
 @media screen and (min-width: 1900px) {
-  .container {
+  .about-container {
     max-width: 1870px;
+    margin: 0 auto;
   }
 }
