@@ -639,7 +639,7 @@ body {
   position: relative;
 }
 .site-header {
-  margin-top: 3rem;
+  padding-top: 3rem;
   margin-bottom: 1.45rem;
 }
 @media (min-width: 768px) {

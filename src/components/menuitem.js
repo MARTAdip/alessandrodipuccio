@@ -1,23 +1,23 @@
-import * as React from "react";
-import { motion } from "framer-motion";
-import Link from 'gatsby-link'
+import * as React from "react"
+import { motion } from "framer-motion"
+import Link from "gatsby-link"
 
 const variants = {
   open: {
     y: 0,
     opacity: 1,
     transition: {
-      y: { stiffness: 1000, velocity: -100 }
-    }
+      y: { stiffness: 1000, velocity: -100 },
+    },
   },
   closed: {
     y: 50,
     opacity: 0,
     transition: {
-      y: { stiffness: 1000 }
-    }
-  }
-};
+      y: { stiffness: 1000 },
+    },
+  },
+}
 
 // const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
@@ -29,21 +29,37 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
         <Link to="/">Home</Link>
       </div>
-      <div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
         <Link to="/about">About</Link>
       </div>
-      <div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
         <Link to="/music">Music</Link>
       </div>
-      <div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
         <Link to="/video">Other Projects</Link>
       </div>
-      
+
       {/* <div className="icon-placeholder" style={style} />
       <div className="text-placeholder" style={style} /> */}
     </motion.li>
-  );
-};
+  )
+}
