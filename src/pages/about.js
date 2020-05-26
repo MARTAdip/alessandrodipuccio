@@ -30,6 +30,7 @@ export default class about extends Component {
   }
   render() {
     return (
+      <div className="about-wrapper">
       <Layout>
         <SEO title="About" />
 
@@ -70,6 +71,7 @@ export default class about extends Component {
       
         
       </Layout>
+      </div>
     )
   }
 }
