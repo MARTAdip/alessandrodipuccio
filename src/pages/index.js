@@ -6,22 +6,24 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 
 const IndexPage = props => (
-  <Layout>
-    <SEO title="Alessandro Di Puccio" />
+  <div className="outer-container-index">
+    <Layout>
+      <SEO title="Alessandro Di Puccio" />
 
-    <Img
-      fluid={props.data.imageOne.childImageSharp.fluid}
-      style={{
-        backgroundSize: "cover",
-        width: "100%",
-        backgroundPosition: "center",
-      }}
-    />
-    <footer>
-      © {new Date().getFullYear()}, Built with love
-      {` `}
-    </footer>
-  </Layout>
+      <Img
+        fluid={props.data.imageOne.childImageSharp.fluid}
+        style={{
+          backgroundSize: "cover",
+          width: "100%",
+          backgroundPosition: "center",
+        }}
+      />
+      <footer>
+        © {new Date().getFullYear()}, Built with love
+        {` `}
+      </footer>
+    </Layout>
+  </div>
 )
 
 export default IndexPage

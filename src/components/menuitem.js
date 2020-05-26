@@ -29,14 +29,17 @@ export const MenuItem = ({ i }) => {
       whileHover={{ scale: 1.1 }}
       whileTap={{ scale: 0.95 }}
     >
-      <div >
+      <div>
         <Link to="/">Home</Link>
       </div>
-      <div >
+      <div>
         <Link to="/about">About</Link>
       </div>
-      <div >
+      <div>
         <Link to="/music">Music</Link>
+      </div>
+      <div>
+        <Link to="/video">Other Projects</Link>
       </div>
       
       {/* <div className="icon-placeholder" style={style} />

@@ -1,0 +1,16 @@
+.awssld__content {
+  background-color: transparentize($color: #fff, $amount: 0.7);
+
+
+}
+.video-outer-wrapper {
+  background: url('../images/video.jpg');
+  background-size: cover;
+  min-height: 100vh;
+
+  .video-wrapper-inner {
+    .video-text {
+      color: #000;
+    }
+  }
+}

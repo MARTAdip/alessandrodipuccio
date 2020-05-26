@@ -11,6 +11,7 @@ import '../components/music.scss'
 
 
 const Music = id => (
+  <div className="music-outer-wrapper">
   <Layout>
     <SEO title="Music" />
       <div className="grid">
@@ -80,6 +81,7 @@ const Music = id => (
           ></iframe>
         </div>
   </Layout>
+  </div>
 )
 
 // const Music = () => (
