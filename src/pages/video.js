@@ -21,7 +21,7 @@ const Video = props => (
               title="piove"
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/uuaoVDjRhGo"
+              src="//www.youtube.com/embed/uuaoVDjRhGo"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
@@ -36,7 +36,7 @@ const Video = props => (
               title="araba"
               width="560"
               height="315"
-              src="https://www.youtube.com/embed/647EhZQq2F0"
+              src="//www.youtube.com/embed/647EhZQq2F0"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
