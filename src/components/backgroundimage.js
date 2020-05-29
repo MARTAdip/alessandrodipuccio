@@ -1,8 +1,8 @@
-import React from 'react'
-import { graphql, StaticQuery } from 'gatsby'
-import styled from 'styled-components'
+import React from "react"
+import { graphql, StaticQuery } from "gatsby"
+import styled from "styled-components"
 
-import BackgroundImage from 'gatsby-background-image'
+import BackgroundImage from "gatsby-background-image"
 
 const BackgroundSection = ({ className }) => (
   <StaticQuery
@@ -10,7 +10,7 @@ const BackgroundSection = ({ className }) => (
       query {
         desktop: file(relativePath: { eq: "home.jpeg" }) {
           childImageSharp {
-            fluid(quality: 90, maxWidth: 1920) {
+            fluid(quality: 100) {
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -27,7 +27,6 @@ const BackgroundSection = ({ className }) => (
           fluid={imageData}
           backgroundColor={`#040e18`}
         >
-          <h2>gatsby-background-image</h2>
         </BackgroundImage>
       )
     }}
@@ -39,6 +38,9 @@ const StyledBackgroundSection = styled(BackgroundSection)`
   background-position: bottom center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh !important;
+  position: static !important;
+  opacity: 1 !important; 
 `
 
 export default StyledBackgroundSection

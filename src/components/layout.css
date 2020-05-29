@@ -60,10 +60,7 @@ strong {
 dfn {
   font-style: italic;
 }
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+
 mark {
   background-color: #ff0;
   color: #000;
@@ -624,6 +621,12 @@ pre tt:after {
 html {
   box-sizing: border-box;
   overflow-y: scroll;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  color: white;
 }
 
 body {

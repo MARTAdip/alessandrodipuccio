@@ -57,6 +57,7 @@ export const MenuItem = ({ i }) => {
       >
         <Link to="/video">Other Projects</Link>
       </div>
+      
 
       {/* <div className="icon-placeholder" style={style} />
       <div className="text-placeholder" style={style} /> */}

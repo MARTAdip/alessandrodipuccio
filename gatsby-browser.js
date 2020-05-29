@@ -8,3 +8,6 @@
 // ES5 way
 // exports.onClientEntry = () => {
 // ES6 way
+// ES5 way
+// exports.onClientEntry = () => {
+// ES6 way
