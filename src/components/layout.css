@@ -652,27 +652,16 @@ body {
   }
 }
 
-/* .outer-container-index {
-  background: url('../images/home.jpeg');
-  background-size: contain;
-
-  min-height: 100vh;
-} */
 
 .motion-nav {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 300px;
+  /* width: 300px; */
   z-index: 111;
 }
-/* @media (max-width: 768px) {
-  nav {
-    max-height: 350px;
-    border-radius: 5px;
-  }
-} */
+
 .background {
   position: absolute;
   top: 0;
@@ -681,7 +670,7 @@ body {
   width: 300px;
   z-index: 111;
   background: #457b9d;
-  height: 355px;
+  /* height: 355px; */
  
 }
 
