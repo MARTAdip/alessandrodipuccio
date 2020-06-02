@@ -34,8 +34,8 @@ module.exports = {
     {
       resolve: `gatsby-source-youtube-v2`,
       options: {
-        channelId: 'UChCWBb3bJHHF08ktBunb21Q',
-        apiKey: 'AIzaSyDFSmbhUpJ96CEMEIHs1tZCiCfzHC-HL4w',
+        channelId: YOUTUBE_CHANNEL_ID,
+        apiKey: YOUTUBE_API_KEY,
         maxVideos: 50 // Defaults to 50
       },
     },

@@ -59,13 +59,6 @@ export default class about extends Component {
               <div className="section-content">
                 <h3>ARRANGIAMENTO E COMPOSIZIONE PER ORCHESTRA.</h3>
                 <span>{text2}</span>
-                {/* <ReadMore
-                  text={text2}
-                  numberOfLines={3}
-                  lineHeight={1.4}
-                  showLessButton
-                  onContentChange={this.getWrapperWidth}
-                /> */}
               </div>
             </div>
             <div className="bio-wrapper">

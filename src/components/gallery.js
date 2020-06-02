@@ -3,7 +3,7 @@ import * as React from "react"
 import { motion } from "framer-motion"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
-import './gallery.scss';
+import "./gallery.scss"
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 
 const thumbnailVariants = {
@@ -72,7 +72,7 @@ const Gallery = () => {
         nodes {
           id
           childImageSharp {
-            fixed(width: 200) {
+            fixed(width: 500) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -101,28 +101,29 @@ const Gallery = () => {
   `)
 
   return (
-    <>
-      {/* <h2>Photo Gallery</h2> */}
-      <div className="gallery">
-        <motion.div
-          className="thumbnails"
-          initial="initial"
-          animate="enter"
-          exit="exit"
-          variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-        >
-          <motion.div variants={thumbnailVariants} className="item">
-            {data.images.nodes.map(image => (
-              <Img
-                key={image.id}
-                fluid={image.childImageSharp.fluid}
-                alt="babbo"
-              />
-            ))}
-          </motion.div>
-        </motion.div>
-      </div>
-    </>
+    <section className="gallery">
+      <div className="gallery-container">
+        <div className="grid-gallery">
+            {/* <motion.div
+              className="thumbnails"
+              initial="initial"
+              animate="enter"
+              exit="exit"
+              variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
+            > */}
+              {data.images.nodes.map(image => (
+                <figure variants={thumbnailVariants} className="img-container" key={image.id}>
+                  <Img
+                    key={image.id}
+                    fixed={image.childImageSharp.fixed}
+                    alt="babbo"
+                  />
+                </figure>
+              ))}
+            {/* </motion.div> */}
+          </div>
+        </div>
+    </section>
   )
 }
 
