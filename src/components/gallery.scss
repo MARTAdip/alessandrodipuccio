@@ -1,9 +1,13 @@
 .gallery {
-  padding: 0 0 4rem 0;
+  padding: 40px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
 }
 .gallery-container {
   display: flex;
-  flex-flow: column;
+  flex-flow: row;
   align-items: center;
 }
 .img-container {

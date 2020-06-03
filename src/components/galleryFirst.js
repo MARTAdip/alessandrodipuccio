@@ -4,6 +4,8 @@ import { motion } from "framer-motion"
 import Img from "gatsby-image"
 import { useStaticQuery, graphql } from "gatsby"
 import "./gallery.scss"
+
+
 const transition = { duration: 0.5, ease: [0.43, 0.13, 0.23, 0.96] }
 
 const thumbnailVariants = {
@@ -65,7 +67,7 @@ const Thumbnail = ({ id, props }) => (
   </>
 )
 
-const Gallery = () => {
+const GalleryFirst = () => {
   const data = useStaticQuery(graphql`
     query Images {
       images: allFile(filter: { relativeDirectory: { eq: "gallery" } }) {
@@ -104,14 +106,9 @@ const Gallery = () => {
     <section className="gallery">
       <div className="gallery-container">
         <div className="grid-gallery">
-            {/* <motion.div
-              className="thumbnails"
-              initial="initial"
-              animate="enter"
-              exit="exit"
-              variants={{ exit: { transition: { staggerChildren: 0.1 } } }}
-            > */}
+            
               {data.images.nodes.map(image => (
+                
                 <figure variants={thumbnailVariants} className="img-container" key={image.id}>
                   <Img
                     key={image.id}
@@ -120,11 +117,11 @@ const Gallery = () => {
                   />
                 </figure>
               ))}
-            {/* </motion.div> */}
+
           </div>
         </div>
     </section>
   )
 }
 
-export default Gallery
+export default GalleryFirst

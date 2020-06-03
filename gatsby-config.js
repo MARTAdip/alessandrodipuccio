@@ -7,6 +7,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+    `gatsby-theme-gallery`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,17 +32,14 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-source-youtube-v2`,
-      options: {
-        channelId: YOUTUBE_CHANNEL_ID,
-        apiKey: YOUTUBE_API_KEY,
-        maxVideos: 50 // Defaults to 50
-      },
-    },
+    // {
+    //   resolve: `gatsby-source-youtube-v2`,
+    //   options: {
+    //     channelId: YOUTUBE_CHANNEL_ID,
+    //     apiKey: YOUTUBE_API_KEY,
+    //     maxVideos: 50 // Defaults to 50
+    //   },
+    // },
    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 }

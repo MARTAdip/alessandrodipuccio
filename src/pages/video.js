@@ -9,25 +9,25 @@ import "react-awesome-slider/dist/styles.css"
 import "../components/video.scss"
 
 const Video = props => {
-  const videoquery = graphql`
-    {
-      allYoutubeVideo(
-        filter: { channelId: { eq: "UChCWBb3bJHHF08ktBunb21Q" } }
-      ) {
-        edges {
-          node {
-            id
-            title
-            description
-            videoId
-            publishedAt
-            privacyStatus
-          }
-        }
-      }
-    }
-  `
-  console.log(videoquery)
+  // const videoquery = graphql`
+  //   {
+  //     allYoutubeVideo(
+  //       filter: { channelId: { eq: "UChCWBb3bJHHF08ktBunb21Q" } }
+  //     ) {
+  //       edges {
+  //         node {
+  //           id
+  //           title
+  //           description
+  //           videoId
+  //           publishedAt
+  //           privacyStatus
+  //         }
+  //       }
+  //     }
+  //   }
+  // `
+  // console.log(videoquery)
 
   return (
     <div className="video-outer-wrapper">
