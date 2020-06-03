@@ -43,9 +43,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/-fWlgrf7h-0"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Immagini Piero Mazzoni, musica ideazione video montaggio e
@@ -62,9 +62,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/j5EEvSV3224"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Riscrittura di Ingredere (ingresso) un brano tratto da le
@@ -80,9 +80,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/szfban48x7E"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Riscrittura di un brano di Francesco Corteccia (compositore
@@ -96,9 +96,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/eijp33GV7Lc"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Musica: Simone Santini (ewi, oboe, sax sopranino Eb) Video:
@@ -111,9 +111,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/NaAX_CSKnAw"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Musica: Simone Santini (ewi, oboe, sax sopranino Eb) Video:
@@ -126,9 +126,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/3wLbhu4Uf7I"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Azure (Duke Ellington) Echoes of MJQ Caligola Records 2002 Paolo
@@ -142,9 +142,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/J6SEu-Vi6zw"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Lulù (Alessandro Di Puccio- Franco Pinzauti) dal cd "Les
@@ -158,9 +158,9 @@ const Video = props => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/BnElYWZ_Z3U"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 Alessandro Di Puccio vibrafono - Leonardo Volo pianoforte
