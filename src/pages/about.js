@@ -72,8 +72,9 @@ export default class about extends Component {
               </div>
             </div>
           </div>
-          <Gallery />
-          {/* <GalleryFirst /> */}
+          <div className="gallery-wrapper">
+            <Gallery />
+          </div>
         </Layout>
       </div>
     )
