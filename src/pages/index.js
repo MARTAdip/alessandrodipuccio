@@ -1,16 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Layout from "../components/layout"
-import StyledBackgroundSection from "../components/backgroundimage"
 import SEO from "../components/seo"
+import "../components/index.scss"
 
 const IndexPage = props => (
   <div className="outer-container-index">
     <Layout>
-      <SEO title="Alessandro Di Puccio"/>
-      <StyledBackgroundSection />
-      
-      <footer  style={{color:` white`}}>
+      <SEO title="Alessandro Di Puccio" />
+
+      <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with love
         {` `}
       </footer>
