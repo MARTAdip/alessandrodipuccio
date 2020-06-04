@@ -40,7 +40,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="auf wiedersehen, goodbye"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/-fWlgrf7h-0"
                 frameBorder="0"

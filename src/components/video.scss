@@ -1,9 +1,7 @@
 .awssld__content {
   background-color: transparentize($color: #fff, $amount: 0.7);
 }
-.awssld__wrapper {
-  // min-height: 500px !important;
-}
+
 .video-outer-wrapper {
   background: url("../images/video.jpg");
   background-size: cover;
@@ -17,7 +15,7 @@
       max-width: 250px;
       font-weight: bold;
       margin-top: 20px;
-      
+
       @media screen and(min-width: 768px) {
         max-width: 600px;
         font-size: 22px;
@@ -28,6 +26,10 @@
 }
 
 .video-container {
+  padding-bottom: 50px;
+  .awssld__wrapper {
+    min-height: 500px !important;
+  }
   @media screen and (min-width: 1600px) {
     max-width: 1570px;
     margin: 0 auto;
@@ -35,5 +37,18 @@
   @media screen and (min-width: 1900px) {
     max-width: 1870px;
     margin: 0 auto;
+  }
+
+  .awssld__controls__arrow-right,
+  .awssld__controls__arrow-left {
+    &:before, 
+    &:after {
+      // background-color: #43677e !important;
+      background-color: #fff !important;
+      opacity: 1 !important;
+    }
+  }
+  .awssld__bullets button {
+    background: #43677e !important;
   }
 }
