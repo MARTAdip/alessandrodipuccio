@@ -59,7 +59,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="le nozze"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/j5EEvSV3224"
                 frameBorder="0"
@@ -77,7 +77,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="canzona"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/szfban48x7E"
                 frameBorder="0"
@@ -93,7 +93,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="exp part1"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/eijp33GV7Lc"
                 frameBorder="0"
@@ -108,7 +108,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="exp part2"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/NaAX_CSKnAw"
                 frameBorder="0"
@@ -123,7 +123,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="azure"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/3wLbhu4Uf7I"
                 frameBorder="0"
@@ -139,7 +139,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="lulu"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/J6SEu-Vi6zw"
                 frameBorder="0"
@@ -155,7 +155,7 @@ const Video = props => {
             <div className="video-wrapper-inner">
               <iframe
                 title="all the things you are"
-                width="560"
+                width="450"
                 height="315"
                 src="https://www.youtube.com/embed/BnElYWZ_Z3U"
                 frameBorder="0"
@@ -165,6 +165,70 @@ const Video = props => {
               <div className="video-text">
                 Alessandro Di Puccio vibrafono - Leonardo Volo pianoforte
                 Firenze feb. 2017
+              </div>
+            </div>
+            <div className="video-wrapper-inner">
+              <iframe
+                title="things are getting better"
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/UE3RFW_-mLg"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="video-text">
+                Things Are Gettin Better - J.C. Adderly Scott Hamilton &
+                Alkaline Jazz trio Alberto Marsico organo Hammond - Alessandro
+                Dio Puccio vibrafono - Alessandro Fabbri batteria
+              </div>
+            </div>
+            <div className="video-wrapper-inner">
+              <iframe
+                title="exactly like you"
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/tlkCZvYcRuM"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="video-text">
+                Exactly Like You (Jimmy McHugh) Scott Hamilton & Alkaline Jazz
+                trio Alberto Marsico organo Hammond - Alessandro Dio Puccio
+                vibrafono - Alessandro Fabbri batteria
+              </div>
+            </div>
+            <div className="video-wrapper-inner">
+              <iframe
+                title="wabash"
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/Ue991RFCqEc"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="video-text">
+                Wabash - J.C. Adderly Alkaline Jazz Trio + Scott Hamilton
+                Alberto Marsico organo Hammond - Alessandro Dio Puccio vibrafono
+                - Alessandro Fabbri batteria
+              </div>
+            </div>
+            <div className="video-wrapper-inner">
+              <iframe
+                title="sack of woe"
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/4OWn03UPc4o"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <div className="video-text">
+                Sack of Woe - J.C. Adderly Alkaline Jazz Trio + Scott Hamilton
+                Alberto Marsico organo Hammond - Alessandro Dio Puccio vibrafono
+                - Alessandro Fabbri batteria
               </div>
             </div>
           </AwesomeSlider>

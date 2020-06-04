@@ -38,17 +38,16 @@
     max-width: 1870px;
     margin: 0 auto;
   }
-
-  .awssld__controls__arrow-right,
-  .awssld__controls__arrow-left {
-    &:before, 
-    &:after {
-      // background-color: #43677e !important;
-      background-color: #fff !important;
-      opacity: 1 !important;
-    }
+}
+.awssld__controls__arrow-right,
+.awssld__controls__arrow-left {
+  &:before,
+  &:after {
+    // background-color: #43677e !important;
+    background-color: #fff !important;
+    opacity: 1 !important;
   }
-  .awssld__bullets button {
-    background: #43677e !important;
-  }
+}
+.awssld__bullets button {
+  background: #43677e !important;
 }
