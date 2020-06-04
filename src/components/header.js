@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
           style={{
             position: `absolute`,
             top: `15px`,
-            right: `5px`,
+            right: `2px`,
             color: `#000`,
             textDecoration: `none`,
           }}
