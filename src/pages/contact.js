@@ -3,11 +3,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/contact.scss"
 
-
 const Contact = () => (
   <div className="contact-outer-wrapper">
     <Layout>
       <SEO title="Contact" />
+
       <div className="flex-wrapper">
         <div className="contact-container">
           <div className="inner">

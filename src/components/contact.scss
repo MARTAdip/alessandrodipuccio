@@ -1,5 +1,5 @@
 .contact-outer-wrapper {
-  background: url('../images/contatto.jpg');
+  background: url("../images/contatto.jpg");
   background-size: cover;
 
   min-height: 100vh;
@@ -11,16 +11,15 @@
   }
 }
 
-
 .flex-wrapper {
   display: flex;
   flex-flow: column;
   align-items: center;
+  padding-top: 70px;
 
   .contact-container {
     position: absolute;
-    top: 35%;
-    
+    top: 55%;
 
     .inner {
       display: flex;
@@ -30,19 +29,21 @@
       background-color: transparentize(#000, 0.3);
       padding: 20px 50px;
       border-radius: 3px;
-    }
 
-    span {
-      text-transform: uppercase;
-      font-family: "Bowlby One SC", cursive;
-      color: #fff;
-      @media (min-width: 768px) {
-        font-size: 25px;
+      span {
+        text-transform: uppercase;
+        font-family: "Bowlby One SC", cursive;
+        color: #fff;
+        @media (min-width: 768px) {
+          font-size: 25px;
+        }
       }
-    }
-    a {
-      padding: 0 20px;
-      color: #fff;
+      a {
+        font-size: 16px;
+        padding: 0 20px;
+        color: #fff;
+        text-decoration: underline;
+      }
     }
   }
 }
