@@ -13,10 +13,9 @@ export default class about extends Component {
         <Layout>
           <SEO title="About" />
           <button
-            className="button-is-large"
-            style={{ marginTop: "20%", border: "1px solid black", borderRadius: "5px" }}
+            style={{ marginTop: "20%", border: "1px solid black", borderRadius: "5px", width: "62x", display:"block", marginLeft: "auto" }}
           >
-            <Link to="/galleryMobile/" className="has-text-white">
+            <Link to="/galleryMobile" className="has-text-white">
               Open Gallery! 📷
             </Link>
           </button>
