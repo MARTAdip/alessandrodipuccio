@@ -16,8 +16,9 @@
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-top: 70px;
-
+  // padding-top: 70px;
+  position: relative;
+  width: 100%;
   .contact-container {
     position: absolute;
     top: 55%;
