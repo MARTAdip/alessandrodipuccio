@@ -7,8 +7,8 @@ import Link from "gatsby-link"
 const GalleryMobile = () => (
   <div className="gallery-mobile-container">
     <div className="gallery-mobile-wrapper">
-      <button className="button-is-large" style={{ marginTop: "10%", color: "white" }}>
-        <Link to="/about/" className="button-go-back" style={{  color: "white" }}>
+      <button className="button-is-large" style={{ marginTop: "10%", border: "1px solid black", borderRadius: "5px", backgroundColor: "white", padding:"10px" }}>
+        <Link to="/about/" className="button-go-back" style={{  color: "#000" }}>
           go back 🔙
         </Link>
       </button>
