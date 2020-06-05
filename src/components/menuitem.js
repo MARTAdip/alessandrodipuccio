@@ -64,6 +64,13 @@ export const MenuItem = ({ i }) => {
       >
         <Link to="/video" className="link">Other Projects</Link>
       </div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
+        <Link to="/contact" className="link">Contact</Link>
+      </div>
       
 
       {/* <div className="icon-placeholder" style={style} />

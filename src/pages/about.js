@@ -13,8 +13,8 @@ export default class about extends Component {
         <Layout>
           <SEO title="About" />
           <button
-            className="button is-dark is-large"
-            style={{ marginTop: "10%" }}
+            className="button-is-large"
+            style={{ marginTop: "20%", border: "1px solid black", borderRadius: "5px" }}
           >
             <Link to="/galleryMobile/" className="has-text-white">
               Open Gallery! 📷
