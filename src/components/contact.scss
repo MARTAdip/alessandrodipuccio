@@ -3,12 +3,13 @@
   background-size: cover;
 
   min-height: 100vh;
-  position: relative;
+  padding: 20px;
+  // position: relative;
 
-  footer {
-    position: absolute;
-    bottom: 30px;
-  }
+  // footer {
+  //   position: absolute;
+  //   bottom: 30px;
+  // }
 }
 
 .flex-wrapper {
@@ -32,6 +33,7 @@
 
       span {
         text-transform: uppercase;
+        text-align: center;
         font-family: "Bowlby One SC", cursive;
         color: #fff;
         @media (min-width: 768px) {
@@ -40,8 +42,9 @@
       }
       a {
         font-size: 16px;
-        padding: 0 20px;
+        // padding: 0 20px;
         color: #fff;
+        text-align: center;
         text-decoration: underline;
       }
     }

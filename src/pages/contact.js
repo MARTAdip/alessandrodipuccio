@@ -28,10 +28,10 @@ const Contact = () => (
           </div>
         </div>
       </div>
-      <footer style={{ color: ` white` }}>
+      {/* <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with love
         {` `}
-      </footer>
+      </footer> */}
     </Layout>
   </div>
 )
