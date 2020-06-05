@@ -34,28 +34,35 @@ export const MenuItem = ({ i }) => {
           marginBottom: "15px",
         }}
       >
-        <Link to="/">Home</Link>
+        <Link className="link" to="/">Home</Link>
       </div>
       <div
         style={{
           marginBottom: "15px",
         }}
       >
-        <Link to="/about">About</Link>
+        <Link to="/about" className="link">About</Link>
       </div>
       <div
         style={{
           marginBottom: "15px",
         }}
       >
-        <Link to="/music">Music</Link>
+        <Link to="/teaching" className="link">Teaching</Link>
       </div>
       <div
         style={{
           marginBottom: "15px",
         }}
       >
-        <Link to="/video">Other Projects</Link>
+        <Link to="/music" className="link">Music</Link>
+      </div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
+        <Link to="/video" className="link">Other Projects</Link>
       </div>
       
 

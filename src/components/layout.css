@@ -711,7 +711,6 @@ li {
   display: flex;
   flex-flow: column;
   align-items: center;
-  cursor: pointer;
   z-index: 111;
 }
 
@@ -722,6 +721,10 @@ a {
   text-transform: uppercase;
   font-family: "Bowlby One SC", cursive;
   color: #000;
+}
+.link {
+  
+  cursor: url("https://img.icons8.com/metro/26/000000/musical-notes.png"), auto !important;
 }
 
 .icon-placeholder {
