@@ -25,8 +25,13 @@
   "about_bio3_6": "He founded in 2015, together with other artists (photographers, musicians, painters, video makers) the Collective Fu.Ori with which he is creating projects that involve the fusion of music and images through the creation of short films, edited and directed by himself, presented on numerous occasions including the 12th and 14th edition of the Florentine Jazz Festival “Settembre in Piazza della Passera” of which Di Puccio is Artistic Director since 2001.", 
   
   
-  "build": "Now go build something great.",
-  "welcome_page2": "Welcome to page 2",
+  "teaching_title": "TEACHING ACTIVITY: ", 
+  "teaching_text1": "Since 1985 he has been teaching percussion instruments (drums, vibraphone) and he teaches courses in ensemble music, harmony, jazz improvisation techniques, composition and arrangement for music and jazz history.",
+  "teaching_text2": "He was teaching director from 1986 to 2017 of the school of the Centro Attività Musicali (CAM) in Florence and from 1986 to 2003 also of the municipal school of Scandicci (Fi).",
+  "teaching_text3": "He currently directs the Jazz Department of the Accademia Musicale in Florence and the Silence JAM (jazz, art, movement) Arts Centre in Florence. He has held seminars in many Italian Music Schools and Conservatories on improvisation in jazz (Florence, Siena, Modena, La Spezia) and a seminar at the University of Istanbul (2004) and at the Conservatory of Pantin, Paris (1987).",
+  "teaching_text4": "For over twenty years it has also carried out educational updating activities for teachers and guided listening courses for nursery and primary school classes in the Municipality and Province of Florence. From 2004 to 2015, for the Department of Education of the Municipality of Florence, as part of the training proposals “Chiavi Della Città”, he directed musical theatre workshops for and with primary and secondary school children.",
+
+  
   "go_back": "Go back to the homepage",
   "notfound": {
     "header": "NOT FOUND",
