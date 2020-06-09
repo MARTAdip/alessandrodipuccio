@@ -1,0 +1,35 @@
+{
+  "title": "Alessandro Di Puccio",
+  "description": "Kick off your next, great Gatsby project with this default-starter-intl. This barebones starter ships with the main Gatsby configuration files you might need.",
+  
+  "about_opengallery": "Open Gallery",
+  "about_title1": "ALESSANDRO DI PUCCIO (Florence, 1958)",
+  "about_subtitle1": "VIBRAPHONIST, drummer and pianist. Composer and arranger",
+  "about_bio1": "From the early '80s to today he has played in the most important clubs, festivals and reviews, both in jazz and world music, in Italy and Europe (Leverkusen, Paris, Cologne, Istanbul, Ankara, Lisbon, Ljubljana).",
+  "about_bio1_2": "Boasts numerous collaborations with jazz and world musicians music, among the most significant: Bruno Tommaso, Enrico Pierannunzi, Maurizio Giammarco, Fabio Morgera, Franco D’Andrea, Gianluigi Trovesi, Pietro Tonolo, Gianni Cazzola, Luca Flores, Marco Tamburini, Massimo Urbani, Tiziana Ghiglioni Larry Nocella, Roberto Rossi, Paolo Birro, Rosario Giuliani, Nicola Stilo, Rita Marcotulli, Riccardo Tesi, Toots Thielemans, Antonello Salis, Stefano Bollani, Albert Mangelsdorff, Claude Barthelemy, Mal Waldron, Mike Turk, Sal Nistico, Emanuele Cisi, Stefano “Cocco” Cantini, Francesco Maccianti.",
+  "about_bio1_3": "He currently gives concerts with American saxophonist SCOTT HAMILTON, organist ALBERTO MARSICO and drummer ALESSANDRO FABBRI.",
+
+  "about_title2": "ARRANGEMENT AND COMPOSITION FOR ORCHESTRA.",
+  "about_bio2": "He has conducted and written compositions and arrangements for jazz orchestras, among which the most significant experiences are with orchestras: ",
+  "about_bio2_2": "Les Italiens (from 1998 to 2013) which performed exclusively his compositions and has performed at Italian and European festivals and exhibitions. With this orchestra she made 2 CDs Les Italiens (2002) and Verdeluna Dancing Hall (2009).",
+  "about_bio2_3": "The orchestra Far Fly MusicComunity (from 2006 to 2008) was born for the performance of pieces by the late pianist Luca Flores arranged by Di Puccio with whom he has participated in many jazz festivals.",
+  "about_bio2_4": "The Multiethnic Orchestra Musipolitana, a world music ensemble whose members were musicians from Cuba, Ivory Coast, Morocco, Iran, Brazil and southern Italy.",
+  "about_bio2_5": "Because of its popular character, it has participated in numerous festivals close to the theme of the “street festival” and ethnic music festival.",
+  
+  "about_title3": "COMPOSITION FOR THEATRE, DANCE, FILM-TELEVISION AND RADIO COMMENTARY",
+  "about_bio3": "He composed and arranged music for theatrical performances collaborating with important Italian actors (Carlina Torta, Marco Zannoni, Veronique Nah) and directors Pietro Bartolini, Silvano Panichi, Alessandro Libertini. ", 
+  "about_bio3_2": "From 2005 to 2014 he composed music and directed Mini Musicals for children with a final performance at the Teatro della Pergola in Florence, in collaboration with the Department of Education of the City of Florence. This activity culminated in the production of the album “Si può farcela”. (2017) - music by Di Puccio, produced by Marco Lamioni and Comune di Firenze - with the participation of Roberto Vecchioni and Irene Grandi.",
+  "about_bio3_3": "His compositions, mainly by Les Italiens, have been used as a theme song or soundtrack or musical commentary for radio and television broadcasts (mainly for RAI - including television dramas and two films produced by Rai Trade - and an animated film for Canadian television).", 
+  "about_bio3_4": "He was musical consultant for Riccardo Milani's film “PIano Solo”, starring Kim Rossi Stuart, about the life of Luca Flores (with whom he played for about twenty years) based on Walter Veltroni's book “Il Disco del Mondo”.", 
+  "about_bio3_5": "With the Musipolitana orchestra he collaborated for several years with the Fabbrica Europa Foundation, working in particular on the three-year European project “Roots & Routes” with the realization of the music for two dance shows and the soundtrack of two television documentaries (Storie Migranti and Intrecci).", 
+  "about_bio3_6": "He founded in 2015, together with other artists (photographers, musicians, painters, video makers) the Collective Fu.Ori with which he is creating projects that involve the fusion of music and images through the creation of short films, edited and directed by himself, presented on numerous occasions including the 12th and 14th edition of the Florentine Jazz Festival “Settembre in Piazza della Passera” of which Di Puccio is Artistic Director since 2001.", 
+  
+  
+  "build": "Now go build something great.",
+  "welcome_page2": "Welcome to page 2",
+  "go_back": "Go back to the homepage",
+  "notfound": {
+    "header": "NOT FOUND",
+    "description": "You just hit a route that doesn't exist... the sadness."
+  }
+}

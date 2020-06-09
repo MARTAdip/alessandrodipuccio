@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.scss"
 
+
 const IndexPage = props => (
   <div className="outer-container-index">
     <Layout>
