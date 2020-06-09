@@ -8,6 +8,14 @@
 
   min-height: 100vh;
 
+
+  .text-img-container {
+
+    @media (min-width: 1024px) {
+      display: flex; 
+      justify-content: space-around;
+    }
+  }
   .teaching-wrapper {
     display: flex;
     flex-flow: column;
@@ -22,6 +30,7 @@
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      width: 50%;
     }
 
     .section-content {
@@ -45,6 +54,13 @@
         font-family: "Manrope", sans-serif;
         line-height: 22px;
       }
+    }
+  }
+
+  .gatsby-image-wrapper {
+    @media (max-width: 425px) {
+      width: 380px !important;
+      margin-top: 20px;
     }
   }
 }

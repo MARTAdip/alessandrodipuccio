@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
-import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation/cube-animation.scss"
+// import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation/cube-animation.scss"
 import "../components/music.scss"
 
 const Music = id => (
