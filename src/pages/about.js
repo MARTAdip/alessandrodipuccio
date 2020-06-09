@@ -13,7 +13,7 @@ export default class about extends Component {
         <Layout>
           <SEO title="About" />
           <button
-            style={{ marginTop: "20%", border: "1px solid black", borderRadius: "5px", width: "62x", display:"block", marginLeft: "auto" }}
+            style={{ border: "1px solid black", borderRadius: "5px", width: "62x", display:"block", marginLeft: "auto" }}
           >
             <Link to="/galleryMobile" className="has-text-white">
               Open Gallery! 📷
@@ -101,7 +101,7 @@ export default class about extends Component {
                   <br /> E’ stato consulente musicale del film "PIano Solo" di
                   Riccardo Milani, interpretato da Kim Rossi Stuart, sulla vita
                   di Luca Flores (con il quale ha suonato per circa venti anni)
-                  tratto dal libro di Walter Veltroni “Il Disco del Mondo”.{" "}
+                  tratto dal libro di Walter Veltroni “Il Disco del Mondo”.
                   <br />
                   <br /> Con l’orchestra Musipolitana ha collaborato per vari
                   anni con la Fondazione Fabbrica Europa, lavorando in

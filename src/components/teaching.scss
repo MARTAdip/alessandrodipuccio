@@ -69,10 +69,10 @@
   h1,
   p {
     font-family: "Bowlby One SC", cursive;
+    color: #000;
   }
   p {
     // font-size: 24px;
-    color: #000;
     @media (max-width: 765px) {
       font-size: 16px;
     }

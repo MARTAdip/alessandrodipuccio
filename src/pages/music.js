@@ -6,14 +6,12 @@ import SEO from "../components/seo"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation/cube-animation.scss"
-import '../components/music.scss'
-
-
+import "../components/music.scss"
 
 const Music = id => (
   <div className="music-outer-wrapper">
-  <Layout>
-    <SEO title="Music" />
+    <Layout>
+      <SEO title="Music" />
       <div className="grid">
         <AwesomeSlider
           mobileTouch
@@ -70,17 +68,18 @@ const Music = id => (
       </div>
 
       <div className="music-index">
-          <iframe
-            title="view"
-            width="100%"
-            height="600"
-            scrolling="no"
-            frameBorder="no"
-            allow="autoplay"
-            src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/777356173&color=%23304463&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true"
-          ></iframe>
-        </div>
-  </Layout>
+        <iframe
+          className="index-frame"
+          title="view"
+          width="100%"
+          height="600"
+          scrolling="no"
+          frameBorder="no"
+          allow="autoplay"
+          src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/777356173&color=%23304463&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=false&visual=true"
+        ></iframe>
+      </div>
+    </Layout>
   </div>
 )
 
