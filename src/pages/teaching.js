@@ -45,21 +45,11 @@ const Teaching = ({ intl }) => {
         <div className="card-container">
           <div className="card-wrapper">
             <div className="card-inner">
-              <h1>Become a Patreon</h1>
+              <h1>{intl.formatMessage({ id: "patreon_title" })}</h1>
+
               <p>
-                Ho sempre pensato che l’apprendimento dell’arte del linguaggio
-                dei suoni (così è definita la musica) sia un percorso ricco di
-                “sorprese” che lo rendono avvincente ed emozionante. La più
-                importante nel mio iter di apprendimento è stato l’incontro con
-                l’eleganza e l’immediatezza del linguaggio del jazz. <br /> Fin
-                dall’inizio la mia attività artistica è stata ispirata dal
-                fascino emanato dalla pratica dell’improvvisazione che permette
-                di esprimersi in maniera personale e straordinariamente libera e
-                creativa. Ho pensato di condividere la mia quarantennale
-                esperienza attraverso Patreon per chi si sta avvicinando al
-                linguaggio del Jazz o chi, già avanti nel suo percorso di
-                studio, desideri approfondire le tematiche riguardanti il
-                linguaggio del jazz.
+                {intl.formatMessage({ id: "patreon_text1" })}
+                <br /> {intl.formatMessage({ id: "patreon_text1_2" })}
               </p>
             </div>
             <div className="card-button">
@@ -68,7 +58,7 @@ const Teaching = ({ intl }) => {
                   href="https://www.patreon.com/alessandrodipuccio"
                   target="blank"
                 >
-                  become a Patreon
+                  {intl.formatMessage({ id: "patreon_title" })}
                 </a>
               </button>
             </div>
