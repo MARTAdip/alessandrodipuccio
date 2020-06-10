@@ -25,6 +25,9 @@ const Music = ({ intl }) => (
           display: `flex`,
           flexFlow: `column`,
           alignItems: `flex-end`,
+          fontSize: `16px`,
+          textTransform: `none`,
+          textDecoration: `underline`
         }}
       >
         {intl.formatMessage({ id: "submenu1" })}
@@ -40,6 +43,9 @@ const Music = ({ intl }) => (
           display: `flex`,
           flexFlow: `column`,
           alignItems: `flex-end`,
+          fontSize: `16px`,
+          textTransform: `none`,
+          textDecoration: `underline`
         }}
       >
         {intl.formatMessage({ id: "submenu2" })}

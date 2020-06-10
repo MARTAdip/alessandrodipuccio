@@ -61,6 +61,7 @@
 @media (min-width: 768px) {
   .first-frame {
     height: 400px;
+    width: 600px !important;
   }
 }
 
@@ -90,6 +91,13 @@
   flex-flow: column;
   align-items: center;
   margin-top: 50px;
+
+  iframe {
+    @media (min-width: 1024px) {
+      width: 650px !important;
+      height: 400px !important;
+    }
+  }
 
   .video-text {
     color: #000;
