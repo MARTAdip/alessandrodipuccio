@@ -2,14 +2,19 @@ import React from "react"
 import { IntlContextConsumer, changeLocale } from "gatsby-plugin-intl"
 
 const languageName = {
-  it: "Italiano",
-  en: "English",
-  
+  it: "Ita",
+  en: "Eng",
 }
 
 const Language = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: `flex`,
+        flexFlow: `column`,
+        alignItems: `flex-end`
+      }}
+    >
       <IntlContextConsumer>
         {({ languages, language: currentLocale }) =>
           languages.map(language => (
@@ -17,7 +22,7 @@ const Language = () => {
               key={language}
               onClick={() => changeLocale(language)}
               style={{
-                color: currentLocale === language ? `black` : `purple`,
+                color: currentLocale === language ? `black` : `blue`,
                 margin: 10,
                 textDecoration: `underline`,
                 cursor: `pointer`,

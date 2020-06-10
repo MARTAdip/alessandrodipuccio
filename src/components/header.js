@@ -5,7 +5,7 @@ import Language from "./language"
 
 const Header = ({ siteTitle }) => (
   <header
-  className="site-header"
+    className="site-header"
     style={{
       paddingTop: `3rem`,
       marginBottom: `1.45rem`,
@@ -34,11 +34,7 @@ const Header = ({ siteTitle }) => (
           {siteTitle}
         </Link>
       </h1>
-      <div
-        style={{
-          cssFloat: `right`,
-        }}
-      >
+      <div>
         <Language />
       </div>
     </div>
