@@ -29,6 +29,13 @@
   border: 1px solid #eaeaea;
   border-radius: 10px;
   transition: color 0.15s ease, border-color 0.15s ease;
+
+  iframe {
+    @media (min-width: 2560px) {
+      height: 600px !important;
+      width: 1000px !important;
+    }
+  }
 }
 @media (min-width: 768px) {
   .card {
@@ -68,25 +75,29 @@
 .music-index {
   margin-top: 100px;
   padding: 25px;
-  
+
   // .index-frame {
-    //   min-height: 50vh !important;
-    // }
+  //   min-height: 50vh !important;
+  // }
+}
+
+.awssld__container {
+  height: 23vh !important;
+  width: 90% !important;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 100%;
   }
-  
-  .awssld__container {
-    height: 23vh !important;
-    width: 90% !important;
-    margin: 0 auto;
-    @media (min-width: 768px) {
-     width: 100%;
-    }
+  @media (min-width: 2560px) {
+    width: 70% !important;
+    height: 0;
   }
-  .awssld__controls {
-    visibility: visible !important;
-  }
-  
-  .video-wrapper-inner {
+}
+.awssld__controls {
+  visibility: visible !important;
+}
+
+.video-wrapper-inner {
   display: flex;
   flex-flow: column;
   align-items: center;
@@ -96,6 +107,10 @@
     @media (min-width: 1024px) {
       width: 650px !important;
       height: 400px !important;
+    }
+    @media (min-width: 2560px) {
+      width: 800px !important;
+      height: 600px !important;
     }
   }
 
