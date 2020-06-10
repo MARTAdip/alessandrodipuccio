@@ -66,20 +66,26 @@
 
 .music-index {
   margin-top: 100px;
-
+  padding: 25px;
+  
   // .index-frame {
-  //   min-height: 50vh !important;
-  // }
-}
-
-.awssld__container {
-  height: 20vh !important;
-}
-.awssld__controls {
-  visibility: visible !important;
-}
-
-.video-wrapper-inner {
+    //   min-height: 50vh !important;
+    // }
+  }
+  
+  .awssld__container {
+    height: 23vh !important;
+    width: 90% !important;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+     width: 100%;
+    }
+  }
+  .awssld__controls {
+    visibility: visible !important;
+  }
+  
+  .video-wrapper-inner {
   display: flex;
   flex-flow: column;
   align-items: center;

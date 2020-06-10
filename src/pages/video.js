@@ -32,6 +32,7 @@ const Video = ({ intl }) => {
 
   return (
     <div className="video-outer-wrapper">
+      <Language />
       <Layout>
         <SEO title="Other Projects" />
         <div className="video-container">
