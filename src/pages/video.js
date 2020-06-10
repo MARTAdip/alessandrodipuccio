@@ -6,8 +6,10 @@ import AwesomeSlider from "react-awesome-slider"
 import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation/cube-animation.scss"
 import "react-awesome-slider/dist/styles.css"
 import "../components/video.scss"
+import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import Language from "../components/language"
 
-const Video = props => {
+const Video = ({ intl }) => {
   // const videoquery = graphql`
   //   {
   //     allYoutubeVideo(
@@ -48,11 +50,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Immagini Piero Mazzoni, musica ideazione video montaggio e
-                animazione Alessandro Di Puccio e Les Italiens, featuring
-                Antonello Salis: fisarmonica (video realizzato nel 2013) il
-                brano è contenuto nell'album "Les Italiens" Forrest Hill record
-                (2002).
+                {intl.formatMessage({ id: "text-other-projects1" })}
               </div>
             </div>
 
@@ -67,11 +65,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Riscrittura di Ingredere (ingresso) un brano tratto da le
-                musiche composte da Francesco Corteccia (compositore
-                rinascimentale) per il matrimonio di Cosimo I de' Medici con
-                Eleonora de Toledo. Alessandro Di Puccio Vibrafono - Stefano
-                Negri sax soprano
+                {intl.formatMessage({ id: "text-other-projects2" })}
               </div>
             </div>
             <div className="video-wrapper-inner">
@@ -85,9 +79,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Riscrittura di un brano di Francesco Corteccia (compositore
-                rinascimentale) Alessandro Di Puccio Vibrafono - Stefano Negri
-                sax soprano
+                {intl.formatMessage({ id: "text-other-projects3" })}
               </div>
             </div>
             <div className="video-wrapper-inner">
@@ -101,8 +93,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Musica: Simone Santini (ewi, oboe, sax sopranino Eb) Video:
-                Alessandro Di Puccio (vibrafono) 2015
+                {intl.formatMessage({ id: "text-other-projects4" })}
               </div>
             </div>
             <div className="video-wrapper-inner">
@@ -116,24 +107,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Musica: Simone Santini (ewi, oboe, sax sopranino Eb) Video:
-                Alessandro Di Puccio (vibrafono) 2015
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="azure"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/3wLbhu4Uf7I"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Azure (Duke Ellington) Echoes of MJQ Caligola Records 2002 Paolo
-                Birro piano - Alessandro Di Puccio vibrafono - Paolo Ghetti
-                contrabbasso - Alessandro Fabbri batteria.
+                {intl.formatMessage({ id: "text-other-projects5" })}
               </div>
             </div>
             <div className="video-wrapper-inner">
@@ -147,88 +121,7 @@ const Video = props => {
                 allowFullScreen
               ></iframe>
               <div className="video-text">
-                Lulù (Alessandro Di Puccio- Franco Pinzauti) dal cd "Les
-                Italiens" Forrest Hill 2002 Francesca Taranto voce - Antonello
-                Salis Fisarmonica
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="all the things you are"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/BnElYWZ_Z3U"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Alessandro Di Puccio vibrafono - Leonardo Volo pianoforte
-                Firenze feb. 2017
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="things are getting better"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/UE3RFW_-mLg"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Things Are Gettin Better - J.C. Adderly Scott Hamilton &
-                Alkaline Jazz trio Alberto Marsico organo Hammond - Alessandro
-                Dio Puccio vibrafono - Alessandro Fabbri batteria
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="exactly like you"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/tlkCZvYcRuM"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Exactly Like You (Jimmy McHugh) Scott Hamilton & Alkaline Jazz
-                trio Alberto Marsico organo Hammond - Alessandro Dio Puccio
-                vibrafono - Alessandro Fabbri batteria
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="wabash"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/Ue991RFCqEc"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Wabash - J.C. Adderly Alkaline Jazz Trio + Scott Hamilton
-                Alberto Marsico organo Hammond - Alessandro Dio Puccio vibrafono
-                - Alessandro Fabbri batteria
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="sack of woe"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/4OWn03UPc4o"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                Sack of Woe - J.C. Adderly Alkaline Jazz Trio + Scott Hamilton
-                Alberto Marsico organo Hammond - Alessandro Dio Puccio vibrafono
-                - Alessandro Fabbri batteria
+                {intl.formatMessage({ id: "text-other-projects6" })}
               </div>
             </div>
           </AwesomeSlider>
@@ -237,4 +130,4 @@ const Video = props => {
     </div>
   )
 }
-export default Video
+export default injectIntl(Video)

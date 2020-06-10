@@ -25,9 +25,9 @@ const Teaching = ({ intl }) => {
   `)
   return (
     <div className="teaching-outer-wrapper">
+      <Language />
       <Layout>
         <SEO title="Other Projects" />
-        <Language />
         <div className="text-img-container">
           <div className="teaching-wrapper">
             <div className="section-content">

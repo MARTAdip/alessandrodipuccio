@@ -12,7 +12,8 @@ const Language = () => {
       style={{
         display: `flex`,
         flexFlow: `column`,
-        alignItems: `flex-end`
+        alignItems: `flex-end`,
+        paddingTop: `80px`
       }}
     >
       <IntlContextConsumer>
@@ -26,6 +27,7 @@ const Language = () => {
                 margin: 10,
                 textDecoration: `underline`,
                 cursor: `pointer`,
+                padding: `0`, 
               }}
             >
               {languageName[language]}
