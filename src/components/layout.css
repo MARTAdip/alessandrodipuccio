@@ -651,6 +651,16 @@ body {
     text-align: center;
   }
 }
+/* @media (min-width: 2560px) {
+  
+} */
+ 
+  /* @media (min-width: 2560px) {
+    .layout-monitor {
+      max-width: 2000px;
+    }
+  
+  } */
 
 
 .motion-nav {

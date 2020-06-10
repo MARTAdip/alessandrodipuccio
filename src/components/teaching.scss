@@ -69,6 +69,10 @@
       width: 380px !important;
       margin-top: 20px;
     }
+    @media (min-width: 1440px) {
+      width: 500px !important;
+      height: 320px !important;
+    }
     @media (min-width: 2560px) {
       width: 700px !important;
       height: 500px !important;
@@ -81,9 +85,9 @@
   justify-content: flex-start;
   padding-top: 100px;
 
-  @media (min-width: 1024px) {
-    max-width: 800px;
-  }
+  // @media (min-width: 1024px) {
+  //   max-width: 800px;
+  // }
   @media (min-width: 2560px) {
     max-width: 2500px;
   }

@@ -10,7 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import {BurgerNavigation} from "./burgerNavigation"
+import { BurgerNavigation } from "./burgerNavigation"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -25,10 +25,11 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout-monitor">
       <Header siteTitle={data.site.siteMetadata.title} />
       <BurgerNavigation />
       <div
+        
         style={{
           margin: `0 auto`,
           // maxWidth: 960,
@@ -38,7 +39,7 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
       </div>
-    </>
+    </div>
   )
 }
 
@@ -47,5 +48,3 @@ Layout.propTypes = {
 }
 
 export default Layout
-
-

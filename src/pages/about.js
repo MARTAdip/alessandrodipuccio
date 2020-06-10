@@ -13,15 +13,7 @@ const About = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="About" />
-        <button
-          style={{
-            border: "1px solid black",
-            borderRadius: "5px",
-            width: "62x",
-            display: "block",
-            marginLeft: "auto",
-          }}
-        >
+        <button className="button-gallery">
           <Link to="/galleryMobile" className="has-text-white">
             {intl.formatMessage({ id: "about_opengallery" })}
             📷

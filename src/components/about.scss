@@ -8,11 +8,23 @@
   min-height: 100vh;
 
 
-  button {
+  .button-gallery {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 62px;
+    display: block;
+    margin-left: auto; 
+    @media (min-width: 2560px) {
+      width: 150px;
+      padding: 25px;
+    }
     .has-text-white {
       font-size: 10px;
       padding: 0;
       font-family: Arial, Helvetica, sans-serif;
+      @media (min-width: 2560px) {
+        font-size: 20px;
+      }
     }
   }
 }
@@ -60,10 +72,17 @@
       // color: #14213d;
       // color: #55828b;
       color: #2f4858;
+      @media (min-width: 2560px)  {
+        font-size: 2rem;
+      }
     }
     span {
       font-family: 'Manrope', sans-serif;
       line-height: 22px;
+      @media (min-width: 2560px) {
+        font-size: 25px;
+        line-height: 35px;
+      }
 
     }
   }
