@@ -35,7 +35,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
       <div>
-        <Language />
+        {/* <Language /> */}
       </div>
     </div>
   </header>

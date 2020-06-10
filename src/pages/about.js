@@ -5,6 +5,7 @@ import "../components/about.scss"
 import { Gallery } from "gatsby-theme-gallery"
 // import Link from "gatsby-link"
 import { injectIntl, Link, FormattedMessage } from "gatsby-plugin-intl"
+import Language from "../components/language"
 
 const About = ({ intl }) =>  {
   
@@ -12,6 +13,7 @@ const About = ({ intl }) =>  {
       <div className="about-wrapper">
         <Layout>
           <SEO title="About" />
+          <Language />
           <button
             style={{ border: "1px solid black", borderRadius: "5px", width: "62x", display:"block", marginLeft: "auto" }}
           >

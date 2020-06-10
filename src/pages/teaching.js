@@ -5,6 +5,7 @@ import "../components/teaching.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import Language from "../components/language"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -26,6 +27,7 @@ const Teaching = ({ intl }) => {
     <div className="teaching-outer-wrapper">
       <Layout>
         <SEO title="Other Projects" />
+        <Language />
         <div className="text-img-container">
           <div className="teaching-wrapper">
             <div className="section-content">
