@@ -33,7 +33,7 @@ export const MenuItem = ({ i }) => {
     >
       <div
         style={{
-          marginBottom: "15px",
+          marginBottom: "30px",
         }}
       >
         <Link className="link" to="/">
@@ -42,7 +42,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "15px",
+          marginBottom: "30px",
         }}
       >
         <Link to="/about" className="link">
@@ -51,7 +51,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "15px",
+          marginBottom: "30px",
         }}
       >
         <Link to="/teaching" className="link">
@@ -60,7 +60,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "15px",
+          marginBottom: "30px",
         }}
       >
         <Link to="/music-video" className="link">
@@ -69,7 +69,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "15px",
+          marginBottom: "30px",
         }}
       >
         <Link to="/contact" className="link">
@@ -88,7 +88,7 @@ export const MenuItem = ({ i }) => {
           target="blank"
           className="icon"
           style={{
-            marginBottom: "15px",
+            marginBottom: "30px",
           }}
         >
           <FiFacebook color="#0000000" size="30px" />
@@ -98,7 +98,7 @@ export const MenuItem = ({ i }) => {
           target="blank"
           className="icon"
           style={{
-            marginBottom: "15px",
+            marginBottom: "30px",
           }}
         >
           <FiYoutube color="#0000000" size="30px" />

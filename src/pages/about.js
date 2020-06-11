@@ -16,14 +16,21 @@ const About = ({ intl }) => {
         relativePath: { eq: "x_concerto_con_Scott Hamilton_firenze2017.jpg" }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 350) {
-            ...GatsbyImageSharpFixed
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       imageTwo: file(relativePath: { eq: "x Les Italiens Istanbul 2004.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 350) {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      imageTwoDesktop: file(relativePath: { eq: "x Les Italiens Istanbul 2004.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 400) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -34,15 +41,37 @@ const About = ({ intl }) => {
         }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 350) {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lflores: file(
+        relativePath: {
+          eq: "x_concerto_con_Luca_Flores_al_Salt_Peanuts_1984.jpg"
+        }
+      ) {
+        childImageSharp {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      lfloresDesktop: file(
+        relativePath: {
+          eq: "x_concerto_con_Luca_Flores_al_Salt_Peanuts_1984.jpg"
+        }
+      ) {
+        childImageSharp {
+          fixed(quality: 100, width: 400) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       pianosolo: file(relativePath: { eq: "pianosolofilm.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 350) {
-            ...GatsbyImageSharpFixed
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -50,21 +79,20 @@ const About = ({ intl }) => {
         relativePath: { eq: "x les italiens piazza passera 2008.jpg" }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 330) {
-            ...GatsbyImageSharpFixed
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
           }
         }
       }
       visual: file(relativePath: { eq: "x visual orchestra 1 2016.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 330) {
-            ...GatsbyImageSharpFixed
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px"){
+            ...GatsbyImageSharpFluid
           }
         }
       }
     }
   `)
-  console.log(data, "hello")
 
   return (
     <div className="about-wrapper">
@@ -85,18 +113,25 @@ const About = ({ intl }) => {
               <span>
                 {intl.formatMessage({ id: "about_bio1" })}
                 <br />
-                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}}>
-                  <Img fixed={data.imageTwo.childImageSharp.fixed} />
+                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}} className="image-mobile">
+                  <Img fluid={data.imageTwo.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `black`}}>Les Italiens in Istanbul - 2004</span>
                 </div>
                 <ReactTooltip />
+
+                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}} className="image-desktop">
+                  <Img fixed={data.imageTwoDesktop.childImageSharp.fixed} />
+                  <span className="overlay" style={{color: `black`}}>Les Italiens in Istanbul - 2004</span>
+                </div>
+                <ReactTooltip />
+
                 <br />
                 {intl.formatMessage({ id: "about_bio1_2" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio1_3" })}
                 <br />
                 <div data-tip="Concerto con Scott Hamilton Firenze 2017" style={{marginTop: `15px`}}>
-                  <Img fixed={data.image.childImageSharp.fixed} />
+                  <Img fluid={data.image.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `white`}}>Concerto con Scott Hamilton Firenze 2017</span>
                 </div>
                 <ReactTooltip />
@@ -113,10 +148,20 @@ const About = ({ intl }) => {
                 {intl.formatMessage({ id: "about_bio2_2" })}
                 <br />
                 {intl.formatMessage({ id: "about_bio2_3" })}
+                <div data-tip="Concerto con Luca Flores al Salt Peanuts 1984" style={{marginTop: `15px`}} className="image-mobile">
+                  <Img fluid={data.lflores.childImageSharp.fluid} />
+                  <span className="overlay" style={{color: `white`}}>Concerto con Luca Flores al Salt Peanuts 1984</span>
+                </div>
+                <ReactTooltip />
+                <div data-tip="Concerto con Luca Flores al Salt Peanuts 1984" style={{marginTop: `15px`}} className="image-desktop">
+                  <Img fixed={data.lfloresDesktop.childImageSharp.fixed} />
+                  <span className="overlay" style={{color: `white`}}>Concerto con Luca Flores al Salt Peanuts 1984</span>
+                </div>
+                <ReactTooltip />
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio2_4" })}
                 <div data-tip="Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007" style={{marginTop: `15px`}}>
-                  <Img fixed={data.imageThree.childImageSharp.fixed} />
+                  <Img fluid={data.imageThree.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `white`}}>Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007</span>
                 </div>
                 <ReactTooltip />
@@ -139,7 +184,7 @@ const About = ({ intl }) => {
                 <br />
                 {intl.formatMessage({ id: "about_bio3_4" })}
                 <div data-tip="Piano Solo" style={{marginTop: `15px`}}>
-                  <Img fixed={data.pianosolo.childImageSharp.fixed} />
+                  <Img fluid={data.pianosolo.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `black`}}>Scena dal film Piano Solo</span>
                 </div>
                 <ReactTooltip />
@@ -149,13 +194,13 @@ const About = ({ intl }) => {
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio3_6" })}
                 <div data-tip="Les Italiens Piazza della Passera 2008" style={{marginTop: `15px`}}>
-                  <Img fixed={data.ppassera.childImageSharp.fixed} />
+                  <Img fluid={data.ppassera.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `white`}}>Les Italiens Piazza della Passera 2008</span>
 
                 </div>
                 <ReactTooltip />
                 <div data-tip="Visual Orchestra Piazza della Passera 2016" style={{marginTop: `15px`}}>
-                  <Img fixed={data.visual.childImageSharp.fixed} />
+                  <Img fluid={data.visual.childImageSharp.fluid} />
                   <span className="overlay" style={{color: `white`}}>Visual Orchestra Piazza della Passera 2016</span>
                 </div>
                 <ReactTooltip />

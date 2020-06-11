@@ -13,17 +13,13 @@
     width: 62px;
     display: block;
     margin-left: auto;
-    @media (min-width: 2560px) {
-      width: 150px;
-      padding: 25px;
+    @media (min-width: 1440px) {
+      display: none;
     }
     .has-text-white {
       font-size: 10px;
       padding: 0;
       font-family: Arial, Helvetica, sans-serif;
-      @media (min-width: 2560px) {
-        font-size: 20px;
-      }
     }
   }
 }
@@ -86,7 +82,7 @@
       font-family: "Manrope", sans-serif;
       line-height: 22px;
       @media (min-width: 2560px) {
-        font-size: 25px;
+        font-size: 20px;
         line-height: 35px;
       }
     }
@@ -137,13 +133,25 @@
 }
 
 .gatsby-image-wrapper {
-  
-  // @media (min-width: 1440px) {
+  display: block !important;
+  margin: 0 auto;
+  // @media (min-width: 10240px) and (max-width:1440px){
   //   width: 500px !important;
   //   height: 320px !important;
   // }
-  // @media (min-width: 2560px) {
-  //   width: 700px !important;
-  //   height: 500px !important;
-  // }
+}
+
+.image-mobile { // fluid
+  @media (min-width: 757px) and (max-width:1140px){
+    display: none;
+  }
+}
+
+.image-desktop { // fixed
+  @media (min-width: 320px) and (max-width:758px){
+    display: none;
+  }
+  @media (min-width: 1139px) {
+    display: none;
+  }
 }

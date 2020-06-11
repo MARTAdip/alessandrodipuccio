@@ -4,20 +4,21 @@ import SEO from "../components/seo"
 import "../components/teaching.scss"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
+import ReactTooltip from "react-tooltip"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      file(
+      imageOne: file(
         relativePath: {
           eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg"
         }
       ) {
         childImageSharp {
-          fixed(quality: 100) {
-            ...GatsbyImageSharpFixed
+          fluid(sizes: "(max-width: 1200px) calc(100vw - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -36,13 +37,16 @@ const Teaching = ({ intl }) => {
                 {intl.formatMessage({ id: "teaching_text1" })}
                 <br /> {intl.formatMessage({ id: "teaching_text2" })}
                 <br />
+                <div data-tip="Durante uno stage all'universita di Istanbul 2004" style={{margin: `15px 0 15px`}}>
+                  <Img fluid={data.imageOne.childImageSharp.fluid} />
+                </div>
+                <ReactTooltip />
                 {intl.formatMessage({ id: "teaching_text3" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "teaching_text4" })}
               </span>
             </div>
           </div>
-          <Img fixed={data.file.childImageSharp.fixed} />
         </div>
         <div className="card-container">
           <div className="card-wrapper">

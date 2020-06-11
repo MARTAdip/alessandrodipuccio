@@ -30,9 +30,9 @@
       align-items: flex-start;
       width: 50%;
     }
-    @media (min-width: 2560px) {
-      width: 60%;
-    }
+    // @media (min-width: 2560px) {
+    //   width: 60%;
+    // }
     .section-content {
       margin: 0 auto;
       width: 100%;
@@ -57,26 +57,15 @@
         font-family: "Manrope", sans-serif;
         line-height: 22px;
         @media (min-width: 2560px) {
-          line-height: 40px;
-          font-size: 30px;
+          line-height: 30px;
+          font-size: 20px;
         }
       }
     }
   }
 
   .gatsby-image-wrapper {
-    @media (max-width: 425px) {
-      width: 380px !important;
-      margin-top: 20px;
-    }
-    @media (min-width: 1440px) {
-      width: 500px !important;
-      height: 320px !important;
-    }
-    @media (min-width: 2560px) {
-      width: 700px !important;
-      height: 500px !important;
-    }
+    
   }
 }
 .card-container {
@@ -90,6 +79,7 @@
   // }
   @media (min-width: 2560px) {
     max-width: 2500px;
+    margin: 0 auto;
   }
   .card-wrapper {
     width: 100%;
