@@ -126,6 +126,7 @@
   left: 15px;
   font-size: 12px;
   width: 100%;
+  text-align: center;
 
   @media (min-width: 1440px) {
     display: none;
@@ -135,10 +136,7 @@
 .gatsby-image-wrapper {
   display: block !important;
   margin: 0 auto;
-  // @media (min-width: 10240px) and (max-width:1440px){
-  //   width: 500px !important;
-  //   height: 320px !important;
-  // }
+ 
 }
 
 .image-mobile { // fluid
