@@ -23,7 +23,7 @@ const About = ({ intl }) => {
       }
       imageTwo: file(relativePath: { eq: "x Les Italiens Istanbul 2004.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 300) {
+          fixed(quality: 100, width: 350) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -34,14 +34,14 @@ const About = ({ intl }) => {
         }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 300) {
+          fixed(quality: 100, width: 350) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       pianosolo: file(relativePath: { eq: "pianosolofilm.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 300) {
+          fixed(quality: 100, width: 350) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -50,14 +50,14 @@ const About = ({ intl }) => {
         relativePath: { eq: "x les italiens piazza passera 2008.jpg" }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 300) {
+          fixed(quality: 100, width: 330) {
             ...GatsbyImageSharpFixed
           }
         }
       }
       visual: file(relativePath: { eq: "x visual orchestra 1 2016.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 300) {
+          fixed(quality: 100, width: 330) {
             ...GatsbyImageSharpFixed
           }
         }
