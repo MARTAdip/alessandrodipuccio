@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 
 .about-wrapper {
-  background: url('../images/bianco.jpg');
+  background: url("../images/bianco.jpg");
   background-size: contain;
 
   min-height: 100vh;
-
 
   .button-gallery {
     border: 1px solid black;
     border-radius: 5px;
     width: 62px;
     display: block;
-    margin-left: auto; 
+    margin-left: auto;
     @media (min-width: 2560px) {
       width: 150px;
       padding: 25px;
@@ -32,14 +31,14 @@
   display: flex;
   flex-flow: column;
   justify-content: flex-start;
-  
-  border: 1px; 
+
+  border: 1px;
   border-radius: 5px;
   background: transparentize($color: gray, $amount: 0.5);
 
   @media (min-width: 1440px) {
-    flex-flow: row; 
-  } 
+    flex-flow: row;
+  }
 
   .bio-wrapper {
     margin: 0 auto;
@@ -72,18 +71,17 @@
       // color: #14213d;
       // color: #55828b;
       color: #2f4858;
-      @media (min-width: 2560px)  {
+      @media (min-width: 2560px) {
         font-size: 2rem;
       }
     }
     span {
-      font-family: 'Manrope', sans-serif;
+      font-family: "Manrope", sans-serif;
       line-height: 22px;
       @media (min-width: 2560px) {
         font-size: 25px;
         line-height: 35px;
       }
-
     }
   }
 }
@@ -116,5 +114,14 @@
 }
 
 .css-dvst2w {
-   grid-auto-rows: auto !important;
+  grid-auto-rows: auto !important;
 }
+
+.overlay {
+  position: absolute;
+  // top: 50%;
+  left: 15px;
+  font-size: 12px;
+  width: 100%;
+}
+
