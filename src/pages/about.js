@@ -85,7 +85,7 @@ const About = ({ intl }) => {
               <span>
                 {intl.formatMessage({ id: "about_bio1" })}
                 <br />
-                <div data-tip="Les Italiens in Istanbul - 2004">
+                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}}>
                   <Img fixed={data.imageTwo.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `black`}}>Les Italiens in Istanbul - 2004</span>
                 </div>
@@ -95,7 +95,7 @@ const About = ({ intl }) => {
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio1_3" })}
                 <br />
-                <div data-tip="Concerto con Scott Hamilton Firenze 2017">
+                <div data-tip="Concerto con Scott Hamilton Firenze 2017" style={{marginTop: `15px`}}>
                   <Img fixed={data.image.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `white`}}>Concerto con Scott Hamilton Firenze 2017</span>
                 </div>
@@ -115,7 +115,7 @@ const About = ({ intl }) => {
                 {intl.formatMessage({ id: "about_bio2_3" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio2_4" })}
-                <div data-tip="Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007">
+                <div data-tip="Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007" style={{marginTop: `15px`}}>
                   <Img fixed={data.imageThree.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `white`}}>Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007</span>
                 </div>
@@ -138,26 +138,25 @@ const About = ({ intl }) => {
                 <br />
                 <br />
                 {intl.formatMessage({ id: "about_bio3_4" })}
-                <div data-tip="Piano Solo">
+                <div data-tip="Piano Solo" style={{marginTop: `15px`}}>
                   <Img fixed={data.pianosolo.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `black`}}>Scena dal film Piano Solo</span>
                 </div>
                 <ReactTooltip />
                 <br />
-                <br />
+             
                 {intl.formatMessage({ id: "about_bio3_5" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio3_6" })}
-                <div data-tip="Les Italiens Piazza della Passera 2008">
+                <div data-tip="Les Italiens Piazza della Passera 2008" style={{marginTop: `15px`}}>
                   <Img fixed={data.ppassera.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `white`}}>Les Italiens Piazza della Passera 2008</span>
 
                 </div>
                 <ReactTooltip />
-                <div data-tip="Visual Orchestra Piazza della Passera 2016">
+                <div data-tip="Visual Orchestra Piazza della Passera 2016" style={{marginTop: `15px`}}>
                   <Img fixed={data.visual.childImageSharp.fixed} />
                   <span className="overlay" style={{color: `white`}}>Visual Orchestra Piazza della Passera 2016</span>
-
                 </div>
                 <ReactTooltip />
               </span>
