@@ -33,7 +33,7 @@ export const MenuItem = ({ i }) => {
     >
       <div
         style={{
-          marginBottom: "30px",
+          marginBottom: "15px",
         }}
       >
         <Link className="link" to="/">
@@ -42,7 +42,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "30px",
+          marginBottom: "15px",
         }}
       >
         <Link to="/about" className="link">
@@ -51,7 +51,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "30px",
+          marginBottom: "15px",
         }}
       >
         <Link to="/teaching" className="link">
@@ -60,7 +60,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "30px",
+          marginBottom: "15px",
         }}
       >
         <Link to="/music-video" className="link">
@@ -69,7 +69,7 @@ export const MenuItem = ({ i }) => {
       </div>
       <div
         style={{
-          marginBottom: "30px",
+          marginBottom: "15px",
         }}
       >
         <Link to="/contact" className="link">
@@ -80,7 +80,7 @@ export const MenuItem = ({ i }) => {
       <div
         className="icon-wrapper"
         style={{
-          marginTop: "50px",
+          marginTop: "30px",
         }}
       >
         <a
@@ -88,20 +88,20 @@ export const MenuItem = ({ i }) => {
           target="blank"
           className="icon"
           style={{
-            marginBottom: "30px",
+            marginBottom: "15px",
           }}
         >
-          <FiFacebook color="#0000000" size="30px" />
+          <FiFacebook color="#0000000" size="25px" />
         </a>
         <a
           href="https://www.youtube.com/channel/UChCWBb3bJHHF08ktBunb21Q/"
           target="blank"
           className="icon"
           style={{
-            marginBottom: "30px",
+            marginBottom: "15px",
           }}
         >
-          <FiYoutube color="#0000000" size="30px" />
+          <FiYoutube color="#0000000" size="25px" />
         </a>
         <a
           href="https://www.instagram.com/alessandrodipuccio/"
@@ -111,7 +111,7 @@ export const MenuItem = ({ i }) => {
             marginBottom: "15px",
           }}
         >
-          <FiInstagram color="#0000000" size="30px" />
+          <FiInstagram color="#0000000" size="25px" />
         </a>
         <a
           href="https://www.patreon.com/alessandrodipuccio/"
@@ -121,7 +121,7 @@ export const MenuItem = ({ i }) => {
             marginBottom: "15px",
           }}
         >
-          <FaPatreon color="#0000000" size="30px" />
+          <FaPatreon color="#0000000" size="25px" />
         </a>
       </div>
     </motion.li>
