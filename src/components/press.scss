@@ -1,6 +1,6 @@
 .press-outer-wrapper {
-  background: url("../images/press2.jpeg");
-  background-size: cover;
+  background: url("../images/press4.jpg");
+  background-size: contain;
 
   min-height: 100vh;
 
@@ -12,6 +12,9 @@
     scroll-behavior: smooth;
 
     .press-wrapper {
+      border: 1px;
+      border-radius: 5px;
+      background: transparentize($color: black, $amount: 0.6);
       // height: 100%;
       // overflow-y: scroll;
       padding: 5px 38px 0 20px;
@@ -23,13 +26,13 @@
     }
     .press-inner-wrapper {
       margin-bottom: 25px;
-      @media (min-width: 758px){
-
+      @media (min-width: 758px) {
         padding: 50px;
       }
 
       .titolo {
-        color: #2f4858;
+        color: #fff;
+        // color: #2f4858;
       }
       .description {
         color: #fff;
@@ -44,14 +47,13 @@
       }
 
       a {
-        color: #fff; 
+        color: #fff;
       }
       iframe {
         margin-top: 10px;
-        
-        @media (min-width: 320px) and (max-width: 425px){
+
+        @media (min-width: 320px) and (max-width: 425px) {
           width: 300px !important;
-          
         }
         @media (min-width: 758px) {
           width: 650px;

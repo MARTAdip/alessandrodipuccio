@@ -51,7 +51,7 @@ const Press = () => {
               onPlay={e => console.log("onPlay")}
               // other props here
               />
-           
+           <a href="https://www.allaboutjazz.com/genius-loci-festival-di-santa-croce-a-firenze-by-neri-pollastri.php" target="blank">LEGGI ARTICOLO (solo italiano)</a>
           </div>
           <div className="press-inner-wrapper">
             <h3 className="titolo">
