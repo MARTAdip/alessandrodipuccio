@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+
 .press-outer-wrapper {
   background: url("../images/press4.jpg");
   background-size: contain;
@@ -7,21 +11,27 @@
   overflow-y: scroll;
   width: 100%;
   .press-container {
-    // height: 85vh;
-    // overflow: hidden;
-    scroll-behavior: smooth;
+    @media (min-width: 1440px) {
+      height: 85vh;
+      overflow: hidden;
+      scroll-behavior: smooth;
+      max-width: 900px;
+    }
 
     .press-wrapper {
       border: 1px;
       border-radius: 5px;
       background: transparentize($color: black, $amount: 0.6);
-      // height: 100%;
-      // overflow-y: scroll;
       padding: 5px 38px 0 20px;
       @media (min-width: 758px) {
         display: flex;
         flex-flow: column;
         align-items: center;
+      }
+      @media (min-width: 1440px) {
+        
+        height: 100%;
+         overflow-y: scroll;
       }
     }
     .press-inner-wrapper {
@@ -32,16 +42,20 @@
 
       .titolo {
         color: #fff;
+        font-family: "Abril Fatface", cursive;
+
         // color: #2f4858;
       }
       .description {
         color: #fff;
-      }
-      .description {
+        font-family: "Manrope", sans-serif;
+        line-height: 25px;
+
         @media (min-width: 758px) {
           max-width: 500px;
         }
       }
+      
       .rhap_container {
         margin-top: 20px !important;
       }
