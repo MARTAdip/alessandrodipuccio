@@ -24,7 +24,7 @@ const Contact = () => (
           </div>
           <div className="inner">
             <span>Press</span>
-            <a href="mailto:dpelati@icloud.com">Alessandro Di Puccio</a>
+            <a href="mailto:dpelati@icloud.com">Daniela Pelati</a>
           </div>
         </div>
       </div>
