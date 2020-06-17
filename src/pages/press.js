@@ -4,9 +4,25 @@ import SEO from "../components/seo"
 import "../components/press.scss"
 import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
-const Press = () => (
-  <div className="press-outer-wrapper">
+const Press = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    imageOne: file( relativePath: { eq: "intervista passera.png"}) {
+      childImageSharp {
+        fixed(quality: 100) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`)
+
+
+  return(
+    <div className="press-outer-wrapper">
     <SEO title="Press" />
     <Layout>
       <div className="press-container">
@@ -34,7 +50,7 @@ const Press = () => (
               src="https://episodes.castos.com/Controradio-it/Alessandro-Di-Puccio-Ingredere-Fancesco-Corteccia-genius-loci.mp3"
               onPlay={e => console.log("onPlay")}
               // other props here
-            />
+              />
            
           </div>
           <div className="press-inner-wrapper">
@@ -58,7 +74,8 @@ const Press = () => (
               vicinolontano.
             </span>
             <br />
-            <iframe
+            <Img fixed={data.imageOne.childImageSharp.fixed} />
+            {/* <iframe
               title="intervista"
               width="450"
               height="315"
@@ -66,7 +83,7 @@ const Press = () => (
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+            ></iframe> */}
           </div>
 
           <hr />
@@ -90,7 +107,7 @@ const Press = () => (
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+              ></iframe>
           </div>
           <hr />
           <div className="press-inner-wrapper">
@@ -113,12 +130,13 @@ const Press = () => (
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></iframe>
+              ></iframe>
           </div>
         </div>
       </div>
     </Layout>
   </div>
 )
+}
 
 export default Press
