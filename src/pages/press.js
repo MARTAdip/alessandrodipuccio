@@ -2,6 +2,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/press.scss"
+import AudioPlayer from "react-h5-audio-player"
+import "react-h5-audio-player/lib/styles.css"
 
 const Press = () => (
   <div className="press-outer-wrapper">
@@ -9,6 +11,32 @@ const Press = () => (
     <Layout>
       <div className="press-container">
         <div className="press-wrapper">
+          <div className="press-inner-wrapper">
+            <h3 className="titolo">
+              Genius Loci, Festival Di Santa Croce A Firenze
+            </h3>
+            <span className="description">
+              Per la terza edizione di “Genius Loci: alla scoperta di Santa
+              Croce”, che si terrà da giovedì 26 a sabato 28 settembre nel
+              Complesso monumentale di Santa Croce a Firenze, una serie di
+              interviste per scoprire il programma attraverso la voce dei
+              protagonisti. 20 settembre 2019 – Intervista a cura di Giustina
+              Terenzi con Alessandro Di Puccio che assieme a Giulio Ottanelli
+              proporrà un concerto in due parti dal titolo “INGREDERE: FRANCESCO
+              CORTECCIA, musiche rinascimentali dalla corte dei Medici”.
+              L’iniziativa è organizzata da Controradio, Controradio Club, Opera
+              di Santa Croce, in collaborazione con La Nottola di Minerva, il
+              contributo di Comune di Firenze – Estate Fiorentina 2019 e il
+              patrocinio della Città Metropolitana di Firenze.
+            </span>
+            <br />
+            <AudioPlayer
+              src="https://episodes.castos.com/Controradio-it/Alessandro-Di-Puccio-Ingredere-Fancesco-Corteccia-genius-loci.mp3"
+              onPlay={e => console.log("onPlay")}
+              // other props here
+            />
+           
+          </div>
           <div className="press-inner-wrapper">
             <h3 className="titolo">
               Les italiens - intervista su RAI tre - concerto in piazza della
@@ -29,11 +57,11 @@ const Press = () => (
               occasioni amorose e amori d'occasione fatti di un erotismo
               vicinolontano.
             </span>
-            <br/>
+            <br />
             <iframe
               title="intervista"
               width="450"
-              height="450"
+              height="315"
               src="https://www.youtube.com/embed/J6tNTZ5ZVpM"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -53,7 +81,7 @@ const Press = () => (
               dell'Orchestra Alessandro di Puccio spiega le finalità e le
               caratteristiche del progetto Musipolitana
             </span>
-            <br/>
+            <br />
             <iframe
               title="musipolitana"
               width="450"
@@ -76,7 +104,7 @@ const Press = () => (
               dell'Orchestra Alessandro di Puccio spiega le finalità e le
               caratteristiche del progetto Musipolitana
             </span>
-            <br/>
+            <br />
             <iframe
               title="piazza passera"
               width="450"

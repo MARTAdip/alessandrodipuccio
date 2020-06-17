@@ -3,10 +3,11 @@
   background-size: cover;
 
   min-height: 100vh;
-
+  overflow-y: scroll;
   .press-container {
-    height: 800px;
+    height: 85vh;
     overflow: hidden;
+    scroll-behavior: smooth ; 
 
     .press-wrapper {
       height: 100%;
@@ -25,7 +26,9 @@
         padding: 50px;
       }
 
-      .titolo,
+      .titolo {
+        color: #2f4858;
+      }
       .description {
         color: #fff;
       }
@@ -33,6 +36,9 @@
         @media (min-width: 758px) {
           max-width: 500px;
         }
+      }
+      .rhap_container {
+        margin-top: 20px !important;
       }
       iframe {
         margin-top: 10px;
