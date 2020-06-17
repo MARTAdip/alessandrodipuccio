@@ -28,7 +28,9 @@ const Header = ({ siteTitle }) => (
             right: `2px`,
             color: `#000`,
             textDecoration: `none`,
-            paddingBottom: `25px`
+            padding: `15px`,
+            borderRadius: `5px`,
+            background: `rgba(255, 255, 255, 0.4)`,
           }}
         >
           {siteTitle}

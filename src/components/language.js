@@ -13,7 +13,8 @@ const Language = () => {
         display: `flex`,
         flexFlow: `column`,
         alignItems: `flex-end`,
-        paddingTop: `80px`
+        paddingTop: `80px`,
+        
       }}
     >
       <IntlContextConsumer>
@@ -27,7 +28,9 @@ const Language = () => {
                 margin: 10,
                 textDecoration: `underline`,
                 cursor: `pointer`,
-                padding: `0`, 
+                padding: `5px`, 
+                background: `rgba(255, 255, 255, 0.4)`,
+                borderRadius: `5px`,
               }}
             >
               {languageName[language]}
