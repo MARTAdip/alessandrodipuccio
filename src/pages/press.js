@@ -12,7 +12,7 @@ const Press = () => {
   query {
     imageOne: file( relativePath: { eq: "intervista passera.png"}) {
       childImageSharp {
-        fixed(quality: 100) {
+        fixed(quality: 100, width: 300) {
           ...GatsbyImageSharpFixed
         }
       }
@@ -75,6 +75,7 @@ const Press = () => {
             </span>
             <br />
             <Img fixed={data.imageOne.childImageSharp.fixed} />
+            <a href="https://www.youtube.com/watch?time_continue=2&v=J6tNTZ5ZVpM&feature=emb_title" target="blank">Guarda L'intervista</a>
             {/* <iframe
               title="intervista"
               width="450"

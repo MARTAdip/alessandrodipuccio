@@ -1,19 +1,19 @@
 .press-outer-wrapper {
-  // background: url("../images/press2.jpeg");
-  // background-size: cover;
+  background: url("../images/press2.jpeg");
+  background-size: cover;
 
-  // min-height: 100vh;
+  min-height: 100vh;
 
-  // overflow-y: scroll;
+  overflow-y: scroll;
   width: 100%;
   .press-container {
-    height: 85vh;
-    overflow: hidden;
+    // height: 85vh;
+    // overflow: hidden;
     scroll-behavior: smooth;
 
     .press-wrapper {
-      height: 100%;
-      overflow-y: scroll;
+      // height: 100%;
+      // overflow-y: scroll;
       padding: 5px 38px 0 20px;
       @media (min-width: 758px) {
         display: flex;
@@ -42,8 +42,17 @@
       .rhap_container {
         margin-top: 20px !important;
       }
+
+      a {
+        color: #fff; 
+      }
       iframe {
         margin-top: 10px;
+        
+        @media (min-width: 320px) and (max-width: 425px){
+          width: 300px !important;
+          
+        }
         @media (min-width: 758px) {
           width: 650px;
           height: 450px;
