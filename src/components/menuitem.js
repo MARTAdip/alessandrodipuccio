@@ -72,6 +72,15 @@ export const MenuItem = ({ i }) => {
           marginBottom: "15px",
         }}
       >
+        <Link to="/press" className="link">
+          Press
+        </Link>
+      </div>
+      <div
+        style={{
+          marginBottom: "15px",
+        }}
+      >
         <Link to="/contact" className="link">
           Contact
         </Link>

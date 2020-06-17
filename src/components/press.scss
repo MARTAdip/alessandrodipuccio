@@ -1,0 +1,46 @@
+.press-outer-wrapper {
+  background: url("../images/press2.jpeg");
+  background-size: cover;
+
+  min-height: 100vh;
+
+  .press-container {
+    height: 800px;
+    overflow: hidden;
+
+    .press-wrapper {
+      height: 100%;
+      overflow-y: scroll;
+      padding: 5px 38px 0 20px;
+      @media (min-width: 758px) {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+      }
+    }
+    .press-inner-wrapper {
+      margin-bottom: 25px;
+      @media (min-width: 758px){
+
+        padding: 50px;
+      }
+
+      .titolo,
+      .description {
+        color: #fff;
+      }
+      .description {
+        @media (min-width: 758px) {
+          max-width: 500px;
+        }
+      }
+      iframe {
+        margin-top: 10px;
+        @media (min-width: 758px) {
+          width: 650px;
+          height: 450px;
+        }
+      }
+    }
+  }
+}

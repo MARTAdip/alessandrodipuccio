@@ -17,8 +17,8 @@ const Teaching = ({ intl }) => {
         }
       ) {
         childImageSharp {
-          fluid(sizes: "(max-width: 1200px) calc(100vw - 40px), 1200px") {
-            ...GatsbyImageSharpFluid
+          fixed(quality: 100) {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -37,16 +37,19 @@ const Teaching = ({ intl }) => {
                 {intl.formatMessage({ id: "teaching_text1" })}
                 <br /> {intl.formatMessage({ id: "teaching_text2" })}
                 <br />
-                <div data-tip="Durante uno stage all'universita di Istanbul 2004" style={{margin: `15px 0 15px`}}>
-                  <Img fluid={data.imageOne.childImageSharp.fluid} />
-                </div>
-                <ReactTooltip />
                 {intl.formatMessage({ id: "teaching_text3" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "teaching_text4" })}
               </span>
             </div>
           </div>
+          <div
+            data-tip="Durante uno stage all'universita di Istanbul 2004"
+            style={{ margin: `15px 0 15px` }}
+          >
+            <Img fixed={data.imageOne.childImageSharp.fixed} />
+          </div>
+          <ReactTooltip />
         </div>
         <div className="card-container">
           <div className="card-wrapper">
