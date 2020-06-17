@@ -50,6 +50,7 @@ const Press = ({ intl }) => {
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
             </div>
+            <hr />
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title2" })}
@@ -112,6 +113,7 @@ const Press = ({ intl }) => {
                 allowFullScreen
               ></iframe>
             </div>
+            <hr />
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title5" })}
