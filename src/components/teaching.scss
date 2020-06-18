@@ -63,11 +63,21 @@
       }
     }
   }
+}
 
-  .gatsby-image-wrapper {
-    
+.teaching-image-mobile { // fluid
+  @media (min-width: 757px) {
+    display: none !important;
   }
 }
+
+.teaching-image-desktop { // fixed
+  @media (min-width: 320px) and (max-width:758px){
+    display: none !important;
+  }
+}  
+
+
 .card-container {
   display: flex;
   flex-flow: column;

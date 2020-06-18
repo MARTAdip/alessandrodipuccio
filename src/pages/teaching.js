@@ -11,13 +11,16 @@ import ReactTooltip from "react-tooltip"
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      imageOne: file(
-        relativePath: {
-          eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg"
-        }
-      ) {
+      imageMobile: file(relativePath: { eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg" }) {
         childImageSharp {
-          fixed(quality: 100) {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      imageDesktop: file(relativePath: { eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 400) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -47,7 +50,8 @@ const Teaching = ({ intl }) => {
             data-tip="Durante uno stage all'universita di Istanbul 2004"
             style={{ margin: `15px 0 15px` }}
           >
-            <Img fixed={data.imageOne.childImageSharp.fixed} />
+            <Img fluid={data.imageMobile.childImageSharp.fluid} className="teaching-image-mobile"/>
+            <Img fixed={data.imageDesktop.childImageSharp.fixed} className="teaching-image-desktop"/>
           </div>
           <ReactTooltip />
         </div>

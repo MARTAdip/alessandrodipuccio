@@ -22,7 +22,28 @@
       font-family: Arial, Helvetica, sans-serif;
     }
   }
-}
+
+  .gatsby-image-wrapper {
+    display: flex !important;
+    margin: 0 auto;
+   
+  }
+  
+  .image-mobile { // fluid
+    @media (min-width: 757px) and (max-width:1140px){
+      display: none;
+    }
+  }
+  
+  .image-desktop { // fixed
+    @media (min-width: 320px) and (max-width:758px){
+      display: none;
+    }
+    @media (min-width: 1139px) {
+      display: none;
+    }
+  }
+
 .about-container {
   display: flex;
   flex-flow: column;
@@ -137,23 +158,4 @@
   }
 }
 
-.gatsby-image-wrapper {
-  display: block !important;
-  margin: 0 auto;
- 
-}
-
-.image-mobile { // fluid
-  @media (min-width: 757px) and (max-width:1140px){
-    display: none;
-  }
-}
-
-.image-desktop { // fixed
-  @media (min-width: 320px) and (max-width:758px){
-    display: none;
-  }
-  @media (min-width: 1139px) {
-    display: none;
-  }
 }
