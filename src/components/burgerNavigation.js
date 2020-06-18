@@ -25,6 +25,7 @@ const sidebar = {
   },
 }
 
+
 export const BurgerNavigation = () => {
   const [isOpen, toggleOpen] = useCycle(false, true)
   const containerRef = useRef(null)
@@ -44,3 +45,4 @@ export const BurgerNavigation = () => {
     </motion.nav>
   )
 }
+// style={ isOpen ? { display:'block', display:'none'} : {}}
