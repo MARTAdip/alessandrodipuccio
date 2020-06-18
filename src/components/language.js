@@ -11,8 +11,8 @@ const Language = () => {
     <div
       style={{
         display: `flex`,
-        flexFlow: `column`,
-        alignItems: `flex-end`,
+        flexFlow: `row`,
+        justifyContent: `flex-end`,
         paddingTop: `80px`,
         
       }}
@@ -24,7 +24,7 @@ const Language = () => {
               key={language}
               onClick={() => changeLocale(language)}
               style={{
-                color: currentLocale === language ? `blue` : `black`,
+                color: currentLocale === language ? `#457b9d` : `black`,
                 margin: 10,
                 textDecoration: `underline`,
                 cursor: `pointer`,

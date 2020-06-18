@@ -14,28 +14,25 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960
-        // marginTop: `150px`,
-        // padding: `1.45rem 1.0875rem`,
-        // position: `realtive`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
             position: `absolute`,
             top: `8px`,
             right: `2px`,
-            color: `#000`,
+            color: `#457b9d`,
             textDecoration: `none`,
             padding: `15px`,
-            borderRadius: `5px`,
-            background: `rgba(255, 255, 255, 0.4)`,
+            borderRadius: `5px`
+            // background: `rgba(255, 255, 255, 0.4)`,
           }}
         >
           {siteTitle}
         </Link>
-      </h1>
+      </h2>
     </div>
   </header>
 )
