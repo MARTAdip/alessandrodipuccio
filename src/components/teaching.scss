@@ -21,7 +21,7 @@
 
     border: 1px;
     border-radius: 5px;
-    background: transparentize($color: gray, $amount: 0.5);
+    background: transparentize($color: gray, $amount: 0.3);
     padding: 10px;
 
     @media (min-width: 1024px) {
@@ -29,10 +29,10 @@
       justify-content: center;
       align-items: flex-start;
       width: 50%;
+      padding: 35px;
+      margin-right: 10px;
     }
-    // @media (min-width: 2560px) {
-    //   width: 60%;
-    // }
+    
     .section-content {
       margin: 0 auto;
       width: 100%;
@@ -111,17 +111,22 @@
     }
   }
   h1,
-  p {
+  .text {
     font-family: "Bowlby One SC", cursive;
     color: #000;
   }
-  p {
+  .text {
     // font-size: 24px;
     @media (max-width: 765px) {
       font-size: 16px;
     }
     @media (min-width: 2560px) {
-     font-size: 27px;
+     font-size: 23px;
+    }
+
+    .read-more-button {
+      color: #2f4858;
+      padding: 15px;
     }
   }
 

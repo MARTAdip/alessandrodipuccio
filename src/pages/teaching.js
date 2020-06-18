@@ -7,26 +7,36 @@ import Img from "gatsby-image"
 import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import ReactTooltip from "react-tooltip"
+import ReadMoreReact from "read-more-react"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
-      imageMobile: file(relativePath: { eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg" }) {
+      imageMobile: file(
+        relativePath: {
+          eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg"
+        }
+      ) {
         childImageSharp {
           fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
             ...GatsbyImageSharpFluid
           }
         }
       }
-      imageDesktop: file(relativePath: { eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg" }) {
+      imageDesktop: file(
+        relativePath: {
+          eq: "x durante_uno_stage_all_universita_di_istanbul_2004.jpg"
+        }
+      ) {
         childImageSharp {
-          fixed(quality: 100, width: 400) {
+          fixed(quality: 100, width: 500, height: 370) {
             ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `)
+
   return (
     <div className="teaching-outer-wrapper">
       <Language />
@@ -50,9 +60,18 @@ const Teaching = ({ intl }) => {
             data-tip={intl.formatMessage({ id: "teaching_image_tooltip" })}
             style={{ margin: `15px 0 15px` }}
           >
-            <Img fluid={data.imageMobile.childImageSharp.fluid} className="teaching-image-mobile" style={{position: `relative`}}/>
-            <span className="overlay" style={{color: `black`}}> {intl.formatMessage({ id: "teaching_image_tooltip" })}</span>
-            <Img fixed={data.imageDesktop.childImageSharp.fixed} className="teaching-image-desktop"/>
+            <Img
+              fluid={data.imageMobile.childImageSharp.fluid}
+              className="teaching-image-mobile"
+              style={{ position: `relative` }}
+            />
+            <span className="overlay" style={{ color: `black` }}>
+              {intl.formatMessage({ id: "teaching_image_tooltip" })}
+            </span>
+            <Img
+              fixed={data.imageDesktop.childImageSharp.fixed}
+              className="teaching-image-desktop"
+            />
           </div>
           <ReactTooltip />
         </div>
@@ -61,10 +80,15 @@ const Teaching = ({ intl }) => {
             <div className="card-inner">
               <h1>{intl.formatMessage({ id: "patreon_title" })}</h1>
 
-              <p>
+              <div className="text">
                 {intl.formatMessage({ id: "patreon_text1" })}
                 <br /> {intl.formatMessage({ id: "patreon_text1_2" })}
-              </p>
+                <ReadMoreReact
+                  text= {intl.formatMessage({ id: "patreon_text1_3" })}
+                  readMoreText={intl.formatMessage({ id: "patreon_readmore" })}
+                />
+               
+              </div>
             </div>
             <div className="card-button">
               <button className="button-patreon" type="submit">
