@@ -28,7 +28,9 @@ const About = ({ intl }) => {
           }
         }
       }
-      imageTwoDesktop: file(relativePath: { eq: "x Les Italiens Istanbul 2004.jpg" }) {
+      imageTwoDesktop: file(
+        relativePath: { eq: "x Les Italiens Istanbul 2004.jpg" }
+      ) {
         childImageSharp {
           fixed(quality: 100, width: 400) {
             ...GatsbyImageSharpFixed
@@ -86,7 +88,7 @@ const About = ({ intl }) => {
       }
       visual: file(relativePath: { eq: "x visual orchestra 1 2016.jpg" }) {
         childImageSharp {
-          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px"){
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
             ...GatsbyImageSharpFluid
           }
         }
@@ -113,26 +115,47 @@ const About = ({ intl }) => {
               <span>
                 {intl.formatMessage({ id: "about_bio1" })}
                 <br />
-                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}} className="image-mobile">
-                  <Img fluid={data.imageTwo.childImageSharp.fluid} style={{position: `relative`}} />
-                  <span className="overlay" style={{color: `black`}}>Les Italiens in Istanbul - 2004</span>
+                <div
+                  data-tip="Les Italiens in Istanbul - 2004"
+                  style={{ marginTop: `15px` }}
+                  className="image-mobile"
+                >
+                  <Img
+                    fluid={data.imageTwo.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    Les Italiens in Istanbul - 2004
+                  </span>
                 </div>
                 <ReactTooltip />
-
-                <div data-tip="Les Italiens in Istanbul - 2004" style={{marginTop: `15px`}} className="image-desktop">
+                <div
+                  data-tip="Les Italiens in Istanbul - 2004"
+                  style={{ marginTop: `15px` }}
+                  className="image-desktop"
+                >
                   <Img fixed={data.imageTwoDesktop.childImageSharp.fixed} />
-                  <span className="overlay" style={{color: `black`}}>Les Italiens in Istanbul - 2004</span>
+                  <span className="overlay" style={{ color: `black` }}>
+                    Les Italiens in Istanbul - 2004
+                  </span>
                 </div>
                 <ReactTooltip />
-
                 <br />
-                {intl.formatMessage({ id: "about_bio1_2" })}
+                <span>{intl.formatMessage({ id: "about_bio1_2" })}</span>
                 <br /> <br />
-                {intl.formatMessage({ id: "about_bio1_3" })}
+                <span>{intl.formatMessage({ id: "about_bio1_3" })}</span>
                 <br />
-                <div data-tip="Concerto con Scott Hamilton Firenze 2017" style={{marginTop: `15px`}}>
-                  <Img fluid={data.image.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Concerto con Scott Hamilton Firenze 2017</span>
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image1" })}
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fluid={data.image.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {intl.formatMessage({ id: "about_image1" })}
+                  </span>
                 </div>
                 <ReactTooltip />
               </span>
@@ -145,24 +168,49 @@ const About = ({ intl }) => {
               <span>
                 {intl.formatMessage({ id: "about_bio2" })}
                 <br />
-                {intl.formatMessage({ id: "about_bio2_2" })}
+                <span>{intl.formatMessage({ id: "about_bio2_2" })}</span>
                 <br />
-                {intl.formatMessage({ id: "about_bio2_3" })}
-                <div data-tip="Concerto con Luca Flores al Salt Peanuts 1984" style={{marginTop: `15px`}} className="image-mobile">
-                  <Img fluid={data.lflores.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Concerto con Luca Flores al Salt Peanuts 1984</span>
+                <span>{intl.formatMessage({ id: "about_bio2_3" })}</span>
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image2" })}
+                  style={{ marginTop: `15px` }}
+                  className="image-mobile"
+                >
+                  <Img
+                    fluid={data.lflores.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {intl.formatMessage({ id: "about_image2" })}
+                  </span>
                 </div>
                 <ReactTooltip />
-                <div data-tip="Concerto con Luca Flores al Salt Peanuts 1984" style={{marginTop: `15px`}} className="image-desktop">
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image2" })}
+                  style={{ marginTop: `15px` }}
+                  className="image-desktop"
+                >
                   <Img fixed={data.lfloresDesktop.childImageSharp.fixed} />
-                  <span className="overlay" style={{color: `black`}}>Concerto con Luca Flores al Salt Peanuts 1984</span>
+                  <span className="overlay" style={{ color: `black` }}>
+                    {" "}
+                    {intl.formatMessage({ id: "about_image2" })}
+                  </span>
                 </div>
                 <ReactTooltip />
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio2_4" })}
-                <div data-tip="Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007" style={{marginTop: `15px`}}>
-                  <Img fluid={data.imageThree.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Orchestra (multietnica) Musipolitana Firenze -Fabbrica Europa 2007</span>
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image3" })}
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fluid={data.imageThree.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {" "}
+                    {intl.formatMessage({ id: "about_image3" })}
+                  </span>
                 </div>
                 <ReactTooltip />
                 <br />
@@ -183,25 +231,47 @@ const About = ({ intl }) => {
                 <br />
                 <br />
                 {intl.formatMessage({ id: "about_bio3_4" })}
-                <div data-tip="Piano Solo" style={{marginTop: `15px`}}>
-                  <Img fluid={data.pianosolo.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Scena dal film Piano Solo</span>
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image4" })}
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fluid={data.pianosolo.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {intl.formatMessage({ id: "about_image4" })}
+                  </span>
                 </div>
                 <ReactTooltip />
                 <br />
-             
                 {intl.formatMessage({ id: "about_bio3_5" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio3_6" })}
-                <div data-tip="Les Italiens Piazza della Passera 2008" style={{marginTop: `15px`}}>
-                  <Img fluid={data.ppassera.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Les Italiens Piazza della Passera 2008</span>
-
+                <div
+                  data-tip="Les Italiens Piazza della Passera 2008"
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fluid={data.ppassera.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    Les Italiens Piazza della Passera 2008
+                  </span>
                 </div>
                 <ReactTooltip />
-                <div data-tip="Visual Orchestra Piazza della Passera 2016" style={{marginTop: `30px`}}>
-                  <Img fluid={data.visual.childImageSharp.fluid} style={{position: `relative`}}/>
-                  <span className="overlay" style={{color: `black`}}>Visual Orchestra Piazza della Passera 2016</span>
+                <div
+                  data-tip="Visual Orchestra Piazza della Passera 2016"
+                  style={{ marginTop: `30px` }}
+                >
+                  <Img
+                    fluid={data.visual.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    Visual Orchestra Piazza della Passera 2016
+                  </span>
                 </div>
                 <ReactTooltip />
               </span>

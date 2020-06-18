@@ -66,17 +66,27 @@
 }
 
 .teaching-image-mobile { // fluid
-  @media (min-width: 757px) {
+  @media (min-width: 1023px) {
     display: none !important;
   }
 }
 
 .teaching-image-desktop { // fixed
-  @media (min-width: 320px) and (max-width:758px){
+  @media (min-width: 320px) and (max-width:1023px){
     display: none !important;
   }
 }  
+.overlay {
+  position: absolute;
+  font-size: 12px;
+  width: 100%;
+  text-align: center;
+  font-family: "Manrope", sans-serif;
 
+  @media (min-width: 1023px) {
+    display: none;
+  }
+}
 
 .card-container {
   display: flex;

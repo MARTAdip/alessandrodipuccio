@@ -47,10 +47,11 @@ const Teaching = ({ intl }) => {
             </div>
           </div>
           <div
-            data-tip="Durante uno stage all'universita di Istanbul 2004"
+            data-tip={intl.formatMessage({ id: "teaching_image_tooltip" })}
             style={{ margin: `15px 0 15px` }}
           >
-            <Img fluid={data.imageMobile.childImageSharp.fluid} className="teaching-image-mobile"/>
+            <Img fluid={data.imageMobile.childImageSharp.fluid} className="teaching-image-mobile" style={{position: `relative`}}/>
+            <span className="overlay" style={{color: `black`}}> {intl.formatMessage({ id: "teaching_image_tooltip" })}</span>
             <Img fixed={data.imageDesktop.childImageSharp.fixed} className="teaching-image-desktop"/>
           </div>
           <ReactTooltip />
