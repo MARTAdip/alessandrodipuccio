@@ -680,10 +680,12 @@ body {
   width: 300px;
   z-index: 111;
   background: #457b9d;
-  /* height: 355px; */
- 
 }
-
+@media (min-width: 320px) and (max-width: 425px){
+  .background {
+    width: 500px;
+  }
+}
 .button-toggle {
   outline: none;
   border: none;
@@ -713,6 +715,28 @@ ul {
   top: 20px;
   width: 230px;
   z-index: 111;
+}
+
+@media (max-width: 375px){
+  ul {
+    width: 340px;
+  }
+}
+@media (min-width: 320px)and (max-width: 374px){
+  ul {
+    width: 230px;
+  }
+}
+@media (min-width: 425px){
+  ul {
+    width: 380px;
+  }
+}
+
+@media (min-width: 768px){
+  ul {
+    width: 230px;
+  }
 }
 
 li {
