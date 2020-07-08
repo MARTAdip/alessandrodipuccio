@@ -84,10 +84,9 @@ const Teaching = ({ intl }) => {
                 {intl.formatMessage({ id: "patreon_text1" })}
                 <br /> {intl.formatMessage({ id: "patreon_text1_2" })}
                 <ReadMoreReact
-                  text= {intl.formatMessage({ id: "patreon_text1_3" })}
+                  text={intl.formatMessage({ id: "patreon_text1_3" })}
                   readMoreText={intl.formatMessage({ id: "patreon_readmore" })}
                 />
-               
               </div>
             </div>
             <div className="card-button">
@@ -99,6 +98,72 @@ const Teaching = ({ intl }) => {
                   {intl.formatMessage({ id: "patreon_title" })}
                 </a>
               </button>
+            </div>
+          </div>
+        </div>
+        <h1 className="reward-title">REWARDS SOSTENITORI e STUDENTI</h1>
+        <div className="card-container small-cont">
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <div className="small-text">
+                <h4>Per tutti i sostenitori </h4>
+                <p>
+                  ogni mese sarà inviato un fascicolo di una raccolta di
+                  dispense sulla storia del jazz con le biografie dei jazzisti
+                  più importanti. Ogni biografia è munita d’indicazioni di
+                  ascolti, cioè di link (Youtube) corrispondenti ad importanti
+                  audio e filmati dei vari musicisti.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <div className="small-text">
+                <h4>Sostenitori standard 5 € mensili</h4>
+                <p>
+                  ogni mese sarà inviato un bootleg storico in mp3 di un brano
+                  tratto dalle registrazioni di concerti effettuati nel jazz
+                  club fiorentino Salt Peanuts tra il 1983 e il 1985. (tra i
+                  vari musicisti che presero parte ai concerti figurano Lee
+                  Konitz, Chet Baker, Eddie Lookjaw Davis, Sal Nistico, Al Cohn,
+                  Albert Mangelsdorff.)
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <div className="small-text">
+                <h4>Sostenitori premium (musicisti amatoriali)</h4>
+                <p>
+                  <ol>10 € mensili</ol> ogni mese sarà inviato un bootleg
+                  storico in mp3 di un brano tratto dalle registrazioni di
+                  concerti effettuati nel jazz club fiorentino Salt Peanuts tra
+                  il 1983 e il 1985. (tra i vari musicisti che presero parte ai
+                  concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw Davis,
+                  Sal Nistico, Al Cohn, Albert Mangelsdorff.) <br />
+                  + ogni mese saranno inviati 2 esercizi dedicati alla tecnica
+                  per l’improvvisazione o un arrangiamento (per piccole
+                  formazioni max sestetto), appositamente realizzato tenendo
+                  conto del livello degli esecutori, di uno standard a vostra
+                  scelta.
+                  <br />
+                  <ol>15 € mensili </ol> ogni mese sarà inviato un bootleg
+                  storico in mp3 di un brano tratto dalle registrazioni di
+                  concerti effettuati nel jazz club fiorentino Salt Peanuts tra
+                  il 1983 e il 1985. (tra i vari musicisti che presero parte ai
+                  concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw Davis,
+                  Sal Nistico, Al Cohn, Albert Mangelsdorff.) <br />
+                  + ogni mese
+                  saranno inviati 4 esercizi dedicati alla tecnica per
+                  l’improvvisazione o 2 arrangiamenti (per piccole formazioni
+                  max sestetto), appositamente realizzato tenendo conto del
+                  livello degli esecutori, di 2 standard a vostra scelta.
+                  <br />
+                </p>
+              </div>
             </div>
           </div>
         </div>
