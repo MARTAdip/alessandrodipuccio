@@ -194,6 +194,13 @@ const Teaching = ({ intl }) => {
                     Salt Peanuts (tra i vari musicisti che presero parte ai
                     concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw
                     Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
+                    <br /> 
+                    <br /> 
+                    (È possibile effettuare anche lezioni collettive, in tal caso
+                    si mantengono gli stessi prezzi delle individuali dividendo
+                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
+                    5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -210,6 +217,13 @@ const Teaching = ({ intl }) => {
                     <br />
                     <TiStar/> Le dispense sulla storia del jazz.
                     <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                    <br /> 
+                    <br /> 
+                    (È possibile effettuare anche lezioni collettive, in tal caso
+                    si mantengono gli stessi prezzi delle individuali dividendo
+                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
+                    5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -226,6 +240,13 @@ const Teaching = ({ intl }) => {
                     <br />
                     <TiStar/> Le dispense sulla storia del jazz.
                     <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                    <br /> 
+                    <br /> 
+                    (È possibile effettuare anche lezioni collettive, in tal caso
+                    si mantengono gli stessi prezzi delle individuali dividendo
+                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
+                    5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -243,27 +264,20 @@ const Teaching = ({ intl }) => {
                     <br />
                     <TiStar/> Le dispense sulla storia del jazz.
                     <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                    <br /> 
+                    <br /> 
+                    (È possibile effettuare anche lezioni collettive, in tal caso
+                    si mantengono gli stessi prezzi delle individuali dividendo
+                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
+                    5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="card-wrapper small">
-            <div className="small-card-container">
-              <div className="small-text">
-                <div>
-                  <div className="list final">
-                    È possibile effettuare anche lezioni collettive, in tal caso
-                    si mantengono gli stessi prezzi delle individuali dividendo
-                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
-                    5 tot. 25 € a partecipante
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
 
         </div>
       </Layout>
