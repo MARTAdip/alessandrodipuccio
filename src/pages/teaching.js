@@ -9,6 +9,7 @@ import Language from "../components/language"
 import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from 'react-icons/ti';
+import Link from "gatsby-link"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -160,7 +161,7 @@ const Teaching = ({ intl }) => {
                   <TiStar/> 4 esercizi di tecnica per lo sviluppo dell’improvvisazione
                     oppure 2 arrangiamenti (per piccole formazioni - max
                     sestetto) di uno standard a scelta nella
-                    <div style={{ color: `red` }}>lista</div> (il titolo del
+                    <Link className="link" to="/musicList"><div style={{ color: `red`, textDecoration: `underline` }}>lista</div></Link> (il titolo del
                     brano dovrà essere inviato per email ogni mese).
                   </span>
                 </div>

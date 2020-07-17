@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
+
+
+.music-list-outer-container {
+
+  
+// background-color: darkgray;
+  h2, 
+  p {
+    padding: 25px;
+  }
+  
+  .lista-musica {
+    padding: 25px;
+    position: relative;
+    font-family: 'Roboto Mono', monospace;
+    width: auto;
+
+    .element {
+      list-style: none;
+      margin-bottom: 20px;
+      display: list-item !important;
+      
+    }
+    
+  }
+}
