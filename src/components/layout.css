@@ -751,7 +751,7 @@ li {
 a {
   text-decoration: none;
   padding: 10px;
-  font-size: 20px;
+  /* font-size: 20px; */
   text-transform: uppercase;
   font-family: "Bowlby One SC", cursive;
   color: #000;

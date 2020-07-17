@@ -8,6 +8,7 @@ import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
+import { TiStar, TiPlus } from 'react-icons/ti';
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -105,15 +106,145 @@ const Teaching = ({ intl }) => {
         <div className="card-container small-cont">
           <div className="card-wrapper small">
             <div className="small-card-container">
+              <h2>Sostenitori</h2>
               <div className="small-text">
-                <h4>Per tutti i sostenitori </h4>
-                <p>
-                  ogni mese sarà inviato un fascicolo di una raccolta di
-                  dispense sulla storia del jazz con le biografie dei jazzisti
-                  più importanti. Ogni biografia è munita d’indicazioni di
-                  ascolti, cioè di link (Youtube) corrispondenti ad importanti
-                  audio e filmati dei vari musicisti.
-                </p>
+                <h4>5€ (quota mensile) - Riceveranno ogni mese: </h4>
+                <div>
+                  <span className="list">
+                    <TiStar/> Una dispensa sulla storia del jazz e una biografia di uno
+                    dei più importanti musicisti corredata di link di filmati e
+                    registrazioni audio.
+                  </span>
+                  <br />
+                  <br />
+                  <span className="list">
+                  <TiStar/> Mp3 di 2 brani tratti da vari bootleg di concerti
+                    effettuati tra il 1983 e il 1985 nel jazz club fiorentino
+                    Salt Peanuts (tra i vari musicisti che presero parte ai
+                    concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw
+                    Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>Sostenitori Premium (musicisti amatoriali o studenti)</h2>
+              <div className="small-text">
+                <h4>
+                  10 € - Oltre alle dispense sulla storia del jazz e gli mp3,
+                  riceveranno ogni mese:
+                </h4>
+                <div>
+                  <span className="list">
+                  <TiStar/> 2 esercizi di tecnica per lo sviluppo dell’improvvisazione
+                    oppure un arrangiamento (per piccole formazioni - max
+                    sestetto) di uno standard a scelta nella lista (il titolo
+                    del brano dovrà essere inviato per email ogni mese).
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>Sostenitori Special (musicisti amatoriali o studenti)</h2>
+              <div className="small-text">
+                <h4>
+                  15 € - Oltre alle dispense sulla storia del jazz e gli mp3,
+                  riceveranno ogni mese:
+                </h4>
+                <div>
+                  <span className="list">
+                  <TiStar/> 4 esercizi di tecnica per lo sviluppo dell’improvvisazione
+                    oppure 2 arrangiamenti (per piccole formazioni - max
+                    sestetto) di uno standard a scelta nella
+                    <div style={{ color: `red` }}>lista</div> (il titolo del
+                    brano dovrà essere inviato per email ogni mese).
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1 className="reward-title">LEZIONI ONLINE</h1>
+        <div className="card-container small-cont">
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>30€</h2>
+              <div className="small-text">
+                <div>
+                  <span className="list">
+                  <TiStar/> 1 lezione mensile individuale di 90 min. <TiPlus /> materiale
+                    didattico consistente in pdf di esercizi con esempi audio e
+                    dispense di armonia.
+                  </span>
+                  <br />
+
+                  <h4> In <TiPlus /> ogni mese riceveranno: </h4>
+                  <span className="list">
+                  <TiStar/> una dispensa sulla storia del jazz e una biografia di uno
+                    dei più importanti musicisti corredata di link di filmati e
+                    registrazioni audio.
+                    <br />
+                    <br /> <TiStar/> Mp3 di 2 brani tratti da vari bootleg di concerti
+                    effettuati tra il 1983 e il 1985 nel jazz club fiorentino
+                    Salt Peanuts (tra i vari musicisti che presero parte ai
+                    concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw
+                    Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>50€</h2>
+              <div className="small-text">
+                <div>
+                  <span className="list">
+                  <TiStar/> 2 lezioni mensili individuali di 90 min. <TiPlus /> il materiale
+                    didattico.
+                    <br />
+                    <TiStar/> Le dispense sulla storia del jazz.
+                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>80€</h2>
+              <div className="small-text">
+                <div>
+                  <span className="list">
+                  <TiStar/> 4 lezioni mensili individuali di 90 min. <TiPlus /> il materiale
+                    didattico.
+                    <br />
+                    <TiStar/> Le dispense sulla storia del jazz.
+                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="card-wrapper small">
+            <div className="small-card-container">
+              <h2>140€</h2>
+              <div className="small-text">
+                <div>
+                  <span className="list">
+                  <TiStar/> 8 lezioni (in 1 o 2 mesi) individuali di 90 min. <TiPlus /> il
+                    materiale didattico.
+                    <br />
+                    <TiStar/> Le dispense sulla storia del jazz.
+                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -121,51 +252,19 @@ const Teaching = ({ intl }) => {
           <div className="card-wrapper small">
             <div className="small-card-container">
               <div className="small-text">
-                <h4>Sostenitori standard 5 € mensili</h4>
-                <p>
-                  ogni mese sarà inviato un bootleg storico in mp3 di un brano
-                  tratto dalle registrazioni di concerti effettuati nel jazz
-                  club fiorentino Salt Peanuts tra il 1983 e il 1985. (tra i
-                  vari musicisti che presero parte ai concerti figurano Lee
-                  Konitz, Chet Baker, Eddie Lookjaw Davis, Sal Nistico, Al Cohn,
-                  Albert Mangelsdorff.)
-                </p>
+                <div>
+                  <div className="list final">
+                    È possibile effettuare anche lezioni collettive, in tal caso
+                    si mantengono gli stessi prezzi delle individuali dividendo
+                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
+                    5 tot. 25 € a partecipante
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div className="card-wrapper small">
-            <div className="small-card-container">
-              <div className="small-text">
-                <h4>Sostenitori premium (musicisti amatoriali)</h4>
-                <p>
-                  <ol>10 € mensili</ol> ogni mese sarà inviato un bootleg
-                  storico in mp3 di un brano tratto dalle registrazioni di
-                  concerti effettuati nel jazz club fiorentino Salt Peanuts tra
-                  il 1983 e il 1985. (tra i vari musicisti che presero parte ai
-                  concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw Davis,
-                  Sal Nistico, Al Cohn, Albert Mangelsdorff.) <br />
-                  + ogni mese saranno inviati 2 esercizi dedicati alla tecnica
-                  per l’improvvisazione o un arrangiamento (per piccole
-                  formazioni max sestetto), appositamente realizzato tenendo
-                  conto del livello degli esecutori, di uno standard a vostra
-                  scelta.
-                  <br />
-                  <ol>15 € mensili </ol> ogni mese sarà inviato un bootleg
-                  storico in mp3 di un brano tratto dalle registrazioni di
-                  concerti effettuati nel jazz club fiorentino Salt Peanuts tra
-                  il 1983 e il 1985. (tra i vari musicisti che presero parte ai
-                  concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw Davis,
-                  Sal Nistico, Al Cohn, Albert Mangelsdorff.) <br />
-                  + ogni mese
-                  saranno inviati 4 esercizi dedicati alla tecnica per
-                  l’improvvisazione o 2 arrangiamenti (per piccole formazioni
-                  max sestetto), appositamente realizzato tenendo conto del
-                  livello degli esecutori, di 2 standard a vostra scelta.
-                  <br />
-                </p>
-              </div>
-            </div>
-          </div>
+
         </div>
       </Layout>
     </div>

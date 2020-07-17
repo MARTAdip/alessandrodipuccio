@@ -55,7 +55,7 @@ export const MenuItem = ({ i }) => {
         }}
       >
         <Link to="/teaching" className="link">
-          Teaching
+          Teaching & Patreon
         </Link>
       </div>
       <div

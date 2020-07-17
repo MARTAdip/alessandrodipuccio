@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/index.scss"
-
+import {TiHeartFullOutline} from 'react-icons/ti';
 
 const IndexPage = props => (
   <div className="outer-container-index">
@@ -11,7 +11,7 @@ const IndexPage = props => (
       <SEO title="Alessandro Di Puccio" />
 
       <footer style={{ color: ` white` }}>
-        © {new Date().getFullYear()}, Built with love
+        © {new Date().getFullYear()}, Built with <TiHeartFullOutline/>
         {` `}
       </footer>
     </Layout>

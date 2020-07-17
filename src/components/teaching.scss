@@ -109,7 +109,7 @@
 
   &.small-cont {
     padding-top: 15px;
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       flex-flow: row;
       // max-width: 250px;
     }
@@ -125,7 +125,13 @@
 
     &.small {
       margin: 5px;
+      padding: 10px 0;
     }
+  }
+
+  h2 {
+    color: #000;
+    font-family: "Manrope", sans-serif;
   }
   h1,
   .text {
@@ -154,12 +160,18 @@
       font-weight: bold;
       font-family: "Manrope", sans-serif;
       color: #2f4858;
-      font-size: 22px;
+      // font-size: 22px;
     }
 
-    ol {
+  
+    .list {
       font-style: italic;
-      font-size: 20px;
+      padding: 5px;
+
+
+      &.final {
+        margin-top: 60px;
+      }
     }
   }
   .card-inner {
