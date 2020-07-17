@@ -20,6 +20,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
+            fontSize: `20px`,
             position: `absolute`,
             top: `8px`,
             right: `2px`,
