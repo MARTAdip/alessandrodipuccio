@@ -19,6 +19,28 @@ const Press = ({ intl }) => {
           }
         }
       }
+
+      wire: file(relativePath: { eq: "wireok.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      wire2: file(relativePath: { eq: "wire2ok.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      oneInstrument: file(relativePath: { eq: "oneinstrument004.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -30,6 +52,57 @@ const Press = ({ intl }) => {
         <SEO title="Press" />
         <div className="press-container">
           <div className="press-wrapper">
+            <div className="press-inner-wrapper">
+              <h2 className="titolo">One Instrument</h2>
+              <div>
+                <Img fixed={data.oneInstrument.childImageSharp.fixed} />
+              </div>
+              <span className="description">
+              {intl.formatMessage({ id: "press_description5" })}
+              </span>
+              <br />
+              <div>
+                <Img fixed={data.wire.childImageSharp.fixed} />
+                <Img fixed={data.wire2.childImageSharp.fixed} />
+              </div>
+              <iframe
+                title="oneinstrument"
+                width="100%"
+                height="600"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/692279068&color=%23304463&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <div></div>
+              <div>
+                <a
+                  href="https://hardwax.com/25602/alessandro-di-puccio/one-instrument-sessions-04/"
+                  target="blank"
+                >
+                  hardwax
+                </a>
+                <a
+                  href="https://www.deejay.de/Alessandro_Di_Puccio_One_Instrument_Sessions_ONEINST004EP_Vinyl__940306"
+                  target="blank"
+                >
+                  deejay.de
+                </a>
+                <a
+                  href="https://xlr8r.com/news/donato-dozzy-album-fahmi-mursyid-and-alessandro-di-puccio-next-on-grand-rivers-one-instrument/"
+                  target="blank"
+                >
+                  xlr8r
+                </a>
+                <a
+                  href="https://www.rushhour.nl/record/vinyl/one-instrument-sessions-1"
+                  target="blank"
+                >
+                  rushhour.nl
+                </a>
+              </div>
+            </div>
+
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title1" })}

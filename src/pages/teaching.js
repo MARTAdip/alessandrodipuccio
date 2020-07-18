@@ -10,7 +10,7 @@ import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from "react-icons/ti"
 import Link from "gatsby-link"
-import Lista from "../markdown-pages/Lista.pdf"
+import LISTANEW from "../markdown-pages/LISTANEW.pdf"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -240,7 +240,7 @@ const Teaching = ({ intl }) => {
                     </Link>{" "}
                     (il titolo del brano dovrà essere inviato per email ogni
                     mese).
-                    <a href={Lista} target="_blank" style={{ color: `purple`, textDecoration: `underline` }}>
+                    <a href={LISTANEW} target="_blank" style={{ color: `purple`, textDecoration: `underline` }}>
                       Download Lista
                     </a>
                   </span>
