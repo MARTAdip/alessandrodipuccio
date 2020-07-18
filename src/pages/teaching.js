@@ -10,6 +10,9 @@ import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from 'react-icons/ti';
 import Link from "gatsby-link"
+import  Lista  from "../markdown-pages/Lista.pdf"; 
+
+
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -163,6 +166,7 @@ const Teaching = ({ intl }) => {
                     sestetto) di uno standard a scelta nella
                     <Link className="link" to="/musicList"><div style={{ color: `red`, textDecoration: `underline` }}>lista</div></Link> (il titolo del
                     brano dovrà essere inviato per email ogni mese).
+                    <a href= {Lista} target = "_blank">Download Pdf</a>
                   </span>
                 </div>
               </div>

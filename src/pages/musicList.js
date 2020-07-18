@@ -10,6 +10,7 @@ const MusicList = () => (
       <div>
         <h2>Main Stream/Standards</h2>
         <p>()(easy)2(medium)3(hard)</p>
+        {/* PRIMA COLONNA */}
         <ul className="lista-musica">
           <li className="element">All The Things You Are - 2</li>
           <li className="element">Autumn Leaves</li>
@@ -69,8 +70,89 @@ const MusicList = () => (
         <ul className="lista-musica">
           <li className="element">Take The "A" Train</li>
         </ul>
+
+         {/* SECONDA COLONNA */}
+         <ul className="lista-musica two">
+          <li className="element">The Days Of Wine And Roses</li>
+          <li className="element">There Is No Greater Love</li>
+        </ul>
+
+         <ul className="lista-musica two">
+          <li className="element">There Will Never Be Another You</li>
+          <li className="element">They Can't Take That Away From Me</li>
+          <li className="element">What A Difference a Day Made</li>
+          <li className="element">What This Thing Called Love</li>
+          <li className="element">Without A Song</li>
+          <li className="element">Yesterday</li>
+        </ul>
+
+          <h2>Ballads</h2>
+
+          <ul className="lista-musica two">
+          <li className="element">A Child Is Born</li>
+          <li className="element">Ask Me Now</li>
+          <li className="element">Body And Soul</li>
+        </ul>
+
+        <ul className="lista-musica two">
+          <li className="element">But Beautiful</li>
+          <li className="element">Come Sunday</li>
+          <li className="element">Darn That Dream</li>
+        </ul>
+
+        <ul className="lista-musica two">
+          <li className="element">Day Dream</li>
+          <li className="element">God Bless The Child</li>
+          <li className="element">I Can’t Get Started</li>
+          <li className="element">If You Could See Me Now</li>
+          <li className="element">In A Sentimental Mood</li>
+        </ul>
+
+        <ul className="lista-musica two">
+          <li className="element">I Remember Clifford</li>
+          <li className="element">Lover Man</li>
+        </ul>
+
+
+        <ul className="lista-musica two">
+          <li className="element">Memories Of You</li>
+          <li className="element">Misty</li>
+          <li className="element">My Funny Valentine</li>
+          <li className="element">My One And Only Love</li>
+          <li className="element">Nearness Of You</li>
+          <li className="element">Over The Rainbow</li>
+          <li className="element">Polka Dots And Moonbeams </li>
+          <li className="element">Round Midnight</li>
+          <li className="element">Ruby My Dear</li>
+          <li className="element">Save Your Love For me</li>
+          <li className="element">Soul Eyes</li>
+          <li className="element">Stardust</li>
+          <li className="element">Skylark</li>
+          <li className="element">Solitude</li>
+          <li className="element">Sophisticated Lady</li>
+          <li className="element">Tenderly</li>
+        </ul>
+
+
       </div>
   </div>
 )
 
 export default MusicList
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
