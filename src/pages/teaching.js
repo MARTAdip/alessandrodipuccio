@@ -8,11 +8,9 @@ import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
-import { TiStar, TiPlus } from 'react-icons/ti';
+import { TiStar, TiPlus } from "react-icons/ti"
 import Link from "gatsby-link"
-import  Lista  from "../markdown-pages/Lista.pdf"; 
-
-
+import Lista from "../markdown-pages/Lista.pdf"
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -35,6 +33,56 @@ const Teaching = ({ intl }) => {
       ) {
         childImageSharp {
           fixed(quality: 100, width: 500, height: 370) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+
+      reward1: file(relativePath: { eq: "01.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward2: file(relativePath: { eq: "02.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward3: file(relativePath: { eq: "03.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward4: file(relativePath: { eq: "04.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward5: file(relativePath: { eq: "05.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward6: file(relativePath: { eq: "06.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      reward7: file(relativePath: { eq: "07.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 120, height: 120) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -112,17 +160,23 @@ const Teaching = ({ intl }) => {
             <div className="small-card-container">
               <h2>Sostenitori</h2>
               <div className="small-text">
+                  <div className="img-reward">
+                    <Img
+                      fixed={data.reward1.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
                 <h4>5€ (quota mensile) - Riceveranno ogni mese: </h4>
                 <div>
                   <span className="list">
-                    <TiStar/> Una dispensa sulla storia del jazz e una biografia di uno
-                    dei più importanti musicisti corredata di link di filmati e
-                    registrazioni audio.
+                    <TiStar /> Una dispensa sulla storia del jazz e una
+                    biografia di uno dei più importanti musicisti corredata di
+                    link di filmati e registrazioni audio.
                   </span>
                   <br />
                   <br />
                   <span className="list">
-                  <TiStar/> Mp3 di 2 brani tratti da vari bootleg di concerti
+                    <TiStar /> Mp3 di 2 brani tratti da vari bootleg di concerti
                     effettuati tra il 1983 e il 1985 nel jazz club fiorentino
                     Salt Peanuts (tra i vari musicisti che presero parte ai
                     concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw
@@ -136,16 +190,23 @@ const Teaching = ({ intl }) => {
             <div className="small-card-container">
               <h2>Sostenitori Premium (musicisti amatoriali o studenti)</h2>
               <div className="small-text">
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward2.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
                 <h4>
                   10 € - Oltre alle dispense sulla storia del jazz e gli mp3,
                   riceveranno ogni mese:
                 </h4>
                 <div>
                   <span className="list">
-                  <TiStar/> 2 esercizi di tecnica per lo sviluppo dell’improvvisazione
-                    oppure un arrangiamento (per piccole formazioni - max
-                    sestetto) di uno standard a scelta nella lista (il titolo
-                    del brano dovrà essere inviato per email ogni mese).
+                    <TiStar /> 2 esercizi di tecnica per lo sviluppo
+                    dell’improvvisazione oppure un arrangiamento (per piccole
+                    formazioni - max sestetto) di uno standard a scelta nella
+                    lista (il titolo del brano dovrà essere inviato per email
+                    ogni mese).
                   </span>
                 </div>
               </div>
@@ -155,18 +216,33 @@ const Teaching = ({ intl }) => {
             <div className="small-card-container">
               <h2>Sostenitori Special (musicisti amatoriali o studenti)</h2>
               <div className="small-text">
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward4.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
                 <h4>
                   15 € - Oltre alle dispense sulla storia del jazz e gli mp3,
                   riceveranno ogni mese:
                 </h4>
                 <div>
                   <span className="list">
-                  <TiStar/> 4 esercizi di tecnica per lo sviluppo dell’improvvisazione
-                    oppure 2 arrangiamenti (per piccole formazioni - max
-                    sestetto) di uno standard a scelta nella
-                    <Link className="link" to="/musicList"><div style={{ color: `red`, textDecoration: `underline` }}>lista</div></Link> (il titolo del
-                    brano dovrà essere inviato per email ogni mese).
-                    <a href= {Lista} target = "_blank">Download Pdf</a>
+                    <TiStar /> 4 esercizi di tecnica per lo sviluppo
+                    dell’improvvisazione oppure 2 arrangiamenti (per piccole
+                    formazioni - max sestetto) di uno standard a scelta nella
+                    <Link className="link" to="/musicList">
+                      <div
+                        style={{ color: `purple`, textDecoration: `underline` }}
+                      >
+                        lista
+                      </div>
+                    </Link>{" "}
+                    (il titolo del brano dovrà essere inviato per email ogni
+                    mese).
+                    <a href={Lista} target="_blank" style={{ color: `purple`, textDecoration: `underline` }}>
+                      Download Lista
+                    </a>
                   </span>
                 </div>
               </div>
@@ -178,34 +254,44 @@ const Teaching = ({ intl }) => {
         <div className="card-container small-cont">
           <div className="card-wrapper small">
             <div className="small-card-container">
-              <h2>30€</h2>
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward3.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
+              <h4>30€</h4>
               <div className="small-text">
                 <div>
                   <span className="list">
-                  <TiStar/> 1 lezione mensile individuale di 90 min. <TiPlus /> materiale
-                    didattico consistente in pdf di esercizi con esempi audio e
-                    dispense di armonia.
+                    <TiStar /> 1 lezione mensile individuale di 90 min.{" "}
+                    <TiPlus /> materiale didattico consistente in pdf di
+                    esercizi con esempi audio e dispense di armonia.
                   </span>
                   <br />
 
-                  <h4> In <TiPlus /> ogni mese riceveranno: </h4>
+                  <h4>
+                    {" "}
+                    In <TiPlus /> ogni mese riceveranno:{" "}
+                  </h4>
                   <span className="list">
-                  <TiStar/> una dispensa sulla storia del jazz e una biografia di uno
-                    dei più importanti musicisti corredata di link di filmati e
-                    registrazioni audio.
+                    <TiStar /> una dispensa sulla storia del jazz e una
+                    biografia di uno dei più importanti musicisti corredata di
+                    link di filmati e registrazioni audio.
                     <br />
-                    <br /> <TiStar/> Mp3 di 2 brani tratti da vari bootleg di concerti
-                    effettuati tra il 1983 e il 1985 nel jazz club fiorentino
-                    Salt Peanuts (tra i vari musicisti che presero parte ai
-                    concerti figurano Lee Konitz, Chet Baker, Eddie Lookjaw
-                    Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
-                    <br /> 
-                    <br /> 
-                    (È possibile effettuare anche lezioni collettive, in tal caso
-                    si mantengono gli stessi prezzi delle individuali dividendo
-                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
-                    5 tot. 25 € a partecipante)
+                    <br /> <TiStar /> Mp3 di 2 brani tratti da vari bootleg di
+                    concerti effettuati tra il 1983 e il 1985 nel jazz club
+                    fiorentino Salt Peanuts (tra i vari musicisti che presero
+                    parte ai concerti figurano Lee Konitz, Chet Baker, Eddie
+                    Lookjaw Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
+                    <br />
+                    <br />
+                    (È possibile effettuare anche lezioni collettive, in tal
+                    caso si mantengono gli stessi prezzi delle individuali
+                    dividendo la cifra fra il numero dei partecipanti (max 4
+                    persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
+                    <TiPlus />5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -213,22 +299,29 @@ const Teaching = ({ intl }) => {
           </div>
           <div className="card-wrapper small">
             <div className="small-card-container">
-              <h2>50€</h2>
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward5.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
+              <h4>50€</h4>
               <div className="small-text">
                 <div>
                   <span className="list">
-                  <TiStar/> 2 lezioni mensili individuali di 90 min. <TiPlus /> il materiale
-                    didattico.
+                    <TiStar /> 2 lezioni mensili individuali di 90 min.{" "}
+                    <TiPlus /> il materiale didattico.
                     <br />
-                    <TiStar/> Le dispense sulla storia del jazz.
-                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
-                    <br /> 
-                    <br /> 
-                    (È possibile effettuare anche lezioni collettive, in tal caso
-                    si mantengono gli stessi prezzi delle individuali dividendo
-                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
-                    5 tot. 25 € a partecipante)
+                    <TiStar /> Le dispense sulla storia del jazz.
+                    <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
+                    <br />
+                    <br />
+                    (È possibile effettuare anche lezioni collettive, in tal
+                    caso si mantengono gli stessi prezzi delle individuali
+                    dividendo la cifra fra il numero dei partecipanti (max 4
+                    persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
+                    <TiPlus />5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -236,22 +329,29 @@ const Teaching = ({ intl }) => {
           </div>
           <div className="card-wrapper small">
             <div className="small-card-container">
-              <h2>80€</h2>
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward6.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
+              <h4>80€</h4>
               <div className="small-text">
                 <div>
                   <span className="list">
-                  <TiStar/> 4 lezioni mensili individuali di 90 min. <TiPlus /> il materiale
-                    didattico.
+                    <TiStar /> 4 lezioni mensili individuali di 90 min.{" "}
+                    <TiPlus /> il materiale didattico.
                     <br />
-                    <TiStar/> Le dispense sulla storia del jazz.
-                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
-                    <br /> 
-                    <br /> 
-                    (È possibile effettuare anche lezioni collettive, in tal caso
-                    si mantengono gli stessi prezzi delle individuali dividendo
-                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
-                    5 tot. 25 € a partecipante)
+                    <TiStar /> Le dispense sulla storia del jazz.
+                    <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
+                    <br />
+                    <br />
+                    (È possibile effettuare anche lezioni collettive, in tal
+                    caso si mantengono gli stessi prezzi delle individuali
+                    dividendo la cifra fra il numero dei partecipanti (max 4
+                    persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
+                    <TiPlus />5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
@@ -260,30 +360,34 @@ const Teaching = ({ intl }) => {
 
           <div className="card-wrapper small">
             <div className="small-card-container">
-              <h2>140€</h2>
+                <div className="img-reward">
+                    <Img
+                      fixed={data.reward7.childImageSharp.fixed}
+                      className=""
+                    />
+                  </div>
+              <h4>140€</h4>
               <div className="small-text">
                 <div>
                   <span className="list">
-                  <TiStar/> 8 lezioni (in 1 o 2 mesi) individuali di 90 min. <TiPlus /> il
-                    materiale didattico.
+                    <TiStar /> 8 lezioni (in 1 o 2 mesi) individuali di 90 min.{" "}
+                    <TiPlus /> il materiale didattico.
                     <br />
-                    <TiStar/> Le dispense sulla storia del jazz.
-                    <br /> <TiStar/> Gli mp3 dei concerti del Salt Peanuts.
-                    <br /> 
-                    <br /> 
-                    (È possibile effettuare anche lezioni collettive, in tal caso
-                    si mantengono gli stessi prezzi delle individuali dividendo
-                    la cifra fra il numero dei partecipanti (max 4 persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20 <TiPlus />
-                    5 tot. 25 € a partecipante)
+                    <TiStar /> Le dispense sulla storia del jazz.
+                    <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
+                    <br />
+                    <br />
+                    (È possibile effettuare anche lezioni collettive, in tal
+                    caso si mantengono gli stessi prezzi delle individuali
+                    dividendo la cifra fra il numero dei partecipanti (max 4
+                    persone) <TiPlus />
+                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
+                    <TiPlus />5 tot. 25 € a partecipante)
                   </span>
                 </div>
               </div>
             </div>
           </div>
-
-          
-
         </div>
       </Layout>
     </div>

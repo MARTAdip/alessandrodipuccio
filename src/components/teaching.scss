@@ -126,6 +126,10 @@
     &.small {
       margin: 5px;
       padding: 10px 0;
+
+      .img-reward {
+        margin-bottom: 10px;
+      }
     }
   }
 
@@ -152,16 +156,14 @@
       padding: 15px;
     }
   }
+  h4 {
+    font-weight: bold;
+    font-family: "Manrope", sans-serif;
+    color: #2f4858;
+  }
   .small-text {
     color: #000;
     font-family: "Manrope", sans-serif;
-
-    h4 {
-      font-weight: bold;
-      font-family: "Manrope", sans-serif;
-      color: #2f4858;
-      // font-size: 22px;
-    }
 
   
     .list {
