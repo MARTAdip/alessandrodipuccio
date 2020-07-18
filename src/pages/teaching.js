@@ -160,12 +160,12 @@ const Teaching = ({ intl }) => {
             <div className="small-card-container">
               <h2>Sostenitori</h2>
               <div className="small-text">
-                  <div className="img-reward">
-                    <Img
-                      fixed={data.reward1.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+                <div className="img-reward">
+                  <Img
+                    fixed={data.reward1.childImageSharp.fixed}
+                    className=""
+                  />
+                </div>
                 <h4>5€ (quota mensile) - Riceveranno ogni mese: </h4>
                 <div>
                   <span className="list">
@@ -191,11 +191,11 @@ const Teaching = ({ intl }) => {
               <h2>Sostenitori Premium (musicisti amatoriali o studenti)</h2>
               <div className="small-text">
                 <div className="img-reward">
-                    <Img
-                      fixed={data.reward2.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+                  <Img
+                    fixed={data.reward2.childImageSharp.fixed}
+                    className=""
+                  />
+                </div>
                 <h4>
                   10 € - Oltre alle dispense sulla storia del jazz e gli mp3,
                   riceveranno ogni mese:
@@ -217,11 +217,11 @@ const Teaching = ({ intl }) => {
               <h2>Sostenitori Special (musicisti amatoriali o studenti)</h2>
               <div className="small-text">
                 <div className="img-reward">
-                    <Img
-                      fixed={data.reward4.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+                  <Img
+                    fixed={data.reward4.childImageSharp.fixed}
+                    className=""
+                  />
+                </div>
                 <h4>
                   15 € - Oltre alle dispense sulla storia del jazz e gli mp3,
                   riceveranno ogni mese:
@@ -240,7 +240,11 @@ const Teaching = ({ intl }) => {
                     </Link>{" "}
                     (il titolo del brano dovrà essere inviato per email ogni
                     mese).
-                    <a href={LISTANEW} target="_blank" style={{ color: `purple`, textDecoration: `underline` }}>
+                    <a
+                      href={LISTANEW}
+                      target="_blank"
+                      style={{ color: `purple`, textDecoration: `underline` }}
+                    >
                       Download Lista
                     </a>
                   </span>
@@ -254,12 +258,9 @@ const Teaching = ({ intl }) => {
         <div className="card-container small-cont">
           <div className="card-wrapper small">
             <div className="small-card-container">
-                <div className="img-reward">
-                    <Img
-                      fixed={data.reward3.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+              <div className="img-reward">
+                <Img fixed={data.reward3.childImageSharp.fixed} className="" />
+              </div>
               <h4>30€</h4>
               <div className="small-text">
                 <div>
@@ -289,9 +290,9 @@ const Teaching = ({ intl }) => {
                     (È possibile effettuare anche lezioni collettive, in tal
                     caso si mantengono gli stessi prezzi delle individuali
                     dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
-                    <TiPlus />5 tot. 25 € a partecipante)
+                    persone) <TiPlus /> l’aggiunta di 5 € a persona. ipotesi: 1
+                    lezioni mensile (30 €) per 2 persone {">"} 15 + 5 tot. 20 €
+                    a partecipante)
                   </span>
                 </div>
               </div>
@@ -299,12 +300,9 @@ const Teaching = ({ intl }) => {
           </div>
           <div className="card-wrapper small">
             <div className="small-card-container">
-                <div className="img-reward">
-                    <Img
-                      fixed={data.reward5.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+              <div className="img-reward">
+                <Img fixed={data.reward5.childImageSharp.fixed} className="" />
+              </div>
               <h4>50€</h4>
               <div className="small-text">
                 <div>
@@ -319,9 +317,9 @@ const Teaching = ({ intl }) => {
                     (È possibile effettuare anche lezioni collettive, in tal
                     caso si mantengono gli stessi prezzi delle individuali
                     dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
-                    <TiPlus />5 tot. 25 € a partecipante)
+                    persone) <TiPlus /> l’aggiunta di 5 € a persona. ipotesi: 2
+                    lezioni mensili (50 €) per 2 persone {">"} 25 + 5 tot. 30 €
+                    a partecipante)
                   </span>
                 </div>
               </div>
@@ -329,12 +327,9 @@ const Teaching = ({ intl }) => {
           </div>
           <div className="card-wrapper small">
             <div className="small-card-container">
-                <div className="img-reward">
-                    <Img
-                      fixed={data.reward6.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+              <div className="img-reward">
+                <Img fixed={data.reward6.childImageSharp.fixed} className="" />
+              </div>
               <h4>80€</h4>
               <div className="small-text">
                 <div>
@@ -349,9 +344,9 @@ const Teaching = ({ intl }) => {
                     (È possibile effettuare anche lezioni collettive, in tal
                     caso si mantengono gli stessi prezzi delle individuali
                     dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
-                    <TiPlus />5 tot. 25 € a partecipante)
+                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 4
+                    lezioni mensili (80 €) per 4 persone {">"} 20 + 5 tot. 25 €
+                    a partecipante)
                   </span>
                 </div>
               </div>
@@ -360,12 +355,9 @@ const Teaching = ({ intl }) => {
 
           <div className="card-wrapper small">
             <div className="small-card-container">
-                <div className="img-reward">
-                    <Img
-                      fixed={data.reward7.childImageSharp.fixed}
-                      className=""
-                    />
-                  </div>
+              <div className="img-reward">
+                <Img fixed={data.reward7.childImageSharp.fixed} className="" />
+              </div>
               <h4>140€</h4>
               <div className="small-text">
                 <div>
@@ -380,9 +372,9 @@ const Teaching = ({ intl }) => {
                     (È possibile effettuare anche lezioni collettive, in tal
                     caso si mantengono gli stessi prezzi delle individuali
                     dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus />
-                    l’aggiunta di 5 € a persona es: 4 mensili per 4 persone 20{" "}
-                    <TiPlus />5 tot. 25 € a partecipante)
+                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 8 lezioni (2
+                    mesi) (140 €) per 4 persone {">"} 35 + 5 tot. 40 € a
+                    partecipante) 
                   </span>
                 </div>
               </div>
