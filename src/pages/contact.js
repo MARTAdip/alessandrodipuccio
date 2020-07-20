@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/contact.scss"
+import privacyPolicy from "../markdown-pages/privacyPolicy.pdf"
 
 const Contact = () => (
   <div className="contact-outer-wrapper">
@@ -26,8 +27,18 @@ const Contact = () => (
             <span>Press</span>
             <a href="mailto:dpelati@icloud.com">Daniela Pelati</a>
           </div>
+          <div className="inner">
+            <a
+              href={privacyPolicy}
+              target="_blank"
+              style={{ color: `purple`, textDecoration: `underline` }}
+            >
+              Privacy Policy
+            </a>
+          </div>
         </div>
       </div>
+  
       {/* <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with love
         {` `}
