@@ -62,6 +62,12 @@
         }
       }
     }
+
+    .press-inner-wrapper {
+      h2 {
+        font-family: "Abril Fatface", cursive;
+      }
+    }
   }
 }
 
@@ -101,7 +107,6 @@
   justify-content: flex-start;
   padding-top: 100px;
 
-  
   @media (min-width: 2560px) {
     max-width: 2500px;
     margin: 0 auto;
@@ -165,11 +170,9 @@
     color: #000;
     font-family: "Manrope", sans-serif;
 
-  
     .list {
       font-style: italic;
       padding: 5px;
-
 
       &.final {
         margin-top: 60px;

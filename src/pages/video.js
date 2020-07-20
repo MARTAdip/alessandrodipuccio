@@ -56,11 +56,6 @@ const Video = ({ intl }) => {
       </Link>
         <div className="description-wrapper">
           <div className="description">{intl.formatMessage({ id: "video_description" })}</div>
-        
-          <h2>Il Collettivo FuOri </h2>
-          <div className="description">
-            {intl.formatMessage({ id: "collettivo_fuori" })}
-          </div>
         </div>
         <div className="video-container" id="video-index">
           <AwesomeSlider

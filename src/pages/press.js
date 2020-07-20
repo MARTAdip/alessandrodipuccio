@@ -62,6 +62,13 @@ const Press = ({ intl }) => {
           }
         }
       }
+      fuoriBand: file(relativePath: { eq: "fuoriband.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -103,24 +110,28 @@ const Press = ({ intl }) => {
                 <a
                   href="https://hardwax.com/25602/alessandro-di-puccio/one-instrument-sessions-04/"
                   target="blank"
+                  rel="noreferrer"
                 >
                   hardwax
                 </a>
                 <a
                   href="https://www.deejay.de/Alessandro_Di_Puccio_One_Instrument_Sessions_ONEINST004EP_Vinyl__940306"
                   target="blank"
+                  rel="noreferrer"
                 >
                   deejay.de
                 </a>
                 <a
                   href="https://xlr8r.com/news/donato-dozzy-album-fahmi-mursyid-and-alessandro-di-puccio-next-on-grand-rivers-one-instrument/"
                   target="blank"
+                  rel="noreferrer"
                 >
                   xlr8r
                 </a>
                 <a
                   href="https://www.rushhour.nl/record/vinyl/one-instrument-sessions-1"
                   target="blank"
+                  rel="noreferrer"
                 >
                   rushhour.nl
                 </a>
@@ -144,9 +155,11 @@ const Press = ({ intl }) => {
                 onPlay={e => console.log("onPlay")}
                 // other props here
               />
+              <br />
               <a
                 href="https://www.allaboutjazz.com/genius-loci-festival-di-santa-croce-a-firenze-by-neri-pollastri.php"
                 target="blank"
+                rel="noreferrer"
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
@@ -171,12 +184,38 @@ const Press = ({ intl }) => {
               <a
                 href="https://www.radiorovigo.net/nel-giardino-di-palazzo-casalini-italia-e-america-a-confronto-sotto-il-cielo-stellato/"
                 target="blank"
+                rel="noreferrer"
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
             </div>
             <hr />
 
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  Alessandro Di Puccio racconta "Settembre In Piazza della
+                  Passera"
+                </div>
+                <div className="date">20.07.2019</div>
+              </div>
+
+              <span className="description">
+                Il direttore artistico della manifestazione ospite di Jazz
+                Meeting
+              </span>
+              <br />
+
+              <a
+                href="https://www.tgcom24.mediaset.it/rubriche/alessandro-di-puccio-racconta-settembre-in-piazza-della-passera-_3229858-201902a.shtml"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
+
+            <hr />
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -197,9 +236,11 @@ const Press = ({ intl }) => {
                 onPlay={e => console.log("onPlay")}
                 // other props here
               />
+                <br />
               <a
                 href="https://corrierefiorentino.corriere.it/firenze/notizie/cronaca/19_novembre_05/casa-jazz-dove-crescono-talenti-9a7018ea-ffde-11e9-82b5-426614f2da09.shtml"
                 target="blank"
+                rel="noreferrer"
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
@@ -209,21 +250,27 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  {intl.formatMessage({ id: "press_title2" })}
+                  Musica, pittura, foto e video. Allo Spazio Alfieri di Firenze
+                  la performance multimediale del Collettivo FuOri
                 </div>
-                <div className="date">20.01.2009</div>
+                <div className="date">22.02.2017</div>
               </div>
-
               <span className="description">
-                {intl.formatMessage({ id: "press_description2" })}
+                Il Collettivo FuOri nasce con l’idea di un laboratorio
+                permanente che offra la possibilità di far incontrare artisti
+                provenienti dal mondo delle arti figurative e visive (pittura,
+                fotografia, video) con altrettanti artisti del mondo della
+                musica con lo scopo di creare progetti e opere multimediali.
               </span>
               <br />
-              <Img fixed={data.imageOne.childImageSharp.fixed} />
+              <Img fixed={data.fuoriBand.childImageSharp.fixed} />
+              <br />
               <a
-                href="https://www.youtube.com/watch?time_continue=2&v=J6tNTZ5ZVpM&feature=emb_title"
+                href="https://www.tempoliberotoscana.it/event/musica-pittura-foto-e-video-allo-spazio-alfieri-di-firenze-la-performance-multimediale-del-collettivo-fuori/"
                 target="blank"
+                rel="noreferrer"
               >
-                {intl.formatMessage({ id: "press_link2" })}
+                {intl.formatMessage({ id: "press_link1" })}
               </a>
             </div>
 
@@ -244,9 +291,11 @@ const Press = ({ intl }) => {
               </span>
               <br />
               <Img fluid={data.floresTribute.childImageSharp.fluid} />
+              <br />
               <a
                 href="https://www.musicajazz.it/for-those-never-knew-tributo-luca-flores/"
                 target="blank"
+                rel="noreferrer"
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
@@ -295,7 +344,6 @@ const Press = ({ intl }) => {
             </div>
             <hr />
 
-          
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -313,9 +361,62 @@ const Press = ({ intl }) => {
               </span>
               <br />
               <Img fixed={data.janeGoddall.childImageSharp.fixed} />
+              <br />
               <a
                 href="http://www.toscanamusiche.it/les-italiens-concerto-per-il-jane-goodall-institute/"
                 target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
+
+            <hr />
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  {intl.formatMessage({ id: "press_title2" })}
+                </div>
+                <div className="date">20.01.2009</div>
+              </div>
+
+              <span className="description">
+                {intl.formatMessage({ id: "press_description2" })}
+              </span>
+              <br />
+              <Img fixed={data.imageOne.childImageSharp.fixed} />
+              <br />
+              <a
+                href="https://www.youtube.com/watch?time_continue=2&v=J6tNTZ5ZVpM&feature=emb_title"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link2" })}
+              </a>
+            </div>
+            <hr />
+
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  Omaggio al cinema italiano: Totò e Anna Magnani (Lubiana)
+                </div>
+                <div className="date">07-30.04.2009</div>
+              </div>
+
+              <span className="description">
+                La serata inaugurale del 7 aprile alle ore 20.00 vedrà
+                l'esibizione del gruppo musicale di Alessandro Di Puccio in un
+                concerto dal titolo Nannarella e il Principe, con canzoni tratte
+                dal repertorio di Anna Magnani e di Totò: con a seguire la
+                proiezione del film Totò al giro d'Italia, di M. Mattioli.
+              </span>
+              <br />
+
+              <a
+                href="https://iiclubiana.esteri.it/iic_lubiana/it/gli_eventi/calendario/2009/04/omaggio-al-cinema-italiano-toto-e-anna-magnani.html"
+                target="blank"
+                rel="noreferrer"
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>

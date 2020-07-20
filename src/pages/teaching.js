@@ -108,7 +108,22 @@ const Teaching = ({ intl }) => {
                 {intl.formatMessage({ id: "teaching_text4" })}
               </span>
             </div>
+            <div className="press-inner-wrapper">
+              <h2 className="titolo">
+                Corsi di Musica Jazz Accademia Musicale Firenze - dipartimento
+                Jazz
+              </h2>
+
+              <a
+                href="http://www.accademiamusicaledifirenze.it/corsi/corsi-musica-jazz/"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
           </div>
+
           <div
             data-tip={intl.formatMessage({ id: "teaching_image_tooltip" })}
             style={{ margin: `15px 0 15px` }}
@@ -147,6 +162,7 @@ const Teaching = ({ intl }) => {
                 <a
                   href="https://www.patreon.com/alessandrodipuccio"
                   target="blank"
+                  rel="noreferrer"
                 >
                   {intl.formatMessage({ id: "patreon_title" })}
                 </a>
@@ -372,9 +388,9 @@ const Teaching = ({ intl }) => {
                     (È possibile effettuare anche lezioni collettive, in tal
                     caso si mantengono gli stessi prezzi delle individuali
                     dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 8 lezioni (2
-                    mesi) (140 €) per 4 persone {">"} 35 + 5 tot. 40 € a
-                    partecipante) 
+                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 8
+                    lezioni (2 mesi) (140 €) per 4 persone {">"} 35 + 5 tot. 40
+                    € a partecipante)
                   </span>
                 </div>
               </div>
