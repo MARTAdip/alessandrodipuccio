@@ -137,7 +137,9 @@ const Press = ({ intl }) => {
                 </a>
               </div>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -164,7 +166,9 @@ const Press = ({ intl }) => {
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -189,7 +193,9 @@ const Press = ({ intl }) => {
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -215,7 +221,10 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
+
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -236,7 +245,7 @@ const Press = ({ intl }) => {
                 onPlay={e => console.log("onPlay")}
                 // other props here
               />
-                <br />
+              <br />
               <a
                 href="https://corrierefiorentino.corriere.it/firenze/notizie/cronaca/19_novembre_05/casa-jazz-dove-crescono-talenti-9a7018ea-ffde-11e9-82b5-426614f2da09.shtml"
                 target="blank"
@@ -246,7 +255,9 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -274,7 +285,9 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -301,7 +314,9 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title3" })}
@@ -320,7 +335,9 @@ const Press = ({ intl }) => {
                 allowFullScreen
               ></iframe>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -342,7 +359,9 @@ const Press = ({ intl }) => {
                 allowFullScreen
               ></iframe>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -371,7 +390,9 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -394,7 +415,9 @@ const Press = ({ intl }) => {
                 {intl.formatMessage({ id: "press_link2" })}
               </a>
             </div>
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -422,7 +445,9 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-            <hr />
+            <div className="line">
+              <hr />
+            </div>
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title5" })}
