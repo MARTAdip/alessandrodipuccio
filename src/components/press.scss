@@ -1,7 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
-
 .press-outer-wrapper {
   background: url("../images/press4.jpg");
   background-size: contain;
@@ -29,9 +28,8 @@
         align-items: center;
       }
       @media (min-width: 1440px) {
-        
         height: 100%;
-         overflow-y: scroll;
+        overflow-y: scroll;
       }
     }
     .press-inner-wrapper {
@@ -55,13 +53,18 @@
           max-width: 500px;
         }
       }
-      
+
       .rhap_container {
         margin-top: 20px !important;
       }
 
       a {
         color: #fff;
+      }
+
+      .links {
+        display: flex;
+        flex-flow: column;
       }
       iframe {
         margin-top: 10px;
