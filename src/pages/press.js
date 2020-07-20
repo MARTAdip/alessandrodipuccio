@@ -126,6 +126,7 @@ const Press = ({ intl }) => {
                 </a>
               </div>
             </div>
+            <hr />
 
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
@@ -294,7 +295,7 @@ const Press = ({ intl }) => {
             </div>
             <hr />
 
-            <hr />
+          
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -320,6 +321,7 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
+            <hr />
             <div className="press-inner-wrapper">
               <h2 className="titolo">
                 {intl.formatMessage({ id: "press_title5" })}

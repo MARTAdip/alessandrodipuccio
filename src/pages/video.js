@@ -6,8 +6,9 @@ import AwesomeSlider from "react-awesome-slider"
 import AwesomeSliderStyles from "react-awesome-slider/src/styled/cube-animation/cube-animation.scss"
 import "react-awesome-slider/dist/styles.css"
 import "../components/video.scss"
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 const Video = ({ intl }) => {
   // const videoquery = graphql`
@@ -35,6 +36,24 @@ const Video = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="Other Projects" />
+        <Link
+        activeClass="active"
+        to="video-index"
+        spy={true}
+        smooth={true}
+        offset={100}
+        duration={500}
+        style={{
+          display: `flex`,
+          flexFlow: `column`,
+          alignItems: `flex-end`,
+          fontSize: `16px`,
+          textTransform: `none`,
+          textDecoration: `underline`
+        }}
+      >
+        {intl.formatMessage({ id: "submenu_video" })}
+      </Link>
         <div className="description-wrapper">
           <div className="description">{intl.formatMessage({ id: "video_description" })}</div>
         
@@ -43,7 +62,7 @@ const Video = ({ intl }) => {
             {intl.formatMessage({ id: "collettivo_fuori" })}
           </div>
         </div>
-        <div className="video-container">
+        <div className="video-container" id="video-index">
           <AwesomeSlider
             cssModule={AwesomeSliderStyles}
             animation="foldOutAnimation"
