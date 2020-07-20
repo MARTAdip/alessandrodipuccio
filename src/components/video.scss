@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600&display=swap");
+
+
 .awssld__content {
   background-color: transparentize($color: #fff, $amount: 0.7);
 }
@@ -7,18 +10,34 @@
   background-size: cover;
   min-height: 100vh;
 
+  .description-wrapper {
+    border: 1px;
+    border-radius: 5px;
+    background: transparentize($color: black, $amount: 0.6);
+    padding: 12px 38px 12px 20px;
+    .description {
+      color: #fff;
+      font-family: "Manrope", sans-serif;
+      line-height: 25px;
+  
+      // @media (min-width: 758px) {
+      //   max-width: 500px;
+      // }
+    }
+  }
   .video-wrapper-inner {
     .video-text {
       color: #000;
+      font-family: "Manrope", sans-serif;
       margin: 0 auto;
       text-align: center;
       max-width: 250px;
       font-weight: bold;
       margin-top: 20px;
+      font-size: 16px;
 
       @media screen and(min-width: 768px) {
         max-width: 600px;
-        font-size: 22px;
         line-height: 30px;
       }
     }
