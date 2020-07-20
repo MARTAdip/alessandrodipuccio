@@ -74,12 +74,15 @@ const Press = ({ intl }) => {
         <div className="press-container">
           <div className="press-wrapper">
             <div className="press-inner-wrapper">
-              <h2 className="titolo">One Instrument</h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">One Instrument</div>
+                <div className="date">04.11.2019</div>
+              </div>
               <div>
                 <Img fixed={data.oneInstrument.childImageSharp.fixed} />
               </div>
               <span className="description">
-              {intl.formatMessage({ id: "press_description5" })}
+                {intl.formatMessage({ id: "press_description5" })}
               </span>
               <br />
               <div>
@@ -125,9 +128,12 @@ const Press = ({ intl }) => {
             </div>
 
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title1" })}
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  {intl.formatMessage({ id: "press_title1" })}
+                </div>
+                <div className="date">26-28.9.2019</div>
+              </div>
               <span className="description">
                 {intl.formatMessage({ id: "press_description1" })}
               </span>
@@ -146,17 +152,21 @@ const Press = ({ intl }) => {
             </div>
             <hr />
 
-
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                Nel giardino di palazzo Casalini, Italia e America a confronto sotto il cielo stellato
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  Nel giardino di palazzo Casalini, Italia e America a confronto
+                  sotto il cielo stellato
+                </div>
+                <div className="date">23.7.2019</div>
+              </div>
+
               <span className="description">
-              <Img fixed={data.alkaline.childImageSharp.fixed} />
+                <Img fixed={data.alkaline.childImageSharp.fixed} />
                 {/* {intl.formatMessage({ id: "press_description1" })} */}
               </span>
               <br />
-             
+
               <a
                 href="https://www.radiorovigo.net/nel-giardino-di-palazzo-casalini-italia-e-america-a-confronto-sotto-il-cielo-stellato/"
                 target="blank"
@@ -166,13 +176,18 @@ const Press = ({ intl }) => {
             </div>
             <hr />
 
-            
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                La casa del jazz dove crescono talenti
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  La casa del jazz dove crescono talenti
+                </div>
+                <div className="date">05.11.2019</div>
+              </div>
+
               <span className="description">
-              Si chiama «Silence» e nasce in via degli Artisti nei locali della storica scuola dove si sono formati Stefano Bollani, Piero Borri e Marco Lamioni
+                Si chiama «Silence» e nasce in via degli Artisti nei locali
+                della storica scuola dove si sono formati Stefano Bollani, Piero
+                Borri e Marco Lamioni
               </span>
               <br />
               <br />
@@ -191,9 +206,13 @@ const Press = ({ intl }) => {
 
             <hr />
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title2" })}
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  {intl.formatMessage({ id: "press_title2" })}
+                </div>
+                <div className="date">20.01.2009</div>
+              </div>
+
               <span className="description">
                 {intl.formatMessage({ id: "press_description2" })}
               </span>
@@ -207,14 +226,20 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-
             <hr />
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                For Those I Never Knew – Tributo a Luca Flores
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  For Those I Never Knew – Tributo a Luca Flores
+                </div>
+                <div className="date">14.09.2017</div>
+              </div>
               <span className="description">
-              Tra gli eventi di maggior spicco va senz’altro annoverato il tributo dedicato a Luca Flores da un quintetto riunito dal vibrafonista Alessandro Di Puccio (suo stretto collaboratore e amico fraterno) sotto la denominazione For Those I Never Knew, una delle più suggestive composizioni del pianista. 
+                Tra gli eventi di maggior spicco va senz’altro annoverato il
+                tributo dedicato a Luca Flores da un quintetto riunito dal
+                vibrafonista Alessandro Di Puccio (suo stretto collaboratore e
+                amico fraterno) sotto la denominazione For Those I Never Knew,
+                una delle più suggestive composizioni del pianista.
               </span>
               <br />
               <Img fluid={data.floresTribute.childImageSharp.fluid} />
@@ -246,10 +271,15 @@ const Press = ({ intl }) => {
               ></iframe>
             </div>
             <hr />
+
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title4" })}
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  {intl.formatMessage({ id: "press_title4" })}
+                </div>
+                <div className="date">11.09.2013</div>
+              </div>
+
               <span className="description"></span>
               <br />
               <iframe
@@ -263,15 +293,22 @@ const Press = ({ intl }) => {
               ></iframe>
             </div>
             <hr />
-            
 
             <hr />
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-              Les Italiens, concerto per il Jane Goodall Institute
-              </h2>
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                  Les Italiens, concerto per il Jane Goodall Institute
+                </div>
+                <div className="date">03.02.2012</div>
+              </div>
+
               <span className="description">
-              Il trascinante swing mediterraneo de Les Italiens per la prima volta all’Odeon di Firenze, e per una buona causa: martedì 7 febbraio la big-band fondata da Alessandro di Puccio è protagonista di un concerto-evento a favore del Jane Goodall Institute.
+                Il trascinante swing mediterraneo de Les Italiens per la prima
+                volta all’Odeon di Firenze, e per una buona causa: martedì 7
+                febbraio la big-band fondata da Alessandro di Puccio è
+                protagonista di un concerto-evento a favore del Jane Goodall
+                Institute.
               </span>
               <br />
               <Img fixed={data.janeGoddall.childImageSharp.fixed} />
@@ -301,7 +338,6 @@ const Press = ({ intl }) => {
                 allowFullScreen
               ></iframe>
             </div>
-
           </div>
         </div>
       </Layout>

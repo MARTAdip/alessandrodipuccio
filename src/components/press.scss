@@ -38,11 +38,22 @@
         padding: 50px;
       }
 
-      .titolo {
-        color: #fff;
-        font-family: "Abril Fatface", cursive;
-
-        // color: #2f4858;
+      .titolo-wrapper {
+        display: flex;
+        flex-flow: row;
+        justify-content: space-between;
+        .titolo,
+        .date {
+          color: #fff;
+          font-family: "Abril Fatface", cursive;
+          
+        }
+       .titolo {
+        font-size: 24px;
+       }
+       .date {
+         font-size: 18px;
+       }
       }
       .description {
         color: #fff;
