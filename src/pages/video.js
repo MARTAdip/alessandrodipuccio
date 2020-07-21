@@ -37,31 +37,47 @@ const Video = ({ intl }) => {
       <Layout>
         <SEO title="Other Projects" />
         <Link
-        activeClass="active"
-        to="video-index"
-        spy={true}
-        smooth={true}
-        offset={100}
-        duration={500}
-        style={{
-          display: `flex`,
-          flexFlow: `column`,
-          alignItems: `flex-end`,
-          fontSize: `16px`,
-          textTransform: `none`,
-          textDecoration: `underline`
-        }}
-      >
-        {intl.formatMessage({ id: "submenu_video" })}
-      </Link>
+          activeClass="active"
+          to="video-index"
+          spy={true}
+          smooth={true}
+          offset={100}
+          duration={500}
+          style={{
+            display: `flex`,
+            flexFlow: `column`,
+            alignItems: `flex-end`,
+            fontSize: `16px`,
+            textTransform: `none`,
+            textDecoration: `underline`,
+          }}
+        >
+          {intl.formatMessage({ id: "submenu_video" })}
+        </Link>
         <div className="description-wrapper">
-          <div className="description">{intl.formatMessage({ id: "video_description" })}</div>
+          <div className="description">
+            {intl.formatMessage({ id: "video_description" })}
+          </div>
         </div>
         <div className="video-container" id="video-index">
           <AwesomeSlider
             cssModule={AwesomeSliderStyles}
             animation="foldOutAnimation"
           >
+            <div className="video-wrapper-inner">
+              <iframe
+                title="sindrome"
+                width="560"
+                height="315"
+                src="https://www.youtube.com/embed/GxpiGI2m9u8"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <div className="video-text">
+                {intl.formatMessage({ id: "text-other-projects7" })}
+              </div>
+            </div>
             <div className="video-wrapper-inner">
               <iframe
                 title="auf wiedersehen, goodbye"
