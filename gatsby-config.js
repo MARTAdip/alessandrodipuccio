@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Alessandro Di Puccio`,
-    description: `Alessandro Di Puccio Official Website. Alessandro Di Puccio (Firenze, 4 Ottobre 1958) è un musicista jazz, compositore e arrangiatore, vibrafonista e batterista. Attico come didatta e visual storyteller.`,
+    description: `Alessandro Di Puccio Official Website. Alessandro Di Puccio (Firenze, 4 Ottobre 1958) è un musicista jazz, compositore e arrangiatore, vibrafonista e batterista. Attivo come didatta e visual storyteller.`,
     author: `marta di puccio`,
   },
   plugins: [
