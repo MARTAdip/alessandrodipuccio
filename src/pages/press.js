@@ -321,19 +321,20 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-
             <div className="line">
               <hr />
             </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                Il jazz toscano ricorda Luca Flores, all’ExWide di Pisa
+                  Il jazz toscano ricorda Luca Flores, all’ExWide di Pisa
                 </div>
                 <div className="date">14.09.2016</div>
               </div>
               <span className="description">
-              Sabato 16 gennaio. Tributo al geniale pianista, sulla scia del suo Matt Jazz Quintet. Sul palco, tra gli altri, due storici collaboratori: Alessandro Di Puccio e Alessandro Fabbri.
+                Sabato 16 gennaio. Tributo al geniale pianista, sulla scia del
+                suo Matt Jazz Quintet. Sul palco, tra gli altri, due storici
+                collaboratori: Alessandro Di Puccio e Alessandro Fabbri.
               </span>
               <br />
               <Img fixed={data.flores.childImageSharp.fixed} />
@@ -353,12 +354,19 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                "Curved Lights": domani Simone Santini e Alessandro Di Puccio in concerto al Politeama
+                  "Curved Lights": domani Simone Santini e Alessandro Di Puccio
+                  in concerto al Politeama
                 </div>
                 <div className="date">13.04.2015</div>
               </div>
               <span className="description">
-              Ormai l'elettronica svolge un ruolo fondamentale nelle produzioni musicali di tutto il globo – dice Di Puccio – “costringendo” molti artisti ad una continua, se non frenetica, ricerca di mezzi e forme espressive in linea con la velocità dell'evolversi contemporaneo.”  Partendo da questi presupposti, Curved Lights pone le proprie basi sull'interattività tra elettronica e strumenti acustici. 
+                Ormai l'elettronica svolge un ruolo fondamentale nelle
+                produzioni musicali di tutto il globo – dice Di Puccio –
+                “costringendo” molti artisti ad una continua, se non frenetica,
+                ricerca di mezzi e forme espressive in linea con la velocità
+                dell'evolversi contemporaneo.” Partendo da questi presupposti,
+                Curved Lights pone le proprie basi sull'interattività tra
+                elettronica e strumenti acustici.
               </span>
               <br />
               <br />
@@ -371,19 +379,19 @@ const Press = ({ intl }) => {
               </a>
             </div>
 
-
             <div className="line">
               <hr />
             </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
-                <div className="titolo">
-                Barga ricorda Luca Flores
-                </div>
+                <div className="titolo">Barga ricorda Luca Flores</div>
                 <div className="date">23.08.2015</div>
               </div>
               <span className="description">
-              Sabato 22 Barga ricorda Luca Flores (eccezionale pianista scomparso nel ’95, militante nell’orchestra di Barga Jazz nelle prime edizioni del Festival) con il progetto “For those I Never Know” dal titolo di una composizione di Flores.
+                Sabato 22 Barga ricorda Luca Flores (eccezionale pianista
+                scomparso nel ’95, militante nell’orchestra di Barga Jazz nelle
+                prime edizioni del Festival) con il progetto “For those I Never
+                Know” dal titolo di una composizione di Flores.
               </span>
               <br />
               <br />
@@ -399,28 +407,6 @@ const Press = ({ intl }) => {
             <div className="line">
               <hr />
             </div>
-            <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title3" })}
-              </h2>
-              <span className="description">
-                {intl.formatMessage({ id: "press_description3" })}
-              </span>
-              <br />
-              <iframe
-                title="musipolitana"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/FBRQ1cDyGh8"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </div>
-            <div className="line">
-              <hr />
-            </div>
-
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
@@ -525,6 +511,27 @@ const Press = ({ intl }) => {
               >
                 {intl.formatMessage({ id: "press_link1" })}
               </a>
+            </div>
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-inner-wrapper">
+              <h2 className="titolo">
+                {intl.formatMessage({ id: "press_title3" })}
+              </h2>
+              <span className="description">
+                {intl.formatMessage({ id: "press_description3" })}
+              </span>
+              <br />
+              <iframe
+                title="musipolitana"
+                width="450"
+                height="315"
+                src="https://www.youtube.com/embed/FBRQ1cDyGh8"
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             </div>
 
             <div className="line">
