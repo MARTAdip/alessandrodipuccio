@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Alessandro Di Puccio`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Alessandro Di Puccio Official Website. Alessandro Di Puccio (Firenze, 4 Ottobre 1958) è un musicista jazz, compositore e arrangiatore, vibrafonista e batterista. Attico come didatta e visual storyteller.`,
+    author: `marta di puccio`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
