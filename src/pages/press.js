@@ -69,6 +69,13 @@ const Press = ({ intl }) => {
           }
         }
       }
+      flores: file(relativePath: { eq: "flores.jpg" }) {
+        childImageSharp {
+          fixed(quality: 100, width: 300, height: 400) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -307,6 +314,81 @@ const Press = ({ intl }) => {
               <br />
               <a
                 href="https://www.musicajazz.it/for-those-never-knew-tributo-luca-flores/"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
+
+
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                Il jazz toscano ricorda Luca Flores, all’ExWide di Pisa
+                </div>
+                <div className="date">14.09.2016</div>
+              </div>
+              <span className="description">
+              Sabato 16 gennaio. Tributo al geniale pianista, sulla scia del suo Matt Jazz Quintet. Sul palco, tra gli altri, due storici collaboratori: Alessandro Di Puccio e Alessandro Fabbri.
+              </span>
+              <br />
+              <Img fixed={data.flores.childImageSharp.fixed} />
+              <br />
+              <a
+                href="http://www.toscanamusiche.it/il-jazz-toscano-ricorda-luca-flores-allexwide-di-pisa/"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
+
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                "Curved Lights": domani Simone Santini e Alessandro Di Puccio in concerto al Politeama
+                </div>
+                <div className="date">13.04.2015</div>
+              </div>
+              <span className="description">
+              Ormai l'elettronica svolge un ruolo fondamentale nelle produzioni musicali di tutto il globo – dice Di Puccio – “costringendo” molti artisti ad una continua, se non frenetica, ricerca di mezzi e forme espressive in linea con la velocità dell'evolversi contemporaneo.”  Partendo da questi presupposti, Curved Lights pone le proprie basi sull'interattività tra elettronica e strumenti acustici. 
+              </span>
+              <br />
+              <br />
+              <a
+                href="https://www.ilsitodifirenze.it/content/136-curved-lights-domani-simone-santini-e-alessandro-di-puccio-concerto-al-politeama"
+                target="blank"
+                rel="noreferrer"
+              >
+                {intl.formatMessage({ id: "press_link1" })}
+              </a>
+            </div>
+
+
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-inner-wrapper">
+              <div className="titolo-wrapper">
+                <div className="titolo">
+                Barga ricorda Luca Flores
+                </div>
+                <div className="date">23.08.2015</div>
+              </div>
+              <span className="description">
+              Sabato 22 Barga ricorda Luca Flores (eccezionale pianista scomparso nel ’95, militante nell’orchestra di Barga Jazz nelle prime edizioni del Festival) con il progetto “For those I Never Know” dal titolo di una composizione di Flores.
+              </span>
+              <br />
+              <br />
+              <a
+                href="https://www.barganews.com/2015/08/23/barga-ricorda-luca-flores/"
                 target="blank"
                 rel="noreferrer"
               >
