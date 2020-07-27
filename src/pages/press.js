@@ -126,11 +126,11 @@ const Press = ({ intl }) => {
   `)
 
   return (
-    <div className="press-outer-wrapper">
+    <div className="press-outer-wrapper" id="go_to_top">
       <Language />
 
       <Layout>
-        <SEO title="Press" />
+        <SEO title="Press"  />
         <Link
           activeClass="active"
           to="press_archive"
@@ -141,16 +141,18 @@ const Press = ({ intl }) => {
           style={{
             display: `flex`,
             flexFlow: `column`,
-            alignItems: `flex-end`,
-            fontSize: `16px`,
+            alignItems: `flex-start`,
+            fontSize: `20px`,
             textTransform: `none`,
             textDecoration: `underline`,
+            color:`yellow`
           }}
+          
         >
           GO TO PRESS ARCHIVE
         </Link>
-        <div className="press-container">
-          <div className="press-wrapper">
+        <div className="press-container" >
+          <div className="press-wrapper"  >
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">One Instrument</div>
@@ -650,6 +652,25 @@ const Press = ({ intl }) => {
             </div>
           </div>
         </div>
+        <Link
+          activeClass="active"
+          to="go_to_top"
+          spy={true}
+          smooth={true}
+          offset={100}
+          duration={500}
+          style={{
+            display: `flex`,
+            flexFlow: `column`,
+            alignItems: `flex-start`,
+            fontSize: `22px`,
+            textTransform: `none`,
+            textDecoration: `underline`,
+            color: `yellow`
+          }}
+        >
+          GO TO TOP
+        </Link>
       </Layout>
     </div>
   )
