@@ -6,8 +6,9 @@ import AudioPlayer from "react-h5-audio-player"
 import "react-h5-audio-player/lib/styles.css"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import { injectIntl, Link } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
+import { Link, animateScroll as scroll } from "react-scroll"
 
 const Press = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -76,6 +77,51 @@ const Press = ({ intl }) => {
           }
         }
       }
+      archivio_curvedlight: file(
+        relativePath: { eq: "21) 2015Curved Light.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      archivio_1: file(
+        relativePath: { eq: "19) 2013 Di Puccio:Visconti 1.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      archivio_2: file(
+        relativePath: { eq: "20) 2013 Di Puccio:Visconti 2.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      odeon_1: file(
+        relativePath: { eq: "17) 2012 Les Italiens Odeon 1.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      odeon_2: file(
+        relativePath: { eq: "18) 2012 Les Italiens Odeon 2.jpg" }
+      ) {
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -85,6 +131,24 @@ const Press = ({ intl }) => {
 
       <Layout>
         <SEO title="Press" />
+        <Link
+          activeClass="active"
+          to="press_archive"
+          spy={true}
+          smooth={true}
+          offset={100}
+          duration={500}
+          style={{
+            display: `flex`,
+            flexFlow: `column`,
+            alignItems: `flex-end`,
+            fontSize: `16px`,
+            textTransform: `none`,
+            textDecoration: `underline`,
+          }}
+        >
+          GO TO PRESS ARCHIVE
+        </Link>
         <div className="press-container">
           <div className="press-wrapper">
             <div className="press-inner-wrapper">
@@ -357,6 +421,7 @@ const Press = ({ intl }) => {
                   "Curved Lights": domani Simone Santini e Alessandro Di Puccio
                   in concerto al Politeama
                 </div>
+
                 <div className="date">13.04.2015</div>
               </div>
               <span className="description">
@@ -554,6 +619,34 @@ const Press = ({ intl }) => {
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
+            </div>
+
+            <div className="line">
+              <hr />
+            </div>
+          </div>
+        </div>
+
+        <div id="press_archive"  style={{ maxWidth:` 900px`}}>
+          <div className="press-archive-wrapper">
+            <div className="press-archive">
+              <Img fluid={data.archivio_curvedlight.childImageSharp.fluid} />
+            </div>
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-archive">
+              <Img fluid={data.archivio_1.childImageSharp.fluid} />
+              < br/>
+              <Img fluid={data.archivio_2.childImageSharp.fluid} />
+            </div>
+            <div className="line">
+              <hr />
+            </div>
+            <div className="press-archive">
+              <Img fluid={data.odeon_1.childImageSharp.fluid} />
+              < br/>
+              <Img fluid={data.odeon_2.childImageSharp.fluid} />
             </div>
           </div>
         </div>
