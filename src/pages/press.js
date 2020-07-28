@@ -77,60 +77,33 @@ const Press = ({ intl }) => {
           }
         }
       }
-      archivio_curvedlight: file(
-        relativePath: { eq: "21) 2015Curved Light.jpg" }
+
+      images_press_archive: allFile(
+        filter: { relativeDirectory: { eq: "archive" } }
       ) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+        nodes {
+          id
+          childImageSharp {
+            fixed(quality: 100, width: 500) {
+              ...GatsbyImageSharpFixed
+            }
           }
-        }
-      }
-      archivio_1: file(
-        relativePath: { eq: "19) 2013 Di Puccio:Visconti 1.jpg" }
-      ) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      archivio_2: file(
-        relativePath: { eq: "20) 2013 Di Puccio:Visconti 2.jpg" }
-      ) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      odeon_1: file(
-        relativePath: { eq: "17) 2012 Les Italiens Odeon 1.jpg" }
-      ) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
-        }
-      }
-      odeon_2: file(
-        relativePath: { eq: "18) 2012 Les Italiens Odeon 2.jpg" }
-      ) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid
+            }
           }
         }
       }
     }
   `)
-
+  console.log(data, "image")
   return (
     <div className="press-outer-wrapper" id="go_to_top">
       <Language />
 
       <Layout>
-        <SEO title="Press"  />
+        <SEO title="Press" />
         <Link
           activeClass="active"
           to="press_archive"
@@ -145,14 +118,13 @@ const Press = ({ intl }) => {
             fontSize: `20px`,
             textTransform: `none`,
             textDecoration: `underline`,
-            color:`yellow`
+            color: `yellow`,
           }}
-          
         >
-          GO TO PRESS ARCHIVE
+          PRESS ARCHIVE
         </Link>
-        <div className="press-container" >
-          <div className="press-wrapper"  >
+        <div className="press-container">
+          <div className="press-wrapper">
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">One Instrument</div>
@@ -629,26 +601,30 @@ const Press = ({ intl }) => {
           </div>
         </div>
 
-        <div id="press_archive"  style={{ maxWidth:` 900px`}}>
+        <div id="press_archive" style={{ maxWidth: ` 900px` }}>
           <div className="press-archive-wrapper">
             <div className="press-archive">
-              <Img fluid={data.archivio_curvedlight.childImageSharp.fluid} />
+              {data.images_press_archive.nodes.map(image => (
+              
+                <>
+                  <div className="line">
+                    <hr />
+                  </div>
+                   <Img
+                   fluid={image.childImageSharp.fluid}
+                   key={image.id}
+                   alt="press_archive"
+                 />
+                  {/* <Img
+                    key={image.id}
+                    fixed={image.childImageSharp.fixed}
+                    alt="babbo"
+                  /> */}
+                </>
+              ))}
             </div>
             <div className="line">
               <hr />
-            </div>
-            <div className="press-archive">
-              <Img fluid={data.archivio_1.childImageSharp.fluid} />
-              < br/>
-              <Img fluid={data.archivio_2.childImageSharp.fluid} />
-            </div>
-            <div className="line">
-              <hr />
-            </div>
-            <div className="press-archive">
-              <Img fluid={data.odeon_1.childImageSharp.fluid} />
-              < br/>
-              <Img fluid={data.odeon_2.childImageSharp.fluid} />
             </div>
           </div>
         </div>
@@ -666,7 +642,7 @@ const Press = ({ intl }) => {
             fontSize: `22px`,
             textTransform: `none`,
             textDecoration: `underline`,
-            color: `yellow`
+            color: `yellow`,
           }}
         >
           GO TO TOP
