@@ -601,7 +601,7 @@ const Press = ({ intl }) => {
           </div>
         </div>
 
-        <div id="press_archive" style={{ maxWidth: ` 900px` }}>
+        <div id="press_archive" style={{ maxWidth: ` 1600px` }}>
           <div className="press-archive-wrapper">
             <div className="press-archive">
               {data.images_press_archive.nodes.map(image => (
