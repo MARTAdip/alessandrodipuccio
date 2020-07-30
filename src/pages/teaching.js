@@ -110,8 +110,7 @@ const Teaching = ({ intl }) => {
             </div>
             <div className="press-inner-wrapper">
               <h2 className="titolo">
-                Corsi di Musica Jazz Accademia Musicale Firenze - dipartimento
-                Jazz
+              {intl.formatMessage({ id: "teaching_text5" })}
               </h2>
 
               <a
