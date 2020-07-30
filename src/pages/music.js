@@ -113,7 +113,7 @@ const Music = ({ intl }) => (
         ></iframe>
       </div>
 
-      <div id="video-concert">
+      <div className="video-container" id="video-concert">
         <AwesomeSlider mobileTouch animation="cubeAnimation">
           <div className="video-wrapper-inner">
             <iframe
