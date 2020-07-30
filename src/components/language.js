@@ -12,8 +12,9 @@ const Language = () => {
       style={{
         display: `flex`,
         flexFlow: `row`,
-        justifyContent: `flex-end`,
-        paddingTop: `80px`,
+        justifyContent: `flex-start`,
+        paddingTop: `100px`,
+        marginLeft: `15px`
         
       }}
     >
@@ -29,7 +30,7 @@ const Language = () => {
                 textDecoration: `underline`,
                 cursor: `pointer`,
                 padding: `5px`, 
-                background: `rgba(255, 255, 255, 0.4)`,
+                background: `rgba(255, 255, 255, 0.6)`,
                 borderRadius: `5px`,
               }}
             >
