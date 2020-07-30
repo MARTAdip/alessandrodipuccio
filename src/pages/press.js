@@ -83,6 +83,7 @@ const Press = ({ intl }) => {
       ) {
         nodes {
           id
+          base
           childImageSharp {
             fixed(quality: 100, width: 500) {
               ...GatsbyImageSharpFixed
@@ -218,8 +219,7 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Nel giardino di palazzo Casalini, Italia e America a confronto
-                  sotto il cielo stellato
+                  {intl.formatMessage({ id: "press_description6" })}
                 </div>
                 <div className="date">23.7.2019</div>
               </div>
@@ -245,15 +245,13 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Alessandro Di Puccio racconta "Settembre In Piazza della
-                  Passera"
+                  {intl.formatMessage({ id: "press_title6" })}
                 </div>
                 <div className="date">20.07.2019</div>
               </div>
 
               <span className="description">
-                Il direttore artistico della manifestazione ospite di Jazz
-                Meeting
+                {intl.formatMessage({ id: "press_description7" })}
               </span>
               <br />
 
@@ -273,15 +271,13 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  La casa del jazz dove crescono talenti
+                  {intl.formatMessage({ id: "press_title7" })}
                 </div>
                 <div className="date">05.11.2019</div>
               </div>
 
               <span className="description">
-                Si chiama «Silence» e nasce in via degli Artisti nei locali
-                della storica scuola dove si sono formati Stefano Bollani, Piero
-                Borri e Marco Lamioni
+                {intl.formatMessage({ id: "press_description8" })}
               </span>
               <br />
               <br />
@@ -306,17 +302,12 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Musica, pittura, foto e video. Allo Spazio Alfieri di Firenze
-                  la performance multimediale del Collettivo FuOri
+                  {intl.formatMessage({ id: "press_title8" })}
                 </div>
                 <div className="date">22.02.2017</div>
               </div>
               <span className="description">
-                Il Collettivo FuOri nasce con l’idea di un laboratorio
-                permanente che offra la possibilità di far incontrare artisti
-                provenienti dal mondo delle arti figurative e visive (pittura,
-                fotografia, video) con altrettanti artisti del mondo della
-                musica con lo scopo di creare progetti e opere multimediali.
+                {intl.formatMessage({ id: "press_description9" })}
               </span>
               <br />
               <Img fixed={data.fuoriBand.childImageSharp.fixed} />
@@ -336,16 +327,12 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  For Those I Never Knew – Tributo a Luca Flores
+                  {intl.formatMessage({ id: "press_title9" })}
                 </div>
                 <div className="date">14.09.2017</div>
               </div>
               <span className="description">
-                Tra gli eventi di maggior spicco va senz’altro annoverato il
-                tributo dedicato a Luca Flores da un quintetto riunito dal
-                vibrafonista Alessandro Di Puccio (suo stretto collaboratore e
-                amico fraterno) sotto la denominazione For Those I Never Knew,
-                una delle più suggestive composizioni del pianista.
+                {intl.formatMessage({ id: "press_description10" })}
               </span>
               <br />
               <Img fluid={data.floresTribute.childImageSharp.fluid} />
@@ -365,14 +352,12 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Il jazz toscano ricorda Luca Flores, all’ExWide di Pisa
+                  {intl.formatMessage({ id: "press_title10" })}
                 </div>
                 <div className="date">14.09.2016</div>
               </div>
               <span className="description">
-                Sabato 16 gennaio. Tributo al geniale pianista, sulla scia del
-                suo Matt Jazz Quintet. Sul palco, tra gli altri, due storici
-                collaboratori: Alessandro Di Puccio e Alessandro Fabbri.
+                {intl.formatMessage({ id: "press_description11" })}
               </span>
               <br />
               <Img fixed={data.flores.childImageSharp.fixed} />
@@ -392,20 +377,13 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  "Curved Lights": domani Simone Santini e Alessandro Di Puccio
-                  in concerto al Politeama
+                  {intl.formatMessage({ id: "press_title11" })}
                 </div>
 
                 <div className="date">13.04.2015</div>
               </div>
               <span className="description">
-                Ormai l'elettronica svolge un ruolo fondamentale nelle
-                produzioni musicali di tutto il globo – dice Di Puccio –
-                “costringendo” molti artisti ad una continua, se non frenetica,
-                ricerca di mezzi e forme espressive in linea con la velocità
-                dell'evolversi contemporaneo.” Partendo da questi presupposti,
-                Curved Lights pone le proprie basi sull'interattività tra
-                elettronica e strumenti acustici.
+                {intl.formatMessage({ id: "press_description12" })}
               </span>
               <br />
               <br />
@@ -423,14 +401,13 @@ const Press = ({ intl }) => {
             </div>
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
-                <div className="titolo">Barga ricorda Luca Flores</div>
+                <div className="titolo">
+                  {intl.formatMessage({ id: "press_title12" })}
+                </div>
                 <div className="date">23.08.2015</div>
               </div>
               <span className="description">
-                Sabato 22 Barga ricorda Luca Flores (eccezionale pianista
-                scomparso nel ’95, militante nell’orchestra di Barga Jazz nelle
-                prime edizioni del Festival) con il progetto “For those I Never
-                Know” dal titolo di una composizione di Flores.
+                {intl.formatMessage({ id: "press_description13" })}
               </span>
               <br />
               <br />
@@ -473,17 +450,13 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Les Italiens, concerto per il Jane Goodall Institute
+                  {intl.formatMessage({ id: "press_title13" })}
                 </div>
                 <div className="date">03.02.2012</div>
               </div>
 
               <span className="description">
-                Il trascinante swing mediterraneo de Les Italiens per la prima
-                volta all’Odeon di Firenze, e per una buona causa: martedì 7
-                febbraio la big-band fondata da Alessandro di Puccio è
-                protagonista di un concerto-evento a favore del Jane Goodall
-                Institute.
+                {intl.formatMessage({ id: "press_description14" })}
               </span>
               <br />
               <Img fixed={data.janeGoddall.childImageSharp.fixed} />
@@ -529,17 +502,13 @@ const Press = ({ intl }) => {
             <div className="press-inner-wrapper">
               <div className="titolo-wrapper">
                 <div className="titolo">
-                  Omaggio al cinema italiano: Totò e Anna Magnani (Lubiana)
+                  {intl.formatMessage({ id: "press_title14" })}
                 </div>
                 <div className="date">07-30.04.2009</div>
               </div>
 
               <span className="description">
-                La serata inaugurale del 7 aprile alle ore 20.00 vedrà
-                l'esibizione del gruppo musicale di Alessandro Di Puccio in un
-                concerto dal titolo Nannarella e il Principe, con canzoni tratte
-                dal repertorio di Anna Magnani e di Totò: con a seguire la
-                proiezione del film Totò al giro d'Italia, di M. Mattioli.
+                {intl.formatMessage({ id: "press_description15" })}
               </span>
               <br />
 
@@ -605,22 +574,21 @@ const Press = ({ intl }) => {
           <div className="press-archive-wrapper">
             <div className="press-archive">
               {data.images_press_archive.nodes.map(image => (
-              
-                <>
+                <div key={image.id}>
                   <div className="line">
                     <hr />
                   </div>
-                   <Img
-                   fluid={image.childImageSharp.fluid}
-                   key={image.id}
-                   alt="press_archive"
-                 />
+                  <Img
+                    fluid={image.childImageSharp.fluid}
+                    key={image.base}
+                    alt="press_archive"
+                  />
                   {/* <Img
                     key={image.id}
                     fixed={image.childImageSharp.fixed}
                     alt="babbo"
                   /> */}
-                </>
+                </div>
               ))}
             </div>
             <div className="line">
