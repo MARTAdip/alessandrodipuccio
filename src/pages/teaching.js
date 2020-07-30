@@ -246,18 +246,19 @@ const Teaching = ({ intl }) => {
                     <TiStar /> 4 esercizi di tecnica per lo sviluppo
                     dell’improvvisazione oppure 2 arrangiamenti (per piccole
                     formazioni - max sestetto) di uno standard a scelta nella
-                    <Link className="link" to="/musicList">
+                    {/* <Link className="link" to="/musicList">
                       <div
                         style={{ color: `purple`, textDecoration: `underline` }}
                       >
                         lista
                       </div>
-                    </Link>{" "}
+                    </Link>{" "} */}
                     (il titolo del brano dovrà essere inviato per email ogni
                     mese).
                     <a
                       href={LISTANEW}
                       target="_blank"
+                      rel="noreferrer"
                       style={{ color: `purple`, textDecoration: `underline` }}
                     >
                       Download Lista
@@ -269,7 +270,8 @@ const Teaching = ({ intl }) => {
           </div>
         </div>
 
-        <h1 className="reward-title">LEZIONI ONLINE</h1>
+        <h1 className="reward-title">LEZIONI ONLINE <p>{intl.formatMessage({ id: "teaching_lesson" })}</p></h1>
+          
         <div className="card-container small-cont">
           <div className="card-wrapper small">
             <div className="small-card-container">
