@@ -70,9 +70,9 @@ const Video = ({ intl }) => {
                 width="560"
                 height="315"
                 src="https://www.youtube.com/embed/GxpiGI2m9u8"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <div className="video-text">
                 {intl.formatMessage({ id: "text-other-projects7" })}

@@ -3,6 +3,7 @@
 
 .awssld__content {
   background-color: transparentize($color: #fff, $amount: 0.7);
+  align-items: baseline !important;
 }
 
 .video-outer-wrapper {
@@ -47,7 +48,7 @@
 .video-container {
   padding-bottom: 50px;
   .awssld__wrapper {
-    min-height: 500px !important;
+    min-height: 600px !important;
   }
   @media screen and (min-width: 1600px) {
     max-width: 1570px;
@@ -62,11 +63,12 @@
 .awssld__controls__arrow-left {
   &:before,
   &:after {
-    // background-color: #43677e !important;
-    background-color: #000 !important;
+    background-color: #43677e !important;
+    // background-color: #000 !important;
     opacity: 1 !important;
   }
 }
 .awssld__bullets button {
   background: #43677e !important;
 }
+
