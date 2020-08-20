@@ -26,7 +26,7 @@
     .press-wrapper {
       border: 1px;
       border-radius: 5px;
-      background: transparentize($color: black, $amount: 0.6);
+      background: transparentize($color: black, $amount: 0.3);
       padding: 5px 38px 0 20px;
       @media (min-width: 758px) {
         display: flex;
