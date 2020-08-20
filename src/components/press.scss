@@ -9,6 +9,12 @@
 
   overflow-y: scroll;
   width: 100%;
+
+  // @media (min-width: 2560px) {
+  //   max-width: 1500px;
+  //   margin: 0 auto ;
+  // }
+  
   .press-container {
     @media (min-width: 1440px) {
       height: 85vh;

@@ -7,9 +7,13 @@
 }
 
 .video-outer-wrapper {
-  background: url("../images/video.jpg");
-  background-size: cover;
+  background-color: #fff;
   min-height: 100vh;
+  
+  // @media (min-width: 2560px) {
+  //   max-width: 1500px;
+  //   margin: 0 auto ;
+  // }
 
   .description-wrapper {
     border: 1px;

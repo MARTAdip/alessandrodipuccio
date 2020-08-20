@@ -8,7 +8,10 @@ import "react-awesome-slider/dist/styles.css"
 import "../components/video.scss"
 import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
-import { Link, animateScroll as scroll } from "react-scroll"
+import { animateScroll as scroll } from "react-scroll"
+import { AwesomeButton } from "react-awesome-button"
+import "react-awesome-button/dist/themes/theme-c137.css"
+import { Link } from "gatsby"
 
 const Video = ({ intl }) => {
   // const videoquery = graphql`
@@ -36,7 +39,12 @@ const Video = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="Other Projects" />
-        <Link
+        <div className="inner">
+          <AwesomeButton size="small" type="primary">
+            <Link to="/music">MUSIC</Link>
+          </AwesomeButton>
+        </div>
+        {/* <Link
           activeClass="active"
           to="video-index"
           spy={true}
@@ -53,7 +61,7 @@ const Video = ({ intl }) => {
           }}
         >
           {intl.formatMessage({ id: "submenu_video" })}
-        </Link>
+        </Link> */}
         <div className="description-wrapper">
           <div className="description">
             {intl.formatMessage({ id: "video_description" })}

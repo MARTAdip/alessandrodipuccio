@@ -101,12 +101,12 @@ const About = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="About" />
-        <button className="button-gallery">
+        {/* <button className="button-gallery">
           <Link to="/galleryMobile" className="has-text-white">
             {intl.formatMessage({ id: "about_opengallery" })}
             📷
           </Link>
-        </button>
+        </button> */}
         <div className="about-container">
           <div className="bio-wrapper">
             <div className="section-content">
@@ -278,9 +278,9 @@ const About = ({ intl }) => {
             </div>
           </div>
         </div>
-        <div className="gallery-wrapper">
+        {/* <div className="gallery-wrapper">
           <Gallery />
-        </div>
+        </div> */}
       </Layout>
     </div>
   )

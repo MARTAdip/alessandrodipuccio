@@ -16,7 +16,7 @@ const Header = ({ siteTitle }) => (
         maxWidth: 960
       }}
     >
-      <h2 style={{ margin: 0 }}>
+      <h2 style={{ margin: 0}}>
         <Link
           to="/"
           style={{

@@ -3,6 +3,10 @@
   background-size: cover;
 
   min-height: 100vh;
+  // @media (min-width: 2560px) {
+  //   max-width: 1500px;
+  //   margin: 0 auto ;
+  // }
 }
 
 .grid {
@@ -22,7 +26,7 @@
 .card {
   margin: 1rem;
   flex-basis: 85%;
-  padding: 15px;
+  // padding: 15px;
   text-align: left;
   color: inherit;
   text-decoration: none;
@@ -80,9 +84,24 @@
   //   min-height: 50vh !important;
   // }
 }
+
+
+@media (max-width: 425px){
+  .awssld__content {
+    display: block !important;
+    overflow: visible;
+  }
+}
 .awssld__content {
   background-color: transparentize($color: #fff, $amount: 0.7);
-  align-items: baseline !important;
+  align-items: center !important;
+}
+#video-concert {
+  .awssld__content {
+    background-color: transparentize($color: #fff, $amount: 0.7);
+    align-items: baseline !important;
+  }
+
 }
 .awssld__container {
   // height: 23vh !important;
@@ -117,7 +136,7 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 50px;
+    // margin-top: 50px;
 
     iframe {
       @media (min-width: 1024px) {
