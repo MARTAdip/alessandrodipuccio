@@ -84,6 +84,7 @@ const Press = ({ intl }) => {
         nodes {
           id
           base
+          name
           childImageSharp {
             fixed(quality: 100, width: 500) {
               ...GatsbyImageSharpFixed
@@ -98,7 +99,7 @@ const Press = ({ intl }) => {
       }
     }
   `)
-  console.log(data, "image")
+  console.log(data.images_press_archive, "image")
   return (
     <div className="press-outer-wrapper" id="go_to_top">
       <Language />
@@ -574,13 +575,13 @@ const Press = ({ intl }) => {
           <div className="press-archive-wrapper">
             <div className="press-archive">
               {data.images_press_archive.nodes.map(image => (
-                <div key={image.id}>
+                <div key={image.base}>
                   <div className="line">
                     <hr />
                   </div>
                   <Img
                     fluid={image.childImageSharp.fluid}
-                    key={image.base}
+                    key={image.name}
                     alt="press_archive"
                   />
                   {/* <Img
