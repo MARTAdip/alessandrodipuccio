@@ -70,7 +70,8 @@ const Video = ({ intl }) => {
         <div className="video-container" id="video-index">
           <AwesomeSlider
             cssModule={AwesomeSliderStyles}
-            animation="foldOutAnimation"
+            mobileTouch
+            animation="cubeAnimation"
           >
             <div className="video-wrapper-inner">
               <iframe

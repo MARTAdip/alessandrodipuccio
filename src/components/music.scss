@@ -16,7 +16,6 @@
   flex-direction: row;
   padding-top: 70px;
 
-  // background: url('../images/palm.jpeg');
 
   @media (min-width: 1440px) {
     width: 100%;
@@ -93,13 +92,19 @@
   }
 }
 .awssld__content {
-  background-color: transparentize($color: #fff, $amount: 0.7);
+  background-color: transparentize($color: #fff, $amount: 0.7); 
   align-items: center !important;
+  @media (min-width: 768px) {
+    padding-bottom: 50px;
+  }
 }
 #video-concert {
   .awssld__content {
     background-color: transparentize($color: #fff, $amount: 0.7);
     align-items: baseline !important;
+    @media (min-width: 768px) {
+      padding-bottom: 50px;
+    }
   }
 
 }
@@ -136,7 +141,10 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    // margin-top: 50px;
+    @media (min-width: 768px) {
+      margin-top: 50px;
+
+    }
 
     iframe {
       @media (min-width: 1024px) {

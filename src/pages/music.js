@@ -5,16 +5,24 @@ import SEO from "../components/seo"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
 import "../components/music.scss"
-import { Link, animateScroll as scroll } from "react-scroll"
+// import { Link, animateScroll as scroll } from "react-scroll"
 import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
 import Language from "../components/language"
+import { AwesomeButton } from "react-awesome-button"
+import "react-awesome-button/dist/themes/theme-c137.css"
+import { Link } from "gatsby"
 
 const Music = ({ intl }) => (
   <div className="music-outer-wrapper">
     <Language />
     <Layout>
       <SEO title="Music" />
-      <Link
+      <div className="inner">
+        <AwesomeButton size="small" type="primary">
+          <Link to="/video">VIDEO</Link>
+        </AwesomeButton>
+      </div>
+      {/* <Link
         activeClass="active"
         to="music-index"
         spy={true}
@@ -49,7 +57,7 @@ const Music = ({ intl }) => (
         }}
       >
         {intl.formatMessage({ id: "submenu2" })}
-      </Link>
+      </Link> */}
       <div className="grid">
         <AwesomeSlider mobileTouch animation="cubeAnimation">
           <div className="card">
