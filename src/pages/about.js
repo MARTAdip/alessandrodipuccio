@@ -88,8 +88,8 @@ const About = ({ intl }) => {
       }
       visual: file(relativePath: { eq: "x visual orchestra 1 2016.jpg" }) {
         childImageSharp {
-          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
-            ...GatsbyImageSharpFluid
+          fixed(quality: 100, width: 300, height: 400)  {
+            ...GatsbyImageSharpFixed
           }
         }
       }
@@ -320,7 +320,7 @@ const About = ({ intl }) => {
                   style={{ marginTop: `30px` }}
                 >
                   <Img
-                    fluid={data.visual.childImageSharp.fluid}
+                    fixed={data.visual.childImageSharp.fixed}
                     style={{ position: `relative` }}
                   />
                   <span className="overlay" style={{ color: `black` }}>
