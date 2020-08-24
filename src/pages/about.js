@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../components/about.scss"
-import { Gallery } from "gatsby-theme-gallery"
 import { useStaticQuery, graphql } from "gatsby"
 import { injectIntl, Link } from "gatsby-plugin-intl"
 import Language from "../components/language"
@@ -333,11 +332,7 @@ const About = ({ intl }) => {
           </div>
         </div>
 
-       
-        
-        {/* <div className="gallery-wrapper">
-          <Gallery />
-        </div> */}
+      
       </Layout>
     </div>
   )

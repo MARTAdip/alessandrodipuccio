@@ -10,6 +10,9 @@ import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import { Link, animateScroll as scroll } from "react-scroll"
 
+import { Gallery } from "gatsby-theme-gallery"
+// import Gallery  from "../components/gallery"
+
 const Press = ({ intl }) => {
   const data = useStaticQuery(graphql`
     query {
@@ -97,6 +100,7 @@ const Press = ({ intl }) => {
           }
         }
       }
+      
     }
   `)
   console.log(data.images_press_archive, "image")
@@ -571,32 +575,10 @@ const Press = ({ intl }) => {
           </div>
         </div>
 
-        <div id="press_archive" style={{ maxWidth: ` 900px` }}>
-          <div className="press-archive-wrapper">
-            <div className="press-archive">
-              {data.images_press_archive.nodes.map(image => (
-                <div key={image.base}>
-                  <div className="line">
-                    <hr />
-                  </div>
-                  <Img
-                    fluid={image.childImageSharp.fluid}
-                    key={image.name}
-                    alt="press_archive"
-                  />
-                  {/* <Img
-                    key={image.id}
-                    fixed={image.childImageSharp.fixed}
-                    alt="babbo"
-                  /> */}
-                </div>
-              ))}
-            </div>
-            <div className="line">
-              <hr />
-            </div>
-          </div>
+        <div id="press_archive" className="gallery-wrapper">
+          <Gallery />
         </div>
+       
         <Link
           activeClass="active"
           to="go_to_top"
