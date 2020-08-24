@@ -51,7 +51,7 @@
 
   border: 1px;
   border-radius: 5px;
-  background: transparentize($color: gray, $amount: 0.3);
+  // background: transparentize($color: yellow, $amount: 0.3);
 
   @media (min-width: 1440px) {
     flex-flow: row;
@@ -102,6 +102,7 @@
     span {
       font-family: "Manrope", sans-serif;
       line-height: 22px;
+      color: #000;
       @media (min-width: 2560px) {
         font-size: 18px;
         line-height: 35px;

@@ -93,6 +93,27 @@ const About = ({ intl }) => {
           }
         }
       }
+      concertoFiLesItaliens: file(
+        relativePath: {
+          eq: "1concerto_con_les_italiens_firenze_2001_grancassa.jpg"
+        }
+      ) {
+        childImageSharp {
+          fixed(quality: 100, width: 330, height: 430)  {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      concertoFloresLucca: file(
+        relativePath: { eq: "2concerto_per_LucaFlores_2015_Lucca.jpg" }
+      ) {
+        childImageSharp {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px")  {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+     
     }
   `)
 
@@ -158,6 +179,20 @@ const About = ({ intl }) => {
                   </span>
                 </div>
                 <ReactTooltip />
+                <br />
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image5" })}
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fixed={data.concertoFiLesItaliens.childImageSharp.fixed}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {intl.formatMessage({ id: "about_image5" })}
+                  </span>
+                </div>
+                <ReactTooltip />
               </span>
             </div>
           </div>
@@ -214,10 +249,29 @@ const About = ({ intl }) => {
                 </div>
                 <ReactTooltip />
                 <br />
+                <br />
                 {intl.formatMessage({ id: "about_bio2_5" })}
+
+                <br />
+                <div
+                  data-tip={intl.formatMessage({ id: "about_image6" })}
+                  style={{ marginTop: `15px` }}
+                >
+                  <Img
+                    fluid={data.concertoFloresLucca.childImageSharp.fluid}
+                    style={{ position: `relative` }}
+                  />
+                  <span className="overlay" style={{ color: `black` }}>
+                    {intl.formatMessage({ id: "about_image6" })}
+                  </span>
+                </div>
+                <ReactTooltip />
               </span>
             </div>
           </div>
+
+
+
           <div className="bio-wrapper">
             <div className="section-content">
               <h3>{intl.formatMessage({ id: "about_title3" })}</h3>
@@ -278,6 +332,9 @@ const About = ({ intl }) => {
             </div>
           </div>
         </div>
+
+       
+        
         {/* <div className="gallery-wrapper">
           <Gallery />
         </div> */}
