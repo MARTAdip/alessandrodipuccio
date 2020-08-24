@@ -91,11 +91,14 @@
     overflow: visible;
   }
 }
-.awssld__content {
-  background-color: transparentize($color: #fff, $amount: 0.7); 
-  align-items: center !important;
-  @media (min-width: 768px) {
-    padding-bottom: 50px;
+.big-content {
+
+  .awssld__content {
+    background-color: transparentize($color: #fff, $amount: 0.7); 
+    align-items: center !important;
+    @media (min-width: 768px) {
+      padding-bottom: 50px;
+    }
   }
 }
 #video-concert {

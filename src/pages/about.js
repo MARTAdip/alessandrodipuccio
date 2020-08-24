@@ -149,7 +149,7 @@ const About = ({ intl }) => {
                     Les Italiens in Istanbul - 2004
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <div
                   data-tip="Les Italiens in Istanbul - 2004"
                   style={{ marginTop: `15px` }}
@@ -160,7 +160,7 @@ const About = ({ intl }) => {
                     Les Italiens in Istanbul - 2004
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <br />
                 <span>{intl.formatMessage({ id: "about_bio1_2" })}</span>
                 <br /> <br />
@@ -178,7 +178,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image1" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <br />
                 <div
                   data-tip={intl.formatMessage({ id: "about_image5" })}
@@ -192,7 +192,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image5" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
               </span>
             </div>
           </div>
@@ -219,7 +219,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image2" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <div
                   data-tip={intl.formatMessage({ id: "about_image2" })}
                   style={{ marginTop: `15px` }}
@@ -231,7 +231,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image2" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio2_4" })}
                 <div
@@ -247,7 +247,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image3" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <br />
                 <br />
                 {intl.formatMessage({ id: "about_bio2_5" })}
@@ -265,7 +265,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image6" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
               </span>
             </div>
           </div>
@@ -297,7 +297,7 @@ const About = ({ intl }) => {
                     {intl.formatMessage({ id: "about_image4" })}
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <br />
                 {intl.formatMessage({ id: "about_bio3_5" })}
                 <br /> <br />
@@ -314,7 +314,7 @@ const About = ({ intl }) => {
                     Les Italiens Piazza della Passera 2008
                   </span>
                 </div>
-                <ReactTooltip />
+                <ReactTooltip backgroundColor="black"/>
                 <div
                   data-tip="Visual Orchestra Piazza della Passera 2016"
                   style={{ marginTop: `30px` }}

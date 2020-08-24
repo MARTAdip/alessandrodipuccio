@@ -58,7 +58,8 @@ const Music = ({ intl }) => (
       >
         {intl.formatMessage({ id: "submenu2" })}
       </Link> */}
-      <div className="grid">
+      <div className="grid big-content">
+        
         <AwesomeSlider mobileTouch animation="cubeAnimation">
           <div className="card">
             <iframe
