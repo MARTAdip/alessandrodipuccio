@@ -23,7 +23,7 @@ const Header = ({ siteTitle }) => (
             fontSize: `20px`,
             position: `absolute`,
             top: `8px`,
-            right: `2px`,
+            right: `0`,
             color: `#457b9d`,
             textDecoration: `none`,
             padding: `15px`,

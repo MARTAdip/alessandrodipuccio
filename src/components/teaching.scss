@@ -24,7 +24,7 @@
 
     border: 1px;
     border-radius: 5px;
-    background: transparentize($color: gray, $amount: 0.3);
+    // background: transparentize($color: #33415c, $amount: 0.3);
     padding: 10px;
 
     @media (min-width: 1024px) {
@@ -59,6 +59,7 @@
       span {
         font-family: "Manrope", sans-serif;
         line-height: 22px;
+        color: #000;
         @media (min-width: 2560px) {
           line-height: 30px;
           font-size: 20px;
@@ -67,11 +68,10 @@
     }
 
     .press-inner-wrapper {
-      h2 {
-        font-family: "Abril Fatface", cursive;
-      }
       a {
         padding: 0 !important;
+        // color: #2f4858;
+        text-decoration: underline;
       }
     }
   }
@@ -102,13 +102,17 @@
   }
 }
 .reward-title {
-  font-family: "Bowlby One SC", cursive;
   color: #000;
   margin-top: 80px;
   text-align: center;
 
   p {
     font-size: 15px;
+  }
+}
+.small-card-container {
+  h2 {
+    color: #000;
   }
 }
 .card-container {
@@ -148,11 +152,9 @@
     }
   }
 
-  h2 {
-    color: #000;
-    font-family: "Manrope", sans-serif;
-  }
-  h1,
+h1 {
+  color: #000; 
+}
   .text {
     font-family: "Manrope", sans-serif;
     color: #000;
@@ -267,4 +269,39 @@
   50% {
     transform: scale(1.1);
   }
+}
+
+.wrapper-parallax {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 420px;
+  background-image: url("../images/parallax3concerto_les_italiens_2012_Firenze.jpg");
+  margin-top: 10rem;
+	min-height: 31rem;
+	 /* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	 /*fixed= parallax
+    scroll= normal*/
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.foreground {
+  margin-top: auto;
+  margin-bottom: 50px;
+  
+  transform-origin: 0;
+  transform: translateZ(3px) scale(0.625);
+  
+  /* Uncomment the code below to see the difference the scale property makes! */
+  /* transform: translateZ(3px); */
+  /* transform: translateZ(0) scale(1); */
+}
+
+.foreground h1 {
+  font-size: 36px;
 }

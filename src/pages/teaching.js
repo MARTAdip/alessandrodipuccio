@@ -142,6 +142,18 @@ const Teaching = ({ intl }) => {
           </div>
           <ReactTooltip />
         </div>
+
+        <div class="wrapper-parallax">
+          
+            {/* <div class="foreground">
+              <div class="foreground__content">
+                <h1>Oooo, parallax</h1>
+              </div>
+            </div> */}
+          
+        </div>
+
+        // PATREON
         <div className="card-container">
           <div className="card-wrapper">
             <div className="card-inner">
@@ -269,11 +281,9 @@ const Teaching = ({ intl }) => {
             </div>
           </div>
         </div>
-
         <h1 className="reward-title">
           LEZIONI ONLINE <p>{intl.formatMessage({ id: "teaching_lesson" })}</p>
         </h1>
-
         <div className="card-container small-cont">
           <div className="card-wrapper small">
             <div className="small-card-container">
@@ -306,7 +316,7 @@ const Teaching = ({ intl }) => {
                     Lookjaw Davis, Sal Nistico, Al Cohn, Albert Mangelsdorff.)
                     <br />
                     <br />
-                    <div style={{fontStyle: "italic"}}>
+                    <div style={{ fontStyle: "italic" }}>
                       (È possibile effettuare anche lezioni collettive, in tal
                       caso si mantengono gli stessi prezzi delle individuali
                       dividendo la cifra fra il numero dei partecipanti (max 4
@@ -335,13 +345,13 @@ const Teaching = ({ intl }) => {
                     <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
                     <br />
                     <br />
-                    <div style={{fontStyle: "italic"}}>
-                    (È possibile effettuare anche lezioni collettive, in tal
-                    caso si mantengono gli stessi prezzi delle individuali
-                    dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus /> l’aggiunta di 5 € a persona. ipotesi: 2
-                    lezioni mensili (50 €) per 2 persone {">"} 25 + 5 tot. 30 €
-                    a partecipante)
+                    <div style={{ fontStyle: "italic" }}>
+                      (È possibile effettuare anche lezioni collettive, in tal
+                      caso si mantengono gli stessi prezzi delle individuali
+                      dividendo la cifra fra il numero dei partecipanti (max 4
+                      persone) <TiPlus /> l’aggiunta di 5 € a persona. ipotesi:
+                      2 lezioni mensili (50 €) per 2 persone {">"} 25 + 5 tot.
+                      30 € a partecipante)
                     </div>
                   </span>
                 </div>
@@ -364,13 +374,13 @@ const Teaching = ({ intl }) => {
                     <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
                     <br />
                     <br />
-                    <div style={{fontStyle: "italic"}}>
-                    (È possibile effettuare anche lezioni collettive, in tal
-                    caso si mantengono gli stessi prezzi delle individuali
-                    dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 4
-                    lezioni mensili (80 €) per 4 persone {">"} 20 + 5 tot. 25 €
-                    a partecipante)
+                    <div style={{ fontStyle: "italic" }}>
+                      (È possibile effettuare anche lezioni collettive, in tal
+                      caso si mantengono gli stessi prezzi delle individuali
+                      dividendo la cifra fra il numero dei partecipanti (max 4
+                      persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 4
+                      lezioni mensili (80 €) per 4 persone {">"} 20 + 5 tot. 25
+                      € a partecipante)
                     </div>
                   </span>
                 </div>
@@ -394,13 +404,13 @@ const Teaching = ({ intl }) => {
                     <br /> <TiStar /> Gli mp3 dei concerti del Salt Peanuts.
                     <br />
                     <br />
-                    <div style={{fontStyle: "italic"}}>
-                    (È possibile effettuare anche lezioni collettive, in tal
-                    caso si mantengono gli stessi prezzi delle individuali
-                    dividendo la cifra fra il numero dei partecipanti (max 4
-                    persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 8
-                    lezioni (2 mesi) (140 €) per 4 persone {">"} 35 + 5 tot. 40
-                    € a partecipante)
+                    <div style={{ fontStyle: "italic" }}>
+                      (È possibile effettuare anche lezioni collettive, in tal
+                      caso si mantengono gli stessi prezzi delle individuali
+                      dividendo la cifra fra il numero dei partecipanti (max 4
+                      persone) <TiPlus /> l’aggiunta di 5 € a persona ipotesi: 8
+                      lezioni (2 mesi) (140 €) per 4 persone {">"} 35 + 5 tot.
+                      40 € a partecipante)
                     </div>
                   </span>
                 </div>

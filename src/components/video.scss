@@ -18,8 +18,10 @@
   .description-wrapper {
     border: 1px;
     border-radius: 5px;
-    background: transparentize($color: black, $amount: 0.6);
+    background: transparentize($color: #43677e, $amount: 0.3);
     padding: 12px 38px 12px 20px;
+    margin-top: 10px;
+
     .description {
       color: #fff;
       font-family: "Manrope", sans-serif;

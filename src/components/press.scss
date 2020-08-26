@@ -55,6 +55,7 @@
         display: flex;
         flex-flow: row;
         justify-content: space-between;
+        margin-bottom: 10px;
         .titolo,
         .date {
           color: #fff;
@@ -72,6 +73,7 @@
         color: #fff;
         font-family: "Manrope", sans-serif;
         line-height: 25px;
+       
 
         @media (min-width: 758px) {
           max-width: 500px;

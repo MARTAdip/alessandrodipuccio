@@ -100,7 +100,6 @@ const Press = ({ intl }) => {
           }
         }
       }
-      
     }
   `)
   console.log(data.images_press_archive, "image")
@@ -529,9 +528,11 @@ const Press = ({ intl }) => {
               <hr />
             </div>
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title3" })}
-              </h2>
+              <div className="titolo-wrapper">
+                <h2 className="titolo">
+                  {intl.formatMessage({ id: "press_title3" })}
+                </h2>
+              </div>
               <span className="description">
                 {intl.formatMessage({ id: "press_description3" })}
               </span>
@@ -551,9 +552,11 @@ const Press = ({ intl }) => {
               <hr />
             </div>
             <div className="press-inner-wrapper">
-              <h2 className="titolo">
-                {intl.formatMessage({ id: "press_title5" })}
-              </h2>
+              <div className="titolo-wrapper">
+                <h2 className="titolo">
+                  {intl.formatMessage({ id: "press_title5" })}
+                </h2>
+              </div>
               <span className="description">
                 {intl.formatMessage({ id: "press_description4" })}
               </span>
@@ -568,17 +571,13 @@ const Press = ({ intl }) => {
                 allowFullScreen
               ></iframe>
             </div>
-
-            <div className="line">
-              <hr />
-            </div>
           </div>
         </div>
 
         <div id="press_archive" className="gallery-wrapper">
           <Gallery />
         </div>
-       
+
         <Link
           activeClass="active"
           to="go_to_top"

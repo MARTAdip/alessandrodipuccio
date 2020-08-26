@@ -627,8 +627,13 @@ h1 {
   font-size: 2em;
   margin: 0.67em 0;
   color: white;
+  font-family: "Bowlby One SC", cursive;
 }
-
+h2 {
+  font-family: "Abril Fatface", cursive;
+  color: #2f4858;
+  /* color: #000; */
+}
 body {
   /* width: 100vw; */
   min-height: 100vh;
@@ -760,9 +765,10 @@ a {
   font-family: "Bowlby One SC", cursive;
   color: #000;
 }
-.link {
+/* .link {
   cursor: url("https://img.icons8.com/metro/26/000000/musical-notes.png"), auto !important;
-}
+} */
+
 
 .icon-placeholder {
   width: 40px;
@@ -794,26 +800,6 @@ a {
   cursor: pointer;
 }
 
-/* .gatsby-image-wrapper {
-  height: 70vh !important;
-  width: 44vh !important;
+.aws-btn--primary .aws-btn__content {
+  background: #43677e !important;
 }
-
-@media (min-width: 320px) {
-  .gatsby-image-wrapper {
-    height: 52vh !important;
-    width: 37vh !important;
-  }
-}
-@media (min-width: 1024px) {
-  .gatsby-image-wrapper {
-    height: 79vh !important;
-    width: 85vh !important;
-  }
-}
-@media (min-width: 1440px) {
-  .gatsby-image-wrapper {
-    height: 85vh !important;
-    width: 100vh !important;
-  }
-} */
