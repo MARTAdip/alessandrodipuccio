@@ -114,7 +114,7 @@ const Music = ({ intl }) => (
           className="index-frame"
           title="view"
           width="100%"
-          height="600"
+          height="800"
           scrolling="no"
           frameBorder="no"
           allow="autoplay"

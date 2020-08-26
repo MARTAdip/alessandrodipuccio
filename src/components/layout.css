@@ -661,12 +661,12 @@ body {
   
 } */
 
-@media (min-width: 2560px) {
+/* @media (min-width: 2560px) {
   .layout-monitor {
     max-width: 1500px;
     margin: 0 auto;
   }
-}
+} */
 
 .motion-nav {
   position: absolute;

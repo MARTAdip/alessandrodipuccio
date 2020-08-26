@@ -142,7 +142,7 @@ const Teaching = ({ intl }) => {
           <ReactTooltip />
         </div>
 
-        <div class="wrapper-parallax"></div>
+        <div className="wrapper-parallax"></div>
 
         // PATREON
         <div className="card-container">
