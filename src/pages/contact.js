@@ -13,13 +13,14 @@ const Contact = () => (
         <div className="contact-container">
           <div className="inner">
             <span>For info & lessons</span>
-            <a href="mailto:alessandro.dipuccio@alice.it">
+            <a href="mailto:info@alessandrodipuccio.com">
               Alessandro Di Puccio
+              (info@alessandrodipuccio.com)
             </a>
           </div>
           <div className="inner">
             <span>For bookings</span>
-            <a href="mailto:alessandro.dipuccio@alice.it">
+            <a href="mailto:dipuccio02@gmail.com">
               Alessandro Di Puccio
             </a>
           </div>

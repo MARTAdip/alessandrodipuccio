@@ -4,7 +4,7 @@
 .about-wrapper {
   // background: url("../images/bianco.jpg");
   // background-size: contain;
-   background-color: #fff;
+   background-color: #1f1f1f;
   min-height: 100vh;
 
   .button-gallery {
@@ -102,7 +102,7 @@
     span {
       font-family: "Manrope", sans-serif;
       line-height: 22px;
-      color: #000;
+      color: #fff;
       @media (min-width: 2560px) {
         font-size: 18px;
         line-height: 35px;

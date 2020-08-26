@@ -276,8 +276,8 @@ h1 {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  height: 420px;
-  background-image: url("../images/parallax3concerto_les_italiens_2012_Firenze.jpg");
+  // height: 420px;
+  background-image: url("../images/concerto\ per\ Luca\ Flores\ 2015\ firenze.jpg");
   margin-top: 10rem;
 	min-height: 31rem;
 	 /* Create the parallax scrolling effect */
@@ -287,21 +287,4 @@ h1 {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-}
-
-
-.foreground {
-  margin-top: auto;
-  margin-bottom: 50px;
-  
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
-  
-  /* Uncomment the code below to see the difference the scale property makes! */
-  /* transform: translateZ(3px); */
-  /* transform: translateZ(0) scale(1); */
-}
-
-.foreground h1 {
-  font-size: 36px;
 }

@@ -9,7 +9,6 @@ import Language from "../components/language"
 import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from "react-icons/ti"
-import Link from "gatsby-link"
 import LISTANEW from "../markdown-pages/LISTANEW.pdf"
 
 const Teaching = ({ intl }) => {
@@ -143,15 +142,7 @@ const Teaching = ({ intl }) => {
           <ReactTooltip />
         </div>
 
-        <div class="wrapper-parallax">
-          
-            {/* <div class="foreground">
-              <div class="foreground__content">
-                <h1>Oooo, parallax</h1>
-              </div>
-            </div> */}
-          
-        </div>
+        <div class="wrapper-parallax"></div>
 
         // PATREON
         <div className="card-container">
@@ -258,13 +249,6 @@ const Teaching = ({ intl }) => {
                     <TiStar /> 4 esercizi di tecnica per lo sviluppo
                     dell’improvvisazione oppure 2 arrangiamenti (per piccole
                     formazioni - max sestetto) di uno standard a scelta nella
-                    {/* <Link className="link" to="/musicList">
-                      <div
-                        style={{ color: `purple`, textDecoration: `underline` }}
-                      >
-                        lista
-                      </div>
-                    </Link>{" "} */}
                     (il titolo del brano dovrà essere inviato per email ogni
                     mese).
                     <a
