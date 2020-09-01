@@ -3,6 +3,7 @@ module.exports = {
     title: `Alessandro Di Puccio`,
     description: `Alessandro Di Puccio Official Website. Alessandro Di Puccio (Firenze, 4 Ottobre 1958) è un musicista jazz, compositore e arrangiatore, vibrafonista e batterista. Attivo come didatta e visual storyteller.`,
     author: `marta di puccio`,
+    siteUrl: 'https://www.alessandrodipuccio.com'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -14,6 +15,14 @@ module.exports = {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.alessandrodipuccio.com',
+        sitemap: 'https://www.alessandrodipuccio.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -42,18 +51,10 @@ module.exports = {
         // language file path
         defaultLanguage: `it`,
         // option to redirect to `/ko` when connecting `/`
-        redirect: true,
+        redirect: false,
         redirectComponent: require.resolve(`./src/components/redirect.js`),
       },
     },
-    // {
-    //   resolve: `gatsby-source-youtube-v2`,
-    //   options: {
-    //     channelId: YOUTUBE_CHANNEL_ID,
-    //     apiKey: YOUTUBE_API_KEY,
-    //     maxVideos: 50 // Defaults to 50
-    //   },
-    // },
-   
+    
   ],
 }
