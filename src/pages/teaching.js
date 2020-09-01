@@ -6,7 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
-import ReactTooltip from "react-tooltip"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from "react-icons/ti"
 import LISTANEW from "../markdown-pages/LISTANEW.pdf"
@@ -123,7 +122,6 @@ const Teaching = ({ intl }) => {
           </div>
 
           <div
-            data-tip={intl.formatMessage({ id: "teaching_image_tooltip" })}
             style={{ margin: `15px 0 15px` }}
           >
             <Img
@@ -139,7 +137,7 @@ const Teaching = ({ intl }) => {
               className="teaching-image-desktop"
             />
           </div>
-          <ReactTooltip />
+         
         </div>
 
         <div className="wrapper-parallax"></div>

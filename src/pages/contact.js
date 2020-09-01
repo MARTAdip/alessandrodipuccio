@@ -15,14 +15,11 @@ const Contact = () => (
             <span>For info & lessons</span>
             <a href="mailto:info@alessandrodipuccio.com">
               Alessandro Di Puccio
-              (info@alessandrodipuccio.com)
             </a>
           </div>
           <div className="inner">
             <span>For bookings</span>
-            <a href="mailto:dipuccio02@gmail.com">
-              Alessandro Di Puccio
-            </a>
+            <a href="mailto:dipuccio02@gmail.com">Alessandro Di Puccio</a>
           </div>
           <div className="inner">
             <span>Press</span>
@@ -39,7 +36,13 @@ const Contact = () => (
           </div>
         </div>
       </div>
-  
+          <div className="info-web" >
+            <div className="info-web-inner">
+              <span>Web design & Web development</span>{" "}
+              <span>Marta Di Puccio </span>
+            </div>
+          </div>
+
       {/* <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with love
         {` `}

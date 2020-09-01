@@ -97,9 +97,9 @@
   text-align: center;
   font-family: "Manrope", sans-serif;
 
-  @media (min-width: 1023px) {
-    display: none;
-  }
+  // @media (min-width: 1023px) {
+  //   display: none;
+  // }
 }
 .reward-title {
   color: #000;
@@ -286,5 +286,9 @@ h1 {
     scroll= normal*/
 	background-position: center;
 	background-repeat: no-repeat;
-	background-size: cover;
+  background-size: cover;
+  
+  @media (min-width: 320px) and (max-width:1023px) {
+    display: none; 
+  }
 }

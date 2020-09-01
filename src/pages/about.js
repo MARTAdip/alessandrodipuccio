@@ -6,7 +6,6 @@ import { useStaticQuery, graphql } from "gatsby"
 import { injectIntl, Link } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import Img from "gatsby-image"
-import ReactTooltip from "react-tooltip"
 
 const About = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -87,7 +86,7 @@ const About = ({ intl }) => {
       }
       visual: file(relativePath: { eq: "x visual orchestra 1 2016.jpg" }) {
         childImageSharp {
-          fixed(quality: 100, width: 300, height: 400)  {
+          fixed(quality: 100, width: 300, height: 400) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -98,7 +97,7 @@ const About = ({ intl }) => {
         }
       ) {
         childImageSharp {
-          fixed(quality: 100, width: 330, height: 430)  {
+          fixed(quality: 100, width: 330, height: 430) {
             ...GatsbyImageSharpFixed
           }
         }
@@ -107,12 +106,11 @@ const About = ({ intl }) => {
         relativePath: { eq: "2concerto_per_LucaFlores_2015_Lucca.jpg" }
       ) {
         childImageSharp {
-          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px")  {
+          fluid(sizes: "(max-width: 1200px) calc(60vh - 40px), 1200px") {
             ...GatsbyImageSharpFluid
           }
         }
       }
-     
     }
   `)
 
@@ -121,12 +119,7 @@ const About = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="About" />
-        {/* <button className="button-gallery">
-          <Link to="/galleryMobile" className="has-text-white">
-            {intl.formatMessage({ id: "about_opengallery" })}
-            📷
-          </Link>
-        </button> */}
+
         <div className="about-container">
           <div className="bio-wrapper">
             <div className="section-content">
@@ -135,63 +128,45 @@ const About = ({ intl }) => {
               <span>
                 {intl.formatMessage({ id: "about_bio1" })}
                 <br />
-                <div
-                  data-tip="Les Italiens in Istanbul - 2004"
-                  style={{ marginTop: `15px` }}
-                  className="image-mobile"
-                >
+                <div style={{ marginTop: `15px` }} className="image-mobile">
                   <Img
                     fluid={data.imageTwo.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     Les Italiens in Istanbul - 2004
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
-                <div
-                  data-tip="Les Italiens in Istanbul - 2004"
-                  style={{ marginTop: `15px` }}
-                  className="image-desktop"
-                >
+                <div style={{ marginTop: `15px` }} className="image-desktop">
                   <Img fixed={data.imageTwoDesktop.childImageSharp.fixed} />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     Les Italiens in Istanbul - 2004
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
                 <br />
                 <span>{intl.formatMessage({ id: "about_bio1_2" })}</span>
                 <br /> <br />
                 <span>{intl.formatMessage({ id: "about_bio1_3" })}</span>
                 <br />
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image1" })}
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fluid={data.image.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {intl.formatMessage({ id: "about_image1" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
                 <br />
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image5" })}
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fixed={data.concertoFiLesItaliens.childImageSharp.fixed}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {intl.formatMessage({ id: "about_image5" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
               </span>
             </div>
           </div>
@@ -205,71 +180,50 @@ const About = ({ intl }) => {
                 <span>{intl.formatMessage({ id: "about_bio2_2" })}</span>
                 <br />
                 <span>{intl.formatMessage({ id: "about_bio2_3" })}</span>
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image2" })}
-                  style={{ marginTop: `15px` }}
-                  className="image-mobile"
-                >
+                <div style={{ marginTop: `15px` }} className="image-mobile">
                   <Img
                     fluid={data.lflores.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {intl.formatMessage({ id: "about_image2" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image2" })}
-                  style={{ marginTop: `15px` }}
-                  className="image-desktop"
-                >
+                <div style={{ marginTop: `15px` }} className="image-desktop">
                   <Img fixed={data.lfloresDesktop.childImageSharp.fixed} />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {" "}
                     {intl.formatMessage({ id: "about_image2" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio2_4" })}
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image3" })}
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fluid={data.imageThree.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {" "}
                     {intl.formatMessage({ id: "about_image3" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
                 <br />
                 <br />
                 {intl.formatMessage({ id: "about_bio2_5" })}
-
                 <br />
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image6" })}
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fluid={data.concertoFloresLucca.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {intl.formatMessage({ id: "about_image6" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
               </span>
             </div>
           </div>
-
-
 
           <div className="bio-wrapper">
             <div className="section-content">
@@ -284,55 +238,41 @@ const About = ({ intl }) => {
                 <br />
                 <br />
                 {intl.formatMessage({ id: "about_bio3_4" })}
-                <div
-                  data-tip={intl.formatMessage({ id: "about_image4" })}
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fluid={data.pianosolo.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     {intl.formatMessage({ id: "about_image4" })}
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
                 <br />
                 {intl.formatMessage({ id: "about_bio3_5" })}
                 <br /> <br />
                 {intl.formatMessage({ id: "about_bio3_6" })}
-                <div
-                  data-tip="Les Italiens Piazza della Passera 2008"
-                  style={{ marginTop: `15px` }}
-                >
+                <div style={{ marginTop: `15px` }}>
                   <Img
                     fluid={data.ppassera.childImageSharp.fluid}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     Les Italiens Piazza della Passera 2008
                   </span>
                 </div>
-                <ReactTooltip backgroundColor="black"/>
-                <div
-                  data-tip="Visual Orchestra Piazza della Passera 2016"
-                  style={{ marginTop: `30px` }}
-                >
+                <div style={{ marginTop: `30px` }}>
                   <Img
                     fixed={data.visual.childImageSharp.fixed}
                     style={{ position: `relative` }}
                   />
-                  <span className="overlay" style={{ color: `black` }}>
+                  <span className="overlay">
                     Visual Orchestra Piazza della Passera 2016
                   </span>
                 </div>
-                <ReactTooltip />
               </span>
             </div>
           </div>
         </div>
-
-      
       </Layout>
     </div>
   )

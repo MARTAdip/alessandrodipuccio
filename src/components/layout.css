@@ -618,6 +618,8 @@ pre tt:after {
   }
 } */
 @import url("https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap");
+
 html {
   box-sizing: border-box;
   overflow-y: scroll;
