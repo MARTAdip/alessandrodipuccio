@@ -4,15 +4,9 @@
 
   min-height: 100vh;
   padding: 20px;
-  // position: relative;
 
-  // footer {
-  //   position: absolute;
-  //   bottom: 30px;
-  // }
-  // @media (min-width: 2560px) {
-  //   max-width: 1500px;
-  //   margin: 0 auto ;
+  // @media (min-width: 812px ) {
+  //   min-height: 200vh;
   // }
 }
 
@@ -57,11 +51,18 @@
   }
 }
 .info-web {
-  position: absolute;
-  bottom: 90px; 
+  // position: absolute;
+  // bottom: 90px; 
 
   .info-web-inner {
     font-family: "Manrope", sans-serif;
+
+    .info-name {
+      font-size: 13px !important;
+      > a {
+        font-size: 13px !important;
+      }
+    }
 
   }
 }

@@ -34,14 +34,15 @@ const Contact = () => (
               Privacy Policy
             </a>
           </div>
-        </div>
-      </div>
-          <div className="info-web" >
+          <div className="info-web inner" >
             <div className="info-web-inner">
-              <span>Web design & Web development</span>{" "}
-              <span>Marta Di Puccio </span>
+              <span className="info-name">Web design & Web development</span>{" "}
+              <span className="info-name"><a href="mailto:martadipuccio@me.com">Marta Di Puccio</a></span>
             </div>
           </div>
+        </div>
+      </div>
+          
 
       {/* <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with love
