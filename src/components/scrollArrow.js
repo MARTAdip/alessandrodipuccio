@@ -6,18 +6,21 @@ const ScrollArrow = () => {
   const [showScroll, setShowScroll] = useState(false)
 
   const checkScrollTop = () => {
-    if (!showScroll && window.pageYOffset > 400) {
+    if (!showScroll && window && window.pageYOffset > 400) {
       setShowScroll(true)
-    } else if (showScroll && window.pageYOffset <= 400) {
+    } else if (showScroll && window && window.pageYOffset <= 400) {
       setShowScroll(false)
     }
   }
 
   const scrollTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" })
+    if (window) {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    }
   }
-
-  window.addEventListener("scroll", checkScrollTop)
+  if (window) {
+    window.addEventListener("scroll", checkScrollTop)
+  }
 
   return (
     <div>
