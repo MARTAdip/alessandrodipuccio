@@ -9,6 +9,8 @@ import Language from "../components/language"
 import ReadMoreReact from "read-more-react"
 import { TiStar, TiPlus } from "react-icons/ti"
 import LISTANEW from "../markdown-pages/LISTANEW.pdf"
+import ScrollArrow from "../components/scrollArrow"
+
 
 const Teaching = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -93,6 +95,7 @@ const Teaching = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="Other Projects" />
+        <ScrollArrow/>
         <div className="text-img-container">
           <div className="teaching-wrapper">
             <div className="section-content">
@@ -141,6 +144,7 @@ const Teaching = ({ intl }) => {
         </div>
 
         <div className="wrapper-parallax"></div>
+        <span className="wrapper-parallax-span"style={{ color: `black` }}>  Image by<a href="https://www.instagram.com/fabiana_laurenzi/?hl=it" target="_blank" rel="noreferrer" style={{color: 'black', textDecoration: 'underline', fontSize:'12px'}}>Fabiana Laurenzi</a></span>
 
         // PATREON
         <div className="card-container">

@@ -13,17 +13,17 @@ const Contact = () => (
         <div className="contact-container">
           <div className="inner">
             <span>For info & lessons</span>
-            <a href="mailto:info@alessandrodipuccio.com">
+            <a href="mailto:info@alessandrodipuccio.com" rel="noreferrer" >
               Alessandro Di Puccio
             </a>
           </div>
           <div className="inner">
             <span>For bookings</span>
-            <a href="mailto:dipuccio02@gmail.com">Alessandro Di Puccio</a>
+            <a href="mailto:dipuccio02@gmail.com" rel="noreferrer" >Alessandro Di Puccio</a>
           </div>
           <div className="inner">
             <span>Press</span>
-            <a href="mailto:danielapelati@icloud.com">Daniela Pelati</a>
+            <a href="mailto:danielapelati@icloud.com" rel="noreferrer" >Daniela Pelati</a>
           </div>
           <div className="inner">
             <a
@@ -37,7 +37,7 @@ const Contact = () => (
           <div className="info-web inner" >
             <div className="info-web-inner">
               <span className="info-name">Web design & Web development</span>{" "}
-              <span className="info-name"><a href="mailto:martadipuccio@me.com">Marta Di Puccio</a></span>
+              <span className="info-name"><a href="mailto:martadipuccio@me.com" rel="noreferrer" >Marta Di Puccio</a></span>
             </div>
           </div>
         </div>

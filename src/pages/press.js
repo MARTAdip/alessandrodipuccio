@@ -11,6 +11,7 @@ import Language from "../components/language"
 import { Link, animateScroll as scroll } from "react-scroll"
 
 import { Gallery } from "gatsby-theme-gallery"
+import ScrollArrow from "../components/scrollArrow"
 // import Gallery  from "../components/gallery"
 
 const Press = ({ intl }) => {
@@ -128,6 +129,7 @@ const Press = ({ intl }) => {
         >
           PRESS ARCHIVE
         </Link>
+        <ScrollArrow />
         <div className="press-container">
           <div className="press-wrapper">
             <div className="press-inner-wrapper">
@@ -578,7 +580,7 @@ const Press = ({ intl }) => {
           <Gallery />
         </div>
 
-        <Link
+        {/* <Link
           activeClass="active"
           to="go_to_top"
           spy={true}
@@ -596,7 +598,7 @@ const Press = ({ intl }) => {
           }}
         >
           GO TO TOP
-        </Link>
+        </Link> */}
       </Layout>
     </div>
   )

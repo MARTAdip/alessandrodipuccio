@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { injectIntl, Link } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import Img from "gatsby-image"
+import ScrollArrow from "../components/scrollArrow"
 
 const About = ({ intl }) => {
   const data = useStaticQuery(graphql`
@@ -119,7 +120,7 @@ const About = ({ intl }) => {
       <Language />
       <Layout>
         <SEO title="About" />
-
+        <ScrollArrow />
         <div className="about-container">
           <div className="bio-wrapper">
             <div className="section-content">

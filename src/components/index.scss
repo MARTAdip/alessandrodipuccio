@@ -6,9 +6,45 @@
   background-position: center;
   position: relative;
 
-
   footer {
     position: absolute;
     bottom: 30px;
+  }
+}
+
+// Scroll up arrow
+
+.scrollTop {
+  position: fixed;
+  
+  bottom: 20px;
+  align-items: flex-start;
+  height: 20px;
+  justify-content: flex-start;
+  z-index: 1000;
+  cursor: pointer;
+  animation: fadeIn 0.3s;
+  transition: opacity 0.4s;
+  opacity: 0.5;
+
+  &:hover {
+    opacity: 1;
+  }
+
+
+  @media (min-width: 320px) and (max-width:425px) {
+    width: 10%;
+  }
+  @media (min-width: 426px)  {
+    width: 5%;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.5;
   }
 }

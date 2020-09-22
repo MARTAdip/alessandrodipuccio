@@ -11,53 +11,20 @@ import Language from "../components/language"
 import { AwesomeButton } from "react-awesome-button"
 import "react-awesome-button/dist/themes/theme-c137.css"
 import { Link } from "gatsby"
+import ScrollArrow from "../components/scrollArrow"
 
 const Music = ({ intl }) => (
   <div className="music-outer-wrapper">
     <Language />
     <Layout>
       <SEO title="Music" />
+      <ScrollArrow />
       <div className="inner">
         <AwesomeButton size="small" type="primary">
           <Link to="/video">VIDEO</Link>
         </AwesomeButton>
       </div>
-      {/* <Link
-        activeClass="active"
-        to="music-index"
-        spy={true}
-        smooth={true}
-        offset={100}
-        duration={500}
-        style={{
-          display: `flex`,
-          flexFlow: `column`,
-          alignItems: `flex-end`,
-          fontSize: `16px`,
-          textTransform: `none`,
-          textDecoration: `underline`
-        }}
-      >
-        {intl.formatMessage({ id: "submenu1" })}
-      </Link>
-      <Link
-        activeClass="active"
-        to="video-concert"
-        spy={true}
-        smooth={true}
-        offset={100}
-        duration={500}
-        style={{
-          display: `flex`,
-          flexFlow: `column`,
-          alignItems: `flex-end`,
-          fontSize: `16px`,
-          textTransform: `none`,
-          textDecoration: `underline`
-        }}
-      >
-        {intl.formatMessage({ id: "submenu2" })}
-      </Link> */}
+     
       <div className="grid big-content">
         
         <AwesomeSlider mobileTouch animation="cubeAnimation">

@@ -743,6 +743,11 @@ ul {
     width: 380px;
   }
 }
+@media (min-width: 426px) {
+  ul {
+    width: 230px;
+  }
+}
 
 @media (min-width: 768px) {
   ul {
