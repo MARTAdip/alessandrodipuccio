@@ -44,135 +44,120 @@ const Video = ({ intl }) => {
             <Link to="/music">MUSIC</Link>
           </AwesomeButton>
         </div>
-        {/* <Link
-          activeClass="active"
-          to="video-index"
-          spy={true}
-          smooth={true}
-          offset={100}
-          duration={500}
-          style={{
-            display: `flex`,
-            flexFlow: `column`,
-            alignItems: `flex-end`,
-            fontSize: `16px`,
-            textTransform: `none`,
-            textDecoration: `underline`,
-          }}
-        >
-          {intl.formatMessage({ id: "submenu_video" })}
-        </Link> */}
-        <div className="description-wrapper">
-          <div className="description">
-            {intl.formatMessage({ id: "video_description" })}
-          </div>
-        </div>
-        <div className="video-container" id="video-index">
-          <AwesomeSlider
-            cssModule={AwesomeSliderStyles}
-            mobileTouch
-            animation="cubeAnimation"
-          >
-            <div className="video-wrapper-inner">
-              <iframe
-                title="sindrome"
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/GxpiGI2m9u8"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects7" })}
-              </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="auf wiedersehen, goodbye"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/-fWlgrf7h-0"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects1" })}
-              </div>
-            </div>
 
-            <div className="video-wrapper-inner">
-              <iframe
-                title="le nozze"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/j5EEvSV3224"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects2" })}
-              </div>
+        <div className="video-flex">
+          <div className="description-wrapper">
+            <div className="description">
+              {intl.formatMessage({ id: "video_description" })}
             </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="canzona"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/szfban48x7E"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects3" })}
+          </div>
+          <div className="video-container" id="video-index">
+            <AwesomeSlider
+              cssModule={AwesomeSliderStyles}
+              mobileTouch
+              animation="cubeAnimation"
+            >
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="sindrome"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/GxpiGI2m9u8"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects7" })}
+                </div>
               </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="exp part1"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/eijp33GV7Lc"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects4" })}
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="auf wiedersehen, goodbye"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/-fWlgrf7h-0"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects1" })}
+                </div>
               </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="exp part2"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/NaAX_CSKnAw"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects5" })}
+
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="le nozze"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/j5EEvSV3224"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects2" })}
+                </div>
               </div>
-            </div>
-            <div className="video-wrapper-inner">
-              <iframe
-                title="lulu"
-                width="450"
-                height="315"
-                src="https://www.youtube.com/embed/J6SEu-Vi6zw"
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <div className="video-text">
-                {intl.formatMessage({ id: "text-other-projects6" })}
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="canzona"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/szfban48x7E"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects3" })}
+                </div>
               </div>
-            </div>
-          </AwesomeSlider>
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="exp part1"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/eijp33GV7Lc"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects4" })}
+                </div>
+              </div>
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="exp part2"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/NaAX_CSKnAw"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects5" })}
+                </div>
+              </div>
+              <div className="video-wrapper-inner">
+                <iframe
+                  title="lulu"
+                  width="450"
+                  height="315"
+                  src="https://www.youtube.com/embed/J6SEu-Vi6zw"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects6" })}
+                </div>
+              </div>
+            </AwesomeSlider>
+          </div>
         </div>
       </Layout>
     </div>

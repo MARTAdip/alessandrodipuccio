@@ -2,50 +2,85 @@
 @import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 .awssld__content {
-  background-color: transparentize($color: #fff, $amount: 0.8);
+  background-color: transparentize($color: #fff, $amount: 1);
   align-items: baseline !important;
-  
+  overflow: visible !important;
 }
 
 .video-outer-wrapper {
-  background-color: #fff;
   min-height: 100vh;
-  
-  // @media (min-width: 2560px) {
-  //   max-width: 1500px;
-  //   margin: 0 auto ;
-  // }
+  background: linear-gradient(to right, #304352, #d7d2cc);
 
-  .description-wrapper {
-    border: 1px;
-    border-radius: 5px;
-    background: transparentize($color: #43677e, $amount: 0.3);
-    padding: 12px 38px 12px 20px;
-    margin-top: 10px;
-
-    .description {
-      color: #fff;
-      font-family: "Manrope", sans-serif;
-      line-height: 28px;
+  .video-flex {
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+    @media (max-width: 768px) {
+      flex-flow: column;
     }
-    @media (min-width: 1500px) {
-      max-width: 1500px;
-      margin: 0 auto ;
+    @media (min-width: 1024px) {
+      flex-flow: row;
+    }
+    .description-wrapper {
+      border: 1px;
+      border-radius: 5px;
+      padding: 12px 38px 12px 20px;
+      margin-top: 10px;
+      text-align: center;
+      margin: 0 auto;
+      max-width: 700px;
+
+      @media (min-width: 1500px) {
+        max-width: 1500px;
+        margin: 0 auto;
+      }
+      .description {
+        color: #000;
+        font-family: "Manrope", sans-serif;
+        line-height: 28px;
+        @media (min-width: 1500px) {
+          font-size: 27px;
+          line-height: 40px;
+        }
+      }
+    }
+    .video-wrapper-inner {
+      margin-top: 20px;
+      .video-text {
+        color: #000;
+        font-family: "Manrope", sans-serif;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 250px;
+        margin-top: 20px;
+        font-size: 16px;
+        padding-bottom: 70px;
+        @media screen and(min-width: 768px) {
+          max-width: 500px;
+          line-height: 30px;
+        }
+        @media (min-width: 1500px) {
+          font-size: 22px;
+        }
+      }
     }
   }
-  .video-wrapper-inner {
-    .video-text {
-      color: #000;
-      font-family: "Manrope", sans-serif;
-      margin: 0 auto;
-      text-align: center;
-      max-width: 250px;
-      margin-top: 20px;
-      font-size: 16px;
-      padding-bottom: 70px;
-      @media screen and(min-width: 768px) {
-        max-width: 600px;
-        line-height: 30px;
+}
+
+@media (min-width: 1024px) {
+  .video-container {
+    .video-wrapper-inner {
+      iframe {
+        width: 450px !important;
+      }
+    }
+  }
+}
+@media (min-width: 2560px) {
+  .video-container {
+    .video-wrapper-inner {
+      iframe {
+        width: 850px !important;
       }
     }
   }
@@ -53,6 +88,7 @@
 
 .video-container {
   padding-bottom: 50px;
+  width: 100%;
   .awssld__wrapper {
     min-height: 600px !important;
   }
