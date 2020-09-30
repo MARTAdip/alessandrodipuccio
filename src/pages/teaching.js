@@ -144,7 +144,7 @@ const Teaching = ({ intl }) => {
         </div>
 
         <div className="wrapper-parallax"></div>
-        <span className="wrapper-parallax-span"style={{ color: `black` }}>  Image by<a href="https://www.instagram.com/fabiana_laurenzi/?hl=it" target="_blank" rel="noreferrer" style={{color: 'black', textDecoration: 'underline', fontSize:'12px'}}>Fabiana Laurenzi</a></span>
+        <span className="wrapper-parallax-span"style={{ color: `black` }}>Image by Fabiana Laurenzi</span>
 
         // PATREON
         <div className="card-container">

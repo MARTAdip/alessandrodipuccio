@@ -13,7 +13,7 @@ const IndexPage = props => (
       <footer style={{ color: ` white` }}>
         © {new Date().getFullYear()}, Built with <TiHeartFullOutline/>
         <br/>
-        Image by<a href="https://www.instagram.com/fabiana_laurenzi/?hl=it" target="_blank" rel="noreferrer" style={{color: 'white', textDecoration: 'underline', fontSize:'12px'}}>Fabiana Laurenzi</a>
+        Image by Fabiana Laurenzi 
       </footer>
     </Layout>
   </div>
