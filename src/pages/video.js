@@ -59,6 +59,20 @@ const Video = ({ intl }) => {
             >
               <div className="video-wrapper-inner">
                 <iframe
+                  title="neorealista"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/CTe0P7i0wCk"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <div className="video-text">
+                  {intl.formatMessage({ id: "text-other-projects8" })}
+                </div>
+              </div>
+              <div className="video-wrapper-inner">
+                <iframe
                   title="sindrome"
                   width="560"
                   height="315"
