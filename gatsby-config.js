@@ -3,7 +3,7 @@ module.exports = {
     title: `Alessandro Di Puccio`,
     description: `Alessandro Di Puccio Official Website. Alessandro Di Puccio (Firenze, 4 Ottobre 1958) è un musicista jazz, compositore e arrangiatore, vibrafonista e batterista. Attivo come didatta e visual storyteller.`,
     author: `marta di puccio`,
-    siteUrl: 'https://www.alessandrodipuccio.com'
+    siteUrl: `https://www.alessandrodipuccio.com`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -20,10 +20,11 @@ module.exports = {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         host: 'https://www.alessandrodipuccio.com',
-        sitemap: 'https://www.alessandrodipuccio.com/sitemap.xml',
+        sitemap:'https://www.alessandrodipuccio.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
