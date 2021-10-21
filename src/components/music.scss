@@ -7,172 +7,178 @@
   //   max-width: 1500px;
   //   margin: 0 auto ;
   // }
-}
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  padding-top: 70px;
-
-
-  @media (min-width: 1440px) {
-    width: 100%;
-  }
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 85%;
-  // padding: 15px;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-
-  iframe {
-    @media (min-width: 2560px) {
-      height: 600px !important;
-      width: 1000px !important;
-    }
-  }
-}
-@media (min-width: 768px) {
-  .card {
-    flex-basis: 45%;
-  }
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
-}
-
-@media (max-width: 600px) {
   .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
-}
-.first-frame {
-  height: 300px;
-}
-@media (min-width: 768px) {
-  .first-frame {
-    height: 400px;
-    width: 600px !important;
-  }
-}
-
-.music-index {
-  margin-top: 100px;
-  padding: 25px;
-
-  // .index-frame {
-  //   min-height: 50vh !important;
-  // }
-}
-
-
-@media (max-width: 425px){
-  .awssld__content {
-    display: block !important;
-    overflow: visible;
-  }
-}
-.big-content {
-
-  .awssld__content {
-    background-color: transparentize($color: #fff, $amount: 0.7); 
-    align-items: center !important;
-    @media (min-width: 768px) {
-      padding-bottom: 50px;
-    }
-  }
-}
-#video-concert {
-  .awssld__content {
-    background-color: transparentize($color: #fff, $amount: 0.7);
-    align-items: baseline !important;
-    @media (min-width: 768px) {
-      padding-bottom: 70px;
-    }
-  }
-
-}
-.awssld__container {
-  // height: 23vh !important;
-  width: 90% !important;
-  margin: 0 auto;
-  @media (min-width: 768px) {
-    width: 100%;
-  }
-  @media (min-width: 2560px) {
-    width: 70% !important;
-    height: 0;
-  }
-}
-.awssld__controls {
-  visibility: visible !important;
-}
-.video-container {
-  padding-bottom: 50px;
-  .awssld__wrapper {
-    min-height: 600px !important;
-  }
-  @media screen and (min-width: 1600px) {
-    max-width: 1570px;
-    margin: 0 auto;
-  }
-  @media screen and (min-width: 1900px) {
-    max-width: 1870px;
-    margin: 0 auto;
-  }
-
-  .video-wrapper-inner {
     display: flex;
-    flex-flow: column;
     align-items: center;
-    @media (min-width: 768px) {
-      margin-top: 50px;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 70px;
 
+    @media (min-width: 1440px) {
+      width: 100%;
     }
+  }
+
+  .card {
+    margin: 1rem;
+    flex-basis: 85%;
+    // padding: 15px;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
 
     iframe {
-      @media (min-width: 1024px) {
-        width: 650px !important;
-        height: 400px !important;
-      }
       @media (min-width: 2560px) {
-        width: 800px !important;
         height: 600px !important;
+        width: 1000px !important;
       }
     }
+  }
+  @media (min-width: 768px) {
+    .card {
+      flex-basis: 45%;
+    }
+  }
 
-    .video-text {
-      color: #000;
+  .card:hover,
+  .card:focus,
+  .card:active {
+    color: #0070f3;
+    border-color: #0070f3;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .grid {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+  .first-frame {
+    height: 300px;
+  }
+  @media (min-width: 768px) {
+    .first-frame {
+      height: 400px;
+      width: 600px !important;
+    }
+  }
+
+  .music-index {
+    margin-top: 100px;
+    padding: 25px;
+
+    // .index-frame {
+    //   min-height: 50vh !important;
+    // }
+  }
+
+  @media (max-width: 425px) {
+    .awssld__content {
+      display: block !important;
+      overflow: visible;
+    }
+  }
+  .big-content-music {
+    .awssld__content {
+      background-color: transparent;
+      align-items: center;
+      display: flex;
+    }
+  }
+  #video-concert-music {
+    .awssld__content {
+      background-color: transparent;
+      @media (min-width: 768px) {
+        padding-bottom: 70px;
+      }
+    }
+  }
+  .awssld__container {
+    width: 90% !important;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+    @media (min-width: 2560px) {
+      width: 70% !important;
+      height: 0;
+    }
+    .awssld__box {
+      height: 70%;
+    }
+  }
+  .awssld__controls {
+    visibility: visible !important;
+  }
+  .awssld__controls button {
+    align-items: flex-start;
+  }
+  .awssld__controls__arrow-right,
+  .awssld__controls__arrow-left {
+    &:before,
+    &:after {
+      background-color: #000 !important;
+      opacity: 1 !important;
+    }
+  }
+
+  .video-container {
+    padding-bottom: 50px;
+    .awssld__wrapper {
+      min-height: 600px !important;
+    }
+    @media screen and (min-width: 1600px) {
+      max-width: 1570px;
       margin: 0 auto;
-      text-align: center;
-      max-width: 250px;
-      font-weight: bold;
-      margin-top: 20px;
-      font-size: 16px;
+    }
+    @media screen and (min-width: 1900px) {
+      max-width: 1870px;
+      margin: 0 auto;
+    }
 
-      font-family: "Manrope", sans-serif;
-      @media screen and(min-width: 768px) {
-        max-width: 600px;
-        line-height: 30px;
+    .video-wrapper-inner {
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      @media (min-width: 768px) {
+        margin-top: 50px;
+      }
+
+      iframe {
+        @media (min-width: 1024px) {
+          width: 650px !important;
+          height: 400px !important;
+        }
+        @media (min-width: 2560px) {
+          width: 800px !important;
+          height: 600px !important;
+        }
+      }
+
+      .video-text {
+        color: #000;
+        margin: 0 auto;
+        text-align: center;
+        max-width: 250px;
+        font-weight: bold;
+        margin-top: 20px;
+        font-size: 16px;
+
+        font-family: "Manrope", sans-serif;
+        @media screen and(min-width: 768px) {
+          max-width: 600px;
+          line-height: 30px;
+        }
       }
     }
   }

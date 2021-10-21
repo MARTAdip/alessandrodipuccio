@@ -103,7 +103,7 @@ const Press = ({ intl }) => {
       }
     }
   `)
-  console.log(data.images_press_archive, "image")
+  
   return (
     <div className="press-outer-wrapper" id="go_to_top">
       <Language />

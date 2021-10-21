@@ -4,9 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AwesomeSlider from "react-awesome-slider"
 import "react-awesome-slider/dist/styles.css"
+
 import "../components/music.scss"
-// import { Link, animateScroll as scroll } from "react-scroll"
-import { injectIntl, FormattedMessage } from "gatsby-plugin-intl"
+import { injectIntl } from "gatsby-plugin-intl"
 import Language from "../components/language"
 import { AwesomeButton } from "react-awesome-button"
 import "react-awesome-button/dist/themes/theme-c137.css"
@@ -24,9 +24,8 @@ const Music = ({ intl }) => (
           <Link to="/video">VIDEO</Link>
         </AwesomeButton>
       </div>
-     
-      <div className="grid big-content">
-        
+
+      <div className="grid big-content-music">
         <AwesomeSlider mobileTouch animation="cubeAnimation">
           <div className="card">
             <iframe
@@ -89,8 +88,8 @@ const Music = ({ intl }) => (
         ></iframe>
       </div>
 
-      <div className="video-container" id="video-concert">
-        <AwesomeSlider mobileTouch animation="cubeAnimation">
+      <div className="video-container" id="video-concert-music">
+        <AwesomeSlider mobileTouch animation="fallAnimation">
           <div className="video-wrapper-inner">
             <iframe
               title="all the things you are"
