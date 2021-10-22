@@ -19,8 +19,12 @@ const ScrollArrow = () => {
     }
   }
   useEffect(() => {
-    window.addEventListener("scroll", checkScrollTop)
-  });
+    if (!showScroll) {
+      window.addEventListener("scroll", checkScrollTop)
+    } else {
+        window.removeEventListener("scroll", checkScrollTop )
+    }
+    });
 
   return (
     <div>

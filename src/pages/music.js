@@ -25,6 +25,18 @@ const Music = ({ intl }) => (
         </AwesomeButton>
       </div>
 
+      <div className="quote-container">
+        <i className="pin"></i>
+        <a
+          href="https://www.youtube.com/channel/UChCWBb3bJHHF08ktBunb21Q"
+          target="blank"
+        >
+          <blockquote className="note yellow">
+            FOR THE LATEST MUSIC VIDEO HERE{" "}
+          </blockquote>
+        </a>
+      </div> 
+      
       <div className="grid big-content-music">
         <AwesomeSlider mobileTouch animation="cubeAnimation">
           <div className="card">

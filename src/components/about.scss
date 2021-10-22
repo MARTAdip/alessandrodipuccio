@@ -2,9 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap");
 
 .about-wrapper {
-  // background: url("../images/bianco.jpg");
-  // background-size: contain;
-   background-color: #1f1f1f;
+  background: url("../images/bg-about2.jpg");
+  background-size: contain;
+  //  background-color: #1f1f1f;
   min-height: 100vh;
 
   .button-gallery {
@@ -91,6 +91,7 @@
     h4 {
       font-family: "Abril Fatface", cursive;
       text-align: left;
+      font-weight: 600;
       // font-size: 22px;
       // color: #14213d;
       // color: #55828b;
@@ -102,7 +103,8 @@
     span {
       font-family: "Manrope", sans-serif;
       line-height: 22px;
-      color: #fff;
+      color: #2f4858;
+      font-weight: 600;
       @media (min-width: 2560px) {
         font-size: 18px;
         line-height: 35px;
